@@ -14,7 +14,10 @@ stats = data["stats"]
 scraped_at = data["scraped_at"]
 
 for c in cars:
-    c["status"] = "Deposit Taken" if "Deposit Taken" in c["title"] else "Available"
+    # Prefer the status recorded by the scraper; fall back to a title check for
+    # older baselines. The site marks a reserved car as "🔹DEPOSIT TAKEN🔹".
+    if not c.get("status"):
+        c["status"] = "Deposit Taken" if "deposit taken" in c["title"].lower() else "Available"
 
 # History of weekly snapshots (its own file so it accumulates independently
 # of the current-stock baseline). Shape: list of
@@ -205,6 +208,7 @@ html = r"""<!DOCTYPE html>
   .changelog-tag.sold { background: rgba(179,38,30,0.10); color: var(--danger); }
   .changelog-tag.price { background: rgba(42,120,214,0.12); color: var(--series-1); }
   .changelog-tag.status { background: rgba(237,161,0,0.14); color: #96690a; }
+  .changelog-tag.offer { background: rgba(27,175,122,0.14); color: #0a7a52; }
   .changelog-tag.baseline { background: var(--gridline); color: var(--text-secondary); }
   .changelog-row .cl-details { color: var(--text-primary); }
 
@@ -246,6 +250,7 @@ html = r"""<!DOCTYPE html>
   .status-dot.deposit { background: var(--status-warning); }
   a.car-link { color: var(--series-1); text-decoration: none; }
   a.car-link:hover { text-decoration: underline; }
+  .price-was { color: var(--text-muted); text-decoration: line-through; font-size: 10px; margin-left: 4px; }
   .table-scroll { max-height: 520px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
   thead th { position: sticky; top: 0; z-index: 3; }
   th:first-child, td:first-child {
@@ -374,7 +379,7 @@ html = r"""<!DOCTYPE html>
       <p class="desc">Total value of available stock at each weekly check.</p>
       <div class="mom-chart" id="momChart"></div>
       <div class="mom-note" id="momNote"></div>
-      <div class="mom-source">How this is recorded: every Saturday a scheduled check re-scrapes carbarsale.ie, appends a new snapshot (date, stock count, AUM, avg price) to a running history log in Google Drive, and rebuilds this dashboard from the full log &mdash; so this chart grows one bar per week automatically.</div>
+      <div class="mom-source">How this is recorded: every Saturday a scheduled GitHub Actions job re-scrapes carbarsale.ie, appends a new snapshot (date, stock count, AUM, avg price) to a running history log committed back to the repo, and rebuilds this dashboard from the full log &mdash; so this chart grows one bar per week automatically.</div>
     </section>
 
     <section>
@@ -530,7 +535,8 @@ function renderChangelog() {
   const el = document.getElementById("changelogList");
   const tagClass = t => ({
     "New listing": "new", "Sold": "sold", "Removed": "sold",
-    "Price change": "price", "Status change": "status", "Baseline": "baseline",
+    "Price change": "price", "Status change": "status",
+    "Offer": "offer", "Offer ended": "status", "Baseline": "baseline",
   }[t] || "baseline");
   const rows = [...CHANGELOG].reverse();
   el.innerHTML = rows.map(r => `
@@ -564,6 +570,9 @@ function renderSalesCards() {
     }).length;
   }
 
+  const onOffer = CARS.filter(c => c.price_was && c.price != null && c.price < c.price_was);
+  const totalDiscount = onOffer.reduce((s, c) => s + (c.price_was - c.price), 0);
+
   const cardsDef = [
     { label: "Total sales", value: totalSales, delta: `<div class="delta">${soldEntries.length ? "all-time, from change log" : "none recorded yet"}</div>` },
     { label: "Total revenue", value: withPrice.length ? fmtEUR(totalRevenue) : "&ndash;",
@@ -571,6 +580,8 @@ function renderSalesCards() {
         : withPrice.length < totalSales ? `<div class="delta">${totalSales - withPrice.length} sale(s) missing price data</div>`
         : `<div class="delta">all-time, from change log</div>` },
     { label: "Deposits taken (last 30 days)", value: depositsLast30, delta: `<div class="delta">vs ${refDate || "&ndash;"}</div>` },
+    { label: "Cars on offer", value: onOffer.length,
+      delta: onOffer.length ? `<div class="delta down">${fmtEUR(totalDiscount)} total off list price</div>` : `<div class="delta">none currently discounted</div>` },
   ];
   el.innerHTML = cardsDef.map(c => `
     <div class="card">
@@ -795,17 +806,23 @@ function renderTable() {
   document.getElementById("filterCount").textContent =
     `${rows.length} of ${CARS.length} cars · total value ${fmtEUR(rows.reduce((s, c) => s + c.price, 0))}`;
 
-  document.getElementById("tableBody").innerHTML = rows.map(c => `
+  document.getElementById("tableBody").innerHTML = rows.map(c => {
+    const priceCell = c.price != null ? fmtEUR(c.price) : "&ndash;";
+    const wasCell = (c.price_was && c.price != null && c.price < c.price_was)
+      ? ` <span class="price-was">${fmtEUR(c.price_was)}</span>` : "";
+    const mileageCell = c.mileage != null
+      ? `${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}` : "&ndash;";
+    return `
     <tr>
       <td>${c.title}</td>
       <td>${c.make}</td>
-      <td class="num">${c.year}</td>
-      <td class="num">${fmtEUR(c.price)}</td>
-      <td class="num">${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}</td>
+      <td class="num">${c.year != null ? c.year : "&ndash;"}</td>
+      <td class="num">${priceCell}${wasCell}</td>
+      <td class="num">${mileageCell}</td>
       <td><span class="status-tag"><span class="status-dot ${c.status === "Available" ? "available" : "deposit"}"></span>${c.status}</span></td>
       <td><a class="car-link" href="${c.url}" target="_blank" rel="noopener">View &rarr;</a></td>
-    </tr>
-  `).join("");
+    </tr>`;
+  }).join("");
 }
 
 function wireFilters() {

@@ -1,12 +1,12 @@
-name: Weekly stock update
+name: Daily stock update
 
-# Scrapes carbarsale.ie every Saturday at 09:00 UTC, updates the JSON data
-# files, rebuilds the dashboard, commits the changes back to the repo, and
-# publishes docs/ to GitHub Pages. Can also be run on demand from the Actions
-# tab (or `gh workflow run weekly-update.yml`).
+# Scrapes carbarsale.ie every day at 09:00 UTC, updates the JSON data files,
+# rebuilds the dashboard, commits the changes back to the repo, and publishes
+# docs/ to GitHub Pages. Can also be run on demand from the Actions tab (or
+# `gh workflow run weekly-update.yml`).
 on:
   schedule:
-    - cron: "0 9 * * 6" # every Saturday 09:00 UTC
+    - cron: "0 9 * * *" # every day 09:00 UTC
   workflow_dispatch:
 
 # contents: write  -> commit the refreshed data + dashboard back to the repo

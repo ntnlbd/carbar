@@ -19,7 +19,7 @@ for c in cars:
     if not c.get("status"):
         c["status"] = "Deposit Taken" if "deposit taken" in c["title"].lower() else "Available"
 
-# History of weekly snapshots (its own file so it accumulates independently
+# History of daily snapshots (its own file so it accumulates independently
 # of the current-stock baseline). Shape: list of
 # {date, total, available, depositTaken, aumAvailable, aumAll, avgPrice}.
 history_path = os.path.join(DATA_DIR, "history.json")
@@ -42,7 +42,7 @@ else:
         json.dump(history, f, indent=2)
 
 # Change log: list of {date, type, carId, title, details}. Also its own file
-# so it accumulates across weekly runs (new listing / sold / price change / status change).
+# so it accumulates across daily runs (new listing / sold / price change / status change).
 changelog_path = os.path.join(DATA_DIR, "changelog.json")
 if os.path.exists(changelog_path):
     with open(changelog_path) as f:
@@ -269,7 +269,7 @@ html = r"""<!DOCTYPE html>
   <div class="header">
     <div>
       <h1>CarBarSale.ie Stock Tracker</h1>
-      <div class="sub">Last checked __SCRAPED_AT__ &middot; refreshed weekly</div>
+      <div class="sub">Last checked __SCRAPED_AT__ &middot; refreshed daily</div>
     </div>
   </div>
 
@@ -376,10 +376,10 @@ html = r"""<!DOCTYPE html>
 
     <section>
       <h2>AUM &mdash; month on month</h2>
-      <p class="desc">Total value of available stock at each weekly check.</p>
+      <p class="desc">Total value of available stock at each daily check.</p>
       <div class="mom-chart" id="momChart"></div>
       <div class="mom-note" id="momNote"></div>
-      <div class="mom-source">How this is recorded: every Saturday a scheduled GitHub Actions job re-scrapes carbarsale.ie, appends a new snapshot (date, stock count, AUM, avg price) to a running history log committed back to the repo, and rebuilds this dashboard from the full log &mdash; so this chart grows one bar per week automatically.</div>
+      <div class="mom-source">How this is recorded: every day a scheduled GitHub Actions job re-scrapes carbarsale.ie, appends a new snapshot (date, stock count, AUM, avg price) to a running history log committed back to the repo, and rebuilds this dashboard from the full log &mdash; so this chart grows one bar per day automatically.</div>
     </section>
 
     <section>
@@ -401,7 +401,7 @@ html = r"""<!DOCTYPE html>
 
     <section>
       <h2>Change log</h2>
-      <p class="desc">New listings, sold cars, price changes, and status changes recorded at each weekly check</p>
+      <p class="desc">New listings, sold cars, price changes, and status changes recorded at each daily check</p>
       <div class="changelog-list" id="changelogList"></div>
     </section>
   </div>
@@ -522,7 +522,7 @@ function renderMoM() {
     `;
   }).join("");
   if (HISTORY.length < 2) {
-    note.textContent = "Only one weekly check recorded so far — this chart fills in as more checks run.";
+    note.textContent = "Only one daily check recorded so far — this chart fills in as more checks run.";
   } else {
     const first = HISTORY[0].aumAvailable, last = HISTORY[HISTORY.length - 1].aumAvailable;
     const diff = last - first;
@@ -612,7 +612,7 @@ function renderMonthlyCharts() {
   if (!months.length) {
     salesEl.innerHTML = "";
     revEl.innerHTML = "";
-    salesNote.textContent = "No sales recorded yet — this fills in as cars are marked Sold/Removed in weekly checks.";
+    salesNote.textContent = "No sales recorded yet — this fills in as cars are marked Sold/Removed in daily checks.";
     revNote.textContent = "No revenue recorded yet — cars sold with tracked prices will appear here.";
     return;
   }
@@ -645,7 +645,7 @@ function renderMonthlyCharts() {
     revNote.textContent = `${fmtEUR(totalRev)} total recorded revenue.`;
   } else {
     revEl.innerHTML = "";
-    revNote.textContent = "Sale prices aren't logged yet for these entries — once weekly checks capture a car's last price at sale, revenue will chart here.";
+    revNote.textContent = "Sale prices aren't logged yet for these entries — once daily checks capture a car's last price at sale, revenue will chart here.";
   }
 }
 

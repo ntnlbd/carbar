@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Weekly scrape + diff for carbarsale.ie stock tracker.
+Daily scrape + diff for carbarsale.ie stock tracker.
 
 Run from the repo root (GitHub Actions does this automatically):
     python3 scripts/scrape_and_update.py

@@ -1,12 +1,12 @@
 # CarBarSale.ie Stock Tracker (GitHub Pages edition)
 
 Self-hosted version of the stock tracker dashboard. GitHub Actions scrapes
-carbarsale.ie every Saturday at 09:00 UTC, updates the JSON data files,
+carbarsale.ie every day at 09:00 UTC, updates the JSON data files,
 rebuilds the dashboard, and publishes it to GitHub Pages automatically.
 No external database, no paid tier, nothing to renew — this runs forever
 on GitHub's free plan (public repos get unlimited Actions minutes; private
 repos get 2,000 free minutes/month, and this job uses well under a minute
-a week).
+a day).
 
 ## One-time setup (5 minutes)
 
@@ -30,11 +30,11 @@ a week).
 
 4. **Enable Actions permissions**: repo → Settings → Actions → General →
    under "Workflow permissions", select **Read and write permissions**.
-   This lets the weekly job commit the updated data files back to the repo.
+   This lets the daily job commit the updated data files back to the repo.
 
-5. That's it. The workflow will run automatically every Saturday. To run it
-   immediately (don't wait for Saturday), go to the **Actions** tab →
-   "Weekly stock update" → **Run workflow**.
+5. That's it. The workflow will run automatically every day. To run it
+   immediately (don't wait for the next 09:00 UTC run), go to the **Actions**
+   tab → "Daily stock update" → **Run workflow**.
 
 Your dashboard will be live at:
 `https://<your-username>.github.io/<repo-name>/`

@@ -1,0 +1,875 @@
+import json
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+DOCS_DIR = os.path.join(BASE_DIR, "docs")
+os.makedirs(DOCS_DIR, exist_ok=True)
+
+with open(os.path.join(DATA_DIR, "baseline.json")) as f:
+    data = json.load(f)
+
+cars = data["cars"]
+stats = data["stats"]
+scraped_at = data["scraped_at"]
+
+for c in cars:
+    c["status"] = "Deposit Taken" if "Deposit Taken" in c["title"] else "Available"
+
+# History of weekly snapshots (its own file so it accumulates independently
+# of the current-stock baseline). Shape: list of
+# {date, total, available, depositTaken, aumAvailable, aumAll, avgPrice}.
+history_path = os.path.join(DATA_DIR, "history.json")
+if os.path.exists(history_path):
+    with open(history_path) as f:
+        history = json.load(f)
+else:
+    history = [
+        {
+            "date": scraped_at,
+            "total": stats["total_cars"],
+            "available": stats["available"],
+            "depositTaken": stats["deposit_taken"],
+            "aumAvailable": stats["aum_available_eur"],
+            "aumAll": stats["aum_all_eur"],
+            "avgPrice": stats["avg_price_eur"],
+        }
+    ]
+    with open(history_path, "w") as f:
+        json.dump(history, f, indent=2)
+
+# Change log: list of {date, type, carId, title, details}. Also its own file
+# so it accumulates across weekly runs (new listing / sold / price change / status change).
+changelog_path = os.path.join(DATA_DIR, "changelog.json")
+if os.path.exists(changelog_path):
+    with open(changelog_path) as f:
+        changelog = json.load(f)
+else:
+    changelog = [
+        {
+            "date": scraped_at,
+            "type": "Baseline",
+            "carId": "-",
+            "title": "-",
+            "details": f"Initial baseline captured: {stats['total_cars']} cars in stock.",
+        }
+    ]
+    with open(changelog_path, "w") as f:
+        json.dump(changelog, f, indent=2)
+
+CARS_JSON = json.dumps(cars)
+HISTORY_JSON = json.dumps(history)
+STATS_JSON = json.dumps(stats)
+CHANGELOG_JSON = json.dumps(changelog)
+
+html = r"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CarBarSale.ie Stock Tracker</title>
+<style>
+  .viz-root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page-plane:     #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --success:        #006300;
+    --danger:         #b3261e;
+    --series-1: #2a78d6; /* blue */
+    --series-2: #eb6834; /* orange */
+    --series-3: #1baf7a; /* aqua */
+    --series-4: #eda100; /* yellow */
+    --series-5: #e87ba4; /* magenta */
+    --series-6: #008300; /* green */
+    --series-7: #4a3aa7; /* violet */
+    --series-8: #e34948; /* red */
+    --status-good: #0ca30c;
+    --status-warning: #fab219;
+  }
+  /* Light theme only — forced, no dark mode */
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--page-plane);
+    color: var(--text-primary);
+    font-size: 13px;
+  }
+  .viz-root { padding: 18px; max-width: 1180px; margin: 0 auto; }
+
+  .header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .header h1 { font-size: 18px; margin: 0; font-weight: 650; }
+  .header .sub { color: var(--text-secondary); font-size: 12px; }
+
+  /* Tabs */
+  .tabs { display: flex; gap: 4px; margin-bottom: 14px; border-bottom: 1px solid var(--baseline); }
+  .tab-btn {
+    border: none; background: transparent; color: var(--text-secondary); font-size: 12.5px;
+    font-weight: 600; padding: 8px 14px; cursor: pointer; border-bottom: 2px solid transparent;
+    margin-bottom: -1px; font-family: inherit;
+  }
+  .tab-btn:hover { color: var(--text-primary); }
+  .tab-btn.active { color: var(--series-1); border-bottom-color: var(--series-1); }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* Stat cards */
+  .cards { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-bottom: 14px; }
+  @media (max-width: 900px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 560px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+  .card {
+    background: var(--surface-1); border: 1px solid var(--border); border-radius: 9px;
+    padding: 9px 11px;
+  }
+  .card .label { font-size: 10.5px; color: var(--text-secondary); margin-bottom: 4px; }
+  .card .value { font-size: 17px; font-weight: 650; letter-spacing: -0.01em; }
+  .card .delta { font-size: 10.5px; margin-top: 3px; color: var(--text-muted); }
+  .card .delta.up { color: var(--success); }
+  .card .delta.down { color: var(--danger); }
+
+  section { background: var(--surface-1); border: 1px solid var(--border); border-radius: 11px; padding: 14px; margin-bottom: 12px; }
+  section h2 { font-size: 13px; margin: 0 0 2px 0; font-weight: 650; }
+  section .desc { font-size: 11px; color: var(--text-secondary); margin: 0 0 10px 0; }
+
+  .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 860px) { .charts-row { grid-template-columns: 1fr; } }
+  .charts-row-3 { grid-template-columns: 1fr 1fr 1fr; align-items: start; }
+  @media (max-width: 1040px) { .charts-row-3 { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .charts-row-3 { grid-template-columns: 1fr; } }
+  .chart-col { display: flex; flex-direction: column; min-width: 0; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 10px; margin-bottom: 8px; font-size: 10.5px; color: var(--text-secondary); }
+  .legend-item { display: flex; align-items: center; gap: 4px; }
+  .swatch { width: 8px; height: 8px; border-radius: 2px; display: inline-block; flex: 0 0 auto; }
+  .legend-footer { margin: 10px 0 0; padding-top: 8px; border-top: 1px solid var(--gridline); }
+
+  .bar-chart { display: flex; flex-direction: column; gap: 5px; }
+  .bar-row { display: grid; grid-template-columns: 64px 1fr 44px; align-items: center; gap: 5px; }
+  .bar-row .row-label { font-size: 10.5px; color: var(--text-secondary); text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { position: relative; height: 15px; background: var(--gridline); border-radius: 3px; display: flex; }
+  .bar-seg { height: 100%; position: relative; }
+  .bar-seg:first-child { border-radius: 3px 0 0 3px; }
+  .bar-seg:last-child { border-radius: 0 3px 3px 0; }
+  .bar-seg:first-child:last-child { border-radius: 3px; }
+  .bar-row .row-total { font-size: 10.5px; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+
+  .tooltip-target { cursor: default; }
+  .bar-seg:hover::after {
+    content: attr(data-tip);
+    position: absolute; bottom: 110%; left: 50%; transform: translateX(-50%);
+    background: var(--text-primary); color: var(--surface-1); font-size: 10.5px; padding: 5px 8px;
+    border-radius: 6px; white-space: pre-line; width: max-content; max-width: 220px; line-height: 1.35;
+    z-index: 6; pointer-events: none; text-align: left; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+
+  .mom-chart { display: flex; align-items: flex-end; gap: 10px; height: 110px; padding: 4px 4px 0; border-bottom: 1px solid var(--baseline); overflow-x: auto; }
+  .mom-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; flex: 1; min-width: 36px; }
+  .mom-bar { width: 22px; max-width: 60%; border-radius: 3px 3px 0 0; background: var(--series-1); position: relative; cursor: default; }
+  .float-tip {
+    display: none; position: fixed; transform: translate(-50%, -100%); margin-top: -8px;
+    background: var(--text-primary); color: var(--surface-1); font-size: 10.5px; padding: 5px 8px;
+    border-radius: 6px; white-space: pre-line; width: max-content; max-width: 220px; line-height: 1.35;
+    z-index: 50; pointer-events: none; text-align: left; box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+  .mom-label { font-size: 9.5px; color: var(--text-muted); margin-top: 5px; white-space: nowrap; }
+  .mom-note { font-size: 11px; color: var(--text-muted); margin-top: 8px; }
+  .mom-source { font-size: 10.5px; color: var(--text-muted); margin-top: 4px; border-top: 1px solid var(--gridline); padding-top: 8px; }
+  .mom-chart-sm { height: 90px; }
+  .mom-bar-sales { background: var(--series-2); }
+  .mom-bar-revenue { background: var(--series-3); }
+
+  /* Donut chart */
+  .donut-wrap { display: flex; align-items: center; justify-content: center; padding: 6px 0 2px; }
+  .donut-svg { flex: 0 0 auto; }
+  .donut-total { display: none; }
+  .donut-row { display: grid; grid-template-columns: 12px 1fr auto auto; align-items: center; gap: 7px; font-size: 11.5px; padding: 2px 0; }
+  .donut-row .d-label { color: var(--text-secondary); }
+  .donut-row .d-count { font-variant-numeric: tabular-nums; color: var(--text-primary); font-weight: 600; text-align: right; }
+  .donut-row .d-pct { font-variant-numeric: tabular-nums; color: var(--text-muted); text-align: right; min-width: 36px; }
+  .donut-center-label { font-size: 9.5px; fill: var(--text-muted); }
+  .donut-center-value { font-size: 16px; font-weight: 650; fill: var(--text-primary); }
+
+  /* Change log */
+  .changelog-list { display: flex; flex-direction: column; }
+  .changelog-row { display: grid; grid-template-columns: 82px 100px 1fr; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--gridline); font-size: 11.5px; align-items: baseline; }
+  .changelog-row .cl-date { color: var(--text-muted); font-variant-numeric: tabular-nums; }
+  .changelog-tag { display: inline-block; font-size: 10px; font-weight: 650; padding: 2px 7px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.02em; }
+  .changelog-tag.new { background: rgba(12,163,12,0.12); color: var(--status-good); }
+  .changelog-tag.sold { background: rgba(179,38,30,0.10); color: var(--danger); }
+  .changelog-tag.price { background: rgba(42,120,214,0.12); color: var(--series-1); }
+  .changelog-tag.status { background: rgba(237,161,0,0.14); color: #96690a; }
+  .changelog-tag.baseline { background: var(--gridline); color: var(--text-secondary); }
+  .changelog-row .cl-details { color: var(--text-primary); }
+
+  /* Filters */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: end; }
+  .filter-group { display: flex; flex-direction: column; gap: 3px; }
+  .filter-group label { font-size: 9.5px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.02em; }
+  .filter-group input[type="text"], .filter-group select, .filter-group input[type="number"] {
+    border: 1px solid var(--border); background: var(--page-plane); color: var(--text-primary);
+    border-radius: 6px; padding: 5px 7px; font-size: 11.5px; font-family: inherit;
+  }
+  .filter-group input[type="number"] { width: 76px; }
+  .range-pair { display: flex; align-items: center; gap: 4px; }
+  .status-pills { display: flex; gap: 5px; }
+  .pill {
+    border: 1px solid var(--border); background: var(--page-plane); color: var(--text-secondary);
+    border-radius: 999px; padding: 4px 10px; font-size: 11px; cursor: pointer; user-select: none;
+  }
+  .pill.active { background: var(--series-1); color: #fff; border-color: var(--series-1); }
+  .reset-btn {
+    border: 1px solid var(--border); background: transparent; color: var(--text-secondary);
+    border-radius: 6px; padding: 5px 11px; font-size: 11px; cursor: pointer;
+  }
+  .filter-count { font-size: 11px; color: var(--text-secondary); margin-bottom: 8px; }
+
+  table { width: 100%; min-width: 720px; border-collapse: collapse; font-size: 11.5px; }
+  thead th {
+    text-align: left; font-weight: 600; color: var(--text-secondary); font-size: 10px;
+    text-transform: uppercase; letter-spacing: 0.02em; padding: 6px 7px; border-bottom: 1px solid var(--baseline);
+    cursor: pointer; white-space: nowrap; background: var(--surface-1);
+  }
+  thead th:hover { color: var(--text-primary); }
+  tbody td { padding: 6px 7px; border-bottom: 1px solid var(--gridline); white-space: nowrap; }
+  tbody tr:hover td { background: var(--page-plane); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .status-tag { display: inline-flex; align-items: center; gap: 4px; font-size: 10.5px; }
+  .status-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+  .status-dot.available { background: var(--status-good); }
+  .status-dot.deposit { background: var(--status-warning); }
+  a.car-link { color: var(--series-1); text-decoration: none; }
+  a.car-link:hover { text-decoration: underline; }
+  .table-scroll { max-height: 520px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
+  thead th { position: sticky; top: 0; z-index: 3; }
+  th:first-child, td:first-child {
+    position: sticky; left: 0; z-index: 1; background: var(--surface-1);
+    box-shadow: 1px 0 0 var(--border); white-space: normal; min-width: 160px; max-width: 210px;
+  }
+  thead th:first-child { z-index: 4; }
+  tbody tr:hover td:first-child { background: var(--page-plane); }
+
+  footer { text-align: center; font-size: 10.5px; color: var(--text-muted); padding: 8px 0 2px; }
+</style>
+</head>
+<body>
+<div class="viz-root" id="vizRoot">
+
+  <div class="header">
+    <div>
+      <h1>CarBarSale.ie Stock Tracker</h1>
+      <div class="sub">Last checked __SCRAPED_AT__ &middot; refreshed weekly</div>
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab-btn active" data-tab="dashboard" type="button">Dashboard</button>
+    <button class="tab-btn" data-tab="stock" type="button">Stock list</button>
+    <button class="tab-btn" data-tab="trends" type="button">Trends &amp; change log</button>
+  </div>
+
+  <!-- ===== Dashboard tab ===== -->
+  <div class="tab-panel active" id="panel-dashboard">
+    <div class="cards" id="statCards"></div>
+
+    <section>
+      <div class="charts-row charts-row-3">
+        <div class="chart-col">
+          <h2>Value by make</h2>
+          <p class="desc">Stacked by price band</p>
+          <div class="bar-chart" id="makeChart"></div>
+          <div class="legend legend-footer" id="makeLegend"></div>
+        </div>
+        <div class="chart-col">
+          <h2>Cars by year</h2>
+          <p class="desc">Stacked by status</p>
+          <div class="bar-chart" id="yearChart"></div>
+          <div class="legend legend-footer" id="yearLegend"></div>
+        </div>
+        <div class="chart-col">
+          <h2>Cars by price range</h2>
+          <p class="desc">Share of stock by count</p>
+          <div class="donut-wrap">
+            <svg class="donut-svg" id="donutSvg" width="120" height="120" viewBox="0 0 120 120"></svg>
+            <div class="donut-total" id="donutTotal"></div>
+          </div>
+          <div class="legend legend-footer" id="donutLegend"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== Stock list tab ===== -->
+  <div class="tab-panel" id="panel-stock">
+    <section>
+      <h2>Current stock</h2>
+      <p class="desc">Filter and search the live listing</p>
+      <div class="filters">
+        <div class="filter-group">
+          <label for="fSearch">Search</label>
+          <input type="text" id="fSearch" placeholder="Title, engine&hellip;">
+        </div>
+        <div class="filter-group">
+          <label for="fMake">Make</label>
+          <select id="fMake"><option value="">All makes</option></select>
+        </div>
+        <div class="filter-group">
+          <label>Status</label>
+          <div class="status-pills" id="fStatus">
+            <div class="pill active" data-status="">All</div>
+            <div class="pill" data-status="Available">Available</div>
+            <div class="pill" data-status="Deposit Taken">Deposit taken</div>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Year</label>
+          <div class="range-pair">
+            <input type="number" id="fYearMin" placeholder="Min">
+            <span>&ndash;</span>
+            <input type="number" id="fYearMax" placeholder="Max">
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Price (EUR)</label>
+          <div class="range-pair">
+            <input type="number" id="fPriceMin" placeholder="Min">
+            <span>&ndash;</span>
+            <input type="number" id="fPriceMax" placeholder="Max">
+          </div>
+        </div>
+        <button class="reset-btn" id="fReset" type="button">Reset filters</button>
+      </div>
+      <div class="filter-count" id="filterCount"></div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th data-key="title">Title</th>
+              <th data-key="make">Make</th>
+              <th data-key="year" class="num">Year</th>
+              <th data-key="price" class="num">Price</th>
+              <th data-key="mileage" class="num">Mileage</th>
+              <th data-key="status">Status</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===== Trends & change log tab ===== -->
+  <div class="tab-panel" id="panel-trends">
+    <div class="cards" id="salesCards"></div>
+
+    <section>
+      <h2>AUM &mdash; month on month</h2>
+      <p class="desc">Total value of available stock at each weekly check.</p>
+      <div class="mom-chart" id="momChart"></div>
+      <div class="mom-note" id="momNote"></div>
+      <div class="mom-source">How this is recorded: every Saturday a scheduled check re-scrapes carbarsale.ie, appends a new snapshot (date, stock count, AUM, avg price) to a running history log in Google Drive, and rebuilds this dashboard from the full log &mdash; so this chart grows one bar per week automatically.</div>
+    </section>
+
+    <section>
+      <div class="charts-row">
+        <div class="chart-col">
+          <h2>Monthly sales</h2>
+          <p class="desc">Cars sold / removed from stock, by month</p>
+          <div class="mom-chart mom-chart-sm" id="salesChart"></div>
+          <div class="mom-note" id="salesNote"></div>
+        </div>
+        <div class="chart-col">
+          <h2>Monthly revenue</h2>
+          <p class="desc">Value of cars sold / removed, by month</p>
+          <div class="mom-chart mom-chart-sm" id="revenueChart"></div>
+          <div class="mom-note" id="revenueNote"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Change log</h2>
+      <p class="desc">New listings, sold cars, price changes, and status changes recorded at each weekly check</p>
+      <div class="changelog-list" id="changelogList"></div>
+    </section>
+  </div>
+
+  <footer>Data captured from carbarsale.ie &middot; not affiliated with the dealer</footer>
+</div>
+
+<script>
+const CARS = __CARS_JSON__;
+const HISTORY = __HISTORY_JSON__;
+const STATS = __STATS_JSON__;
+const CHANGELOG = __CHANGELOG_JSON__;
+
+const PRICE_BANDS = [
+  { label: "Under €5k", min: 0, max: 5000, color: "var(--series-1)", hex: "#2a78d6" },
+  { label: "€5k–10k", min: 5000, max: 10000, color: "var(--series-2)", hex: "#eb6834" },
+  { label: "€10k–15k", min: 10000, max: 15000, color: "var(--series-3)", hex: "#1baf7a" },
+  { label: "€15k–20k", min: 15000, max: 20000, color: "var(--series-4)", hex: "#eda100" },
+  { label: "€20k–25k", min: 20000, max: 25000, color: "var(--series-5)", hex: "#e87ba4" },
+  { label: "€25k+", min: 25000, max: Infinity, color: "var(--series-7)", hex: "#4a3aa7" },
+];
+
+function fmtEUR(n) {
+  return "€" + Math.round(n).toLocaleString("en-IE");
+}
+function fmtCompactEUR(n) {
+  if (n >= 1000) return "€" + (n/1000).toFixed(n >= 10000 ? 0 : 1) + "K";
+  return "€" + Math.round(n);
+}
+
+// ---------- Floating tooltip (for elements inside scroll-clipped containers, e.g. .mom-bar) ----------
+function wireFloatingTooltips() {
+  const tip = document.createElement("div");
+  tip.className = "float-tip";
+  document.getElementById("vizRoot").appendChild(tip);
+
+  function positionTip(el) {
+    const r = el.getBoundingClientRect();
+    tip.style.left = (r.left + r.width / 2) + "px";
+    tip.style.top = r.top + "px";
+  }
+
+  document.addEventListener("mouseover", e => {
+    const el = e.target.closest(".mom-bar[data-tip]");
+    if (!el) return;
+    tip.textContent = el.getAttribute("data-tip");
+    tip.style.display = "block";
+    positionTip(el);
+  });
+  document.addEventListener("mousemove", e => {
+    if (tip.style.display !== "block") return;
+    const el = e.target.closest(".mom-bar[data-tip]");
+    if (el) positionTip(el);
+  });
+  document.addEventListener("mouseout", e => {
+    const el = e.target.closest(".mom-bar[data-tip]");
+    if (!el) return;
+    if (e.relatedTarget && e.relatedTarget.closest(".mom-bar[data-tip]") === el) return;
+    tip.style.display = "none";
+  });
+}
+
+// ---------- Tabs ----------
+function wireTabs() {
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById("panel-" + btn.dataset.tab).classList.add("active");
+    });
+  });
+}
+
+// ---------- Stat cards (with week-over-week deltas where history allows) ----------
+function renderCards() {
+  const el = document.getElementById("statCards");
+  const prev = HISTORY.length >= 2 ? HISTORY[HISTORY.length - 2] : null;
+
+  function deltaHtml(current, prevVal, isEur) {
+    if (prev == null) return `<div class="delta">first snapshot</div>`;
+    const diff = current - prevVal;
+    if (diff === 0) return `<div class="delta">no change vs last week</div>`;
+    const cls = diff > 0 ? "up" : "down";
+    const txt = isEur ? fmtEUR(Math.abs(diff)) : Math.abs(diff);
+    return `<div class="delta ${cls}">${diff > 0 ? "▲" : "▼"} ${txt} vs last week</div>`;
+  }
+
+  const cardsDef = [
+    { label: "Total cars in stock", value: STATS.total_cars, delta: deltaHtml(STATS.total_cars, prev ? prev.total : null, false) },
+    { label: "Available", value: STATS.available, delta: deltaHtml(STATS.available, prev ? prev.available : null, false) },
+    { label: "Deposit taken", value: STATS.deposit_taken, delta: deltaHtml(STATS.deposit_taken, prev ? prev.depositTaken : null, false) },
+    { label: "AUM (available)", value: fmtEUR(STATS.aum_available_eur), delta: deltaHtml(STATS.aum_available_eur, prev ? prev.aumAvailable : null, true) },
+    { label: "AUM (all stock)", value: fmtEUR(STATS.aum_all_eur), delta: deltaHtml(STATS.aum_all_eur, prev ? prev.aumAll : null, true) },
+    { label: "Average price", value: fmtEUR(STATS.avg_price_eur), delta: deltaHtml(STATS.avg_price_eur, prev ? prev.avgPrice : null, true) },
+  ];
+  el.innerHTML = cardsDef.map(c => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      ${c.delta}
+    </div>
+  `).join("");
+}
+
+// ---------- Month on month AUM ----------
+function renderMoM() {
+  const el = document.getElementById("momChart");
+  const note = document.getElementById("momNote");
+  const max = Math.max(...HISTORY.map(h => h.aumAvailable), 1);
+  el.innerHTML = HISTORY.map(h => {
+    const pct = Math.max(4, (h.aumAvailable / max) * 100);
+    return `
+      <div class="mom-col">
+        <div class="mom-bar" style="height:${pct}%" data-tip="${fmtEUR(h.aumAvailable)} on ${h.date}"></div>
+        <div class="mom-label">${h.date}</div>
+      </div>
+    `;
+  }).join("");
+  if (HISTORY.length < 2) {
+    note.textContent = "Only one weekly check recorded so far — this chart fills in as more checks run.";
+  } else {
+    const first = HISTORY[0].aumAvailable, last = HISTORY[HISTORY.length - 1].aumAvailable;
+    const diff = last - first;
+    note.textContent = `${diff >= 0 ? "Up" : "Down"} ${fmtEUR(Math.abs(diff))} since ${HISTORY[0].date} (${HISTORY.length} checks recorded).`;
+  }
+}
+
+// ---------- Change log ----------
+function renderChangelog() {
+  const el = document.getElementById("changelogList");
+  const tagClass = t => ({
+    "New listing": "new", "Sold": "sold", "Removed": "sold",
+    "Price change": "price", "Status change": "status", "Baseline": "baseline",
+  }[t] || "baseline");
+  const rows = [...CHANGELOG].reverse();
+  el.innerHTML = rows.map(r => `
+    <div class="changelog-row">
+      <div class="cl-date">${r.date}</div>
+      <div><span class="changelog-tag ${tagClass(r.type)}">${r.type}</span></div>
+      <div class="cl-details">${r.title && r.title !== "-" ? `<strong>${r.title}</strong> &mdash; ` : ""}${r.details}</div>
+    </div>
+  `).join("");
+}
+
+// ---------- Sales & revenue stats ----------
+function monthKey(dateStr) { return dateStr.slice(0, 7); } // YYYY-MM
+
+function renderSalesCards() {
+  const el = document.getElementById("salesCards");
+  const soldEntries = CHANGELOG.filter(r => r.type === "Sold" || r.type === "Removed");
+  const totalSales = soldEntries.length;
+  const withPrice = soldEntries.filter(r => typeof r.price === "number");
+  const totalRevenue = withPrice.reduce((s, r) => s + r.price, 0);
+
+  const refDate = HISTORY.length ? HISTORY[HISTORY.length - 1].date : (CHANGELOG.length ? CHANGELOG[CHANGELOG.length - 1].date : null);
+  let depositsLast30 = 0;
+  if (refDate) {
+    const ref = new Date(refDate);
+    const cutoff = new Date(ref); cutoff.setDate(cutoff.getDate() - 30);
+    depositsLast30 = CHANGELOG.filter(r => {
+      if (r.type !== "Status change" || !/deposit taken/i.test(r.details || "")) return false;
+      const d = new Date(r.date);
+      return d >= cutoff && d <= ref;
+    }).length;
+  }
+
+  const cardsDef = [
+    { label: "Total sales", value: totalSales, delta: `<div class="delta">${soldEntries.length ? "all-time, from change log" : "none recorded yet"}</div>` },
+    { label: "Total revenue", value: withPrice.length ? fmtEUR(totalRevenue) : "&ndash;",
+      delta: totalSales === 0 ? `<div class="delta">no sales recorded yet</div>`
+        : withPrice.length < totalSales ? `<div class="delta">${totalSales - withPrice.length} sale(s) missing price data</div>`
+        : `<div class="delta">all-time, from change log</div>` },
+    { label: "Deposits taken (last 30 days)", value: depositsLast30, delta: `<div class="delta">vs ${refDate || "&ndash;"}</div>` },
+  ];
+  el.innerHTML = cardsDef.map(c => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      ${c.delta}
+    </div>
+  `).join("");
+}
+
+// ---------- Monthly sales / revenue charts ----------
+function renderMonthlyCharts() {
+  const soldEntries = CHANGELOG.filter(r => r.type === "Sold" || r.type === "Removed");
+  const byMonth = {};
+  soldEntries.forEach(r => {
+    const m = monthKey(r.date);
+    byMonth[m] = byMonth[m] || { count: 0, revenue: 0, hasPrice: false };
+    byMonth[m].count++;
+    if (typeof r.price === "number") { byMonth[m].revenue += r.price; byMonth[m].hasPrice = true; }
+  });
+  const months = Object.keys(byMonth).sort();
+
+  const salesEl = document.getElementById("salesChart");
+  const salesNote = document.getElementById("salesNote");
+  const revEl = document.getElementById("revenueChart");
+  const revNote = document.getElementById("revenueNote");
+
+  if (!months.length) {
+    salesEl.innerHTML = "";
+    revEl.innerHTML = "";
+    salesNote.textContent = "No sales recorded yet — this fills in as cars are marked Sold/Removed in weekly checks.";
+    revNote.textContent = "No revenue recorded yet — cars sold with tracked prices will appear here.";
+    return;
+  }
+
+  const maxCount = Math.max(...months.map(m => byMonth[m].count), 1);
+  salesEl.innerHTML = months.map(m => {
+    const pct = Math.max(4, (byMonth[m].count / maxCount) * 100);
+    return `
+      <div class="mom-col">
+        <div class="mom-bar mom-bar-sales" style="height:${pct}%" data-tip="${byMonth[m].count} sold in ${m}"></div>
+        <div class="mom-label">${m}</div>
+      </div>
+    `;
+  }).join("");
+  salesNote.textContent = `${soldEntries.length} car${soldEntries.length === 1 ? "" : "s"} sold/removed across ${months.length} month${months.length === 1 ? "" : "s"} of records.`;
+
+  const maxRev = Math.max(...months.map(m => byMonth[m].revenue), 1);
+  const anyRevenue = months.some(m => byMonth[m].hasPrice);
+  if (anyRevenue) {
+    revEl.innerHTML = months.map(m => {
+      const pct = Math.max(4, (byMonth[m].revenue / maxRev) * 100);
+      return `
+        <div class="mom-col">
+          <div class="mom-bar mom-bar-revenue" style="height:${pct}%" data-tip="${fmtEUR(byMonth[m].revenue)} in ${m}"></div>
+          <div class="mom-label">${m}</div>
+        </div>
+      `;
+    }).join("");
+    const totalRev = months.reduce((s, m) => s + byMonth[m].revenue, 0);
+    revNote.textContent = `${fmtEUR(totalRev)} total recorded revenue.`;
+  } else {
+    revEl.innerHTML = "";
+    revNote.textContent = "Sale prices aren't logged yet for these entries — once weekly checks capture a car's last price at sale, revenue will chart here.";
+  }
+}
+
+// ---------- Value by make (stacked by price band) ----------
+function renderMakeChart() {
+  const legendEl = document.getElementById("makeLegend");
+  legendEl.innerHTML = PRICE_BANDS.map(b => `
+    <div class="legend-item"><span class="swatch" style="background:${b.color}"></span>${b.label}</div>
+  `).join("");
+
+  const byMake = {};
+  CARS.forEach(c => {
+    byMake[c.make] = byMake[c.make] || { total: 0, bands: PRICE_BANDS.map(() => 0) };
+    byMake[c.make].total += c.price;
+    const idx = PRICE_BANDS.findIndex(b => c.price >= b.min && c.price < b.max);
+    if (idx >= 0) byMake[c.make].bands[idx] += c.price;
+  });
+  const makes = Object.keys(byMake).sort((a, b) => byMake[b].total - byMake[a].total);
+  const maxTotal = Math.max(...makes.map(m => byMake[m].total), 1);
+
+  const el = document.getElementById("makeChart");
+  el.innerHTML = makes.map(m => {
+    const d = byMake[m];
+    const widthPct = (d.total / maxTotal) * 100;
+    const segs = d.bands.map((v, i) => {
+      if (v <= 0) return "";
+      const segPct = (v / d.total) * 100;
+      const carsInSeg = CARS.filter(c => c.make === m && c.price >= PRICE_BANDS[i].min && c.price < PRICE_BANDS[i].max);
+      const carList = carsInSeg.slice(0, 6).map(c => c.title).join("&#10;") + (carsInSeg.length > 6 ? `&#10;+${carsInSeg.length - 6} more` : "");
+      const tip = `${PRICE_BANDS[i].label}: ${fmtEUR(v)}&#10;${carList}`;
+      return `<div class="bar-seg tooltip-target" style="width:${segPct}%;background:${PRICE_BANDS[i].color};margin-right:2px" data-tip="${tip}"></div>`;
+    }).join("");
+    return `
+      <div class="bar-row">
+        <div class="row-label">${m}</div>
+        <div class="bar-track" style="width:${widthPct}%">${segs}</div>
+        <div class="row-total">${fmtCompactEUR(d.total)}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+// ---------- Cars by year (stacked by status) ----------
+function renderYearChart() {
+  const legendEl = document.getElementById("yearLegend");
+  legendEl.innerHTML = `
+    <div class="legend-item"><span class="swatch" style="background:var(--series-1)"></span>Available</div>
+    <div class="legend-item"><span class="swatch" style="background:var(--series-4)"></span>Deposit taken</div>
+  `;
+  const byYear = {};
+  CARS.forEach(c => {
+    byYear[c.year] = byYear[c.year] || { available: 0, deposit: 0 };
+    if (c.status === "Available") byYear[c.year].available++; else byYear[c.year].deposit++;
+  });
+  const years = Object.keys(byYear).sort((a, b) => b - a);
+  const maxTotal = Math.max(...years.map(y => byYear[y].available + byYear[y].deposit), 1);
+
+  const el = document.getElementById("yearChart");
+  el.innerHTML = years.map(y => {
+    const d = byYear[y];
+    const total = d.available + d.deposit;
+    const widthPct = (total / maxTotal) * 100;
+    const carsAvail = CARS.filter(c => c.year == y && c.status === "Available");
+    const carsDep = CARS.filter(c => c.year == y && c.status !== "Available");
+    const listTip = (label, list) => {
+      const names = list.slice(0, 6).map(c => c.title).join("&#10;") + (list.length > 6 ? `&#10;+${list.length - 6} more` : "");
+      return `${label}&#10;${names}`;
+    };
+    let segs = "";
+    if (d.available > 0) segs += `<div class="bar-seg tooltip-target" style="width:${(d.available/total)*100}%;background:var(--series-1);margin-right:2px" data-tip="${listTip(d.available + " available", carsAvail)}"></div>`;
+    if (d.deposit > 0) segs += `<div class="bar-seg tooltip-target" style="width:${(d.deposit/total)*100}%;background:var(--series-4)" data-tip="${listTip(d.deposit + " deposit taken", carsDep)}"></div>`;
+    return `
+      <div class="bar-row">
+        <div class="row-label">${y}</div>
+        <div class="bar-track" style="width:${widthPct}%">${segs}</div>
+        <div class="row-total">${total}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+// ---------- Cars by price range (donut / pie, count-based) ----------
+function renderPriceDonut() {
+  const counts = PRICE_BANDS.map(b => CARS.filter(c => c.price >= b.min && c.price < b.max).length);
+  const total = counts.reduce((s, n) => s + n, 0) || 1;
+
+  const cx = 60, cy = 60, r = 46, strokeW = 18;
+  const circumference = 2 * Math.PI * r;
+  let offsetAccum = 0;
+  const svg = document.getElementById("donutSvg");
+
+  let circles = "";
+  PRICE_BANDS.forEach((b, i) => {
+    const n = counts[i];
+    if (n <= 0) return;
+    const frac = n / total;
+    const dash = frac * circumference;
+    const gap = circumference - dash;
+    const rotation = (offsetAccum / total) * 360 - 90;
+    circles += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${b.hex}"
+      stroke-width="${strokeW}" stroke-dasharray="${Math.max(dash - 2, 0)} ${gap + 2}"
+      transform="rotate(${rotation} ${cx} ${cy})" stroke-linecap="butt">
+      <title>${b.label}: ${n} car${n === 1 ? "" : "s"} (${Math.round(frac * 100)}%)</title>
+    </circle>`;
+    offsetAccum += n;
+  });
+
+  svg.innerHTML = `
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="var(--gridline)" stroke-width="${strokeW}"></circle>
+    ${circles}
+    <text x="${cx}" y="${cy - 3}" text-anchor="middle" class="donut-center-value">${total}</text>
+    <text x="${cx}" y="${cy + 12}" text-anchor="middle" class="donut-center-label">cars</text>
+  `;
+
+  document.getElementById("donutLegend").innerHTML = PRICE_BANDS.map((b, i) => {
+    const n = counts[i];
+    if (n <= 0) return "";
+    const pct = total ? Math.round((n / total) * 100) : 0;
+    return `<div class="legend-item"><span class="swatch" style="background:${b.hex}"></span>${b.label} &middot; ${n} (${pct}%)</div>`;
+  }).join("");
+}
+
+// ---------- Filterable table ----------
+let sortKey = "price", sortDir = -1;
+const state = { search: "", make: "", status: "", yearMin: null, yearMax: null, priceMin: null, priceMax: null };
+
+function populateMakeOptions() {
+  const sel = document.getElementById("fMake");
+  const makes = [...new Set(CARS.map(c => c.make))].sort();
+  makes.forEach(m => {
+    const opt = document.createElement("option");
+    opt.value = m; opt.textContent = m;
+    sel.appendChild(opt);
+  });
+}
+
+function applyFilters() {
+  return CARS.filter(c => {
+    if (state.search && !(c.title.toLowerCase().includes(state.search) || (c.engine || "").toLowerCase().includes(state.search))) return false;
+    if (state.make && c.make !== state.make) return false;
+    if (state.status && c.status !== state.status) return false;
+    if (state.yearMin != null && c.year < state.yearMin) return false;
+    if (state.yearMax != null && c.year > state.yearMax) return false;
+    if (state.priceMin != null && c.price < state.priceMin) return false;
+    if (state.priceMax != null && c.price > state.priceMax) return false;
+    return true;
+  });
+}
+
+function renderTable() {
+  let rows = applyFilters();
+  rows.sort((a, b) => {
+    const av = a[sortKey], bv = b[sortKey];
+    if (typeof av === "string") return av.localeCompare(bv) * sortDir;
+    return (av - bv) * sortDir;
+  });
+
+  document.getElementById("filterCount").textContent =
+    `${rows.length} of ${CARS.length} cars · total value ${fmtEUR(rows.reduce((s, c) => s + c.price, 0))}`;
+
+  document.getElementById("tableBody").innerHTML = rows.map(c => `
+    <tr>
+      <td>${c.title}</td>
+      <td>${c.make}</td>
+      <td class="num">${c.year}</td>
+      <td class="num">${fmtEUR(c.price)}</td>
+      <td class="num">${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}</td>
+      <td><span class="status-tag"><span class="status-dot ${c.status === "Available" ? "available" : "deposit"}"></span>${c.status}</span></td>
+      <td><a class="car-link" href="${c.url}" target="_blank" rel="noopener">View &rarr;</a></td>
+    </tr>
+  `).join("");
+}
+
+function wireFilters() {
+  document.getElementById("fSearch").addEventListener("input", e => { state.search = e.target.value.toLowerCase(); renderTable(); });
+  document.getElementById("fMake").addEventListener("change", e => { state.make = e.target.value; renderTable(); });
+  document.querySelectorAll("#fStatus .pill").forEach(p => {
+    p.addEventListener("click", () => {
+      document.querySelectorAll("#fStatus .pill").forEach(x => x.classList.remove("active"));
+      p.classList.add("active");
+      state.status = p.dataset.status;
+      renderTable();
+    });
+  });
+  document.getElementById("fYearMin").addEventListener("input", e => { state.yearMin = e.target.value ? +e.target.value : null; renderTable(); });
+  document.getElementById("fYearMax").addEventListener("input", e => { state.yearMax = e.target.value ? +e.target.value : null; renderTable(); });
+  document.getElementById("fPriceMin").addEventListener("input", e => { state.priceMin = e.target.value ? +e.target.value : null; renderTable(); });
+  document.getElementById("fPriceMax").addEventListener("input", e => { state.priceMax = e.target.value ? +e.target.value : null; renderTable(); });
+  document.getElementById("fReset").addEventListener("click", () => {
+    state.search = ""; state.make = ""; state.status = "";
+    state.yearMin = state.yearMax = state.priceMin = state.priceMax = null;
+    document.getElementById("fSearch").value = "";
+    document.getElementById("fMake").value = "";
+    document.getElementById("fYearMin").value = "";
+    document.getElementById("fYearMax").value = "";
+    document.getElementById("fPriceMin").value = "";
+    document.getElementById("fPriceMax").value = "";
+    document.querySelectorAll("#fStatus .pill").forEach(x => x.classList.remove("active"));
+    document.querySelector('#fStatus .pill[data-status=""]').classList.add("active");
+    renderTable();
+  });
+  document.querySelectorAll("thead th[data-key]").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (sortKey === key) sortDir *= -1; else { sortKey = key; sortDir = 1; }
+      renderTable();
+    });
+  });
+}
+
+wireTabs();
+wireFloatingTooltips();
+renderCards();
+renderMoM();
+renderChangelog();
+renderSalesCards();
+renderMonthlyCharts();
+renderMakeChart();
+renderYearChart();
+renderPriceDonut();
+populateMakeOptions();
+wireFilters();
+renderTable();
+</script>
+</body>
+</html>
+"""
+
+html = html.replace("__SCRAPED_AT__", scraped_at)
+html = html.replace("__CARS_JSON__", CARS_JSON)
+html = html.replace("__HISTORY_JSON__", HISTORY_JSON)
+html = html.replace("__STATS_JSON__", STATS_JSON)
+html = html.replace("__CHANGELOG_JSON__", CHANGELOG_JSON)
+
+out_path = os.path.join(DOCS_DIR, "index.html")
+with open(out_path, "w") as f:
+    f.write(html)
+print("Saved", out_path, len(html), "bytes")

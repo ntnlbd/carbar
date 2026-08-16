@@ -5,5 +5,12 @@
     "carId": "-",
     "title": "-",
     "details": "Baseline re-captured after scraper fix: 29 cars (28 available, 1 deposit taken, 11 on offer)."
+  },
+  {
+    "date": "2026-08-16",
+    "type": "No change",
+    "carId": "-",
+    "title": "-",
+    "details": "No changes since last check."
   }
 ]

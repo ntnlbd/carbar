@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-08-17",
+  "scraped_at": "2026-08-18",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 69,
+      "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
+      "year": 2015,
+      "price": 9990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 197000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/69/deposit-taken",
+      "make": "Unknown",
+      "status": "Deposit Taken"
+    },
     {
       "id": 82,
       "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
@@ -348,21 +363,6 @@
       "status": "Available"
     },
     {
-      "id": 69,
-      "title": "Audi A6 2015 S Line Ultra 2L Diesel Belt Done",
-      "year": 2015,
-      "price": 9990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 197000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/69/audi-a6-2015-s-line-ultra-2l-diesel-belt-done",
-      "make": "Audi",
-      "status": "Available"
-    },
-    {
       "id": 65,
       "title": "Mercedes C-Class 2016 2L Petrol Plug-in Sunroof",
       "year": 2016,
@@ -440,10 +440,10 @@
   ],
   "stats": {
     "total_cars": 29,
-    "available": 28,
-    "deposit_taken": 1,
+    "available": 27,
+    "deposit_taken": 2,
     "on_offer": 11,
-    "aum_available_eur": 345629,
+    "aum_available_eur": 335639,
     "aum_all_eur": 355619,
     "avg_price_eur": 12263
   }

@@ -19,5 +19,12 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-08-18",
+    "type": "Status change",
+    "carId": 69,
+    "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
+    "details": "Deposit taken"
   }
 ]

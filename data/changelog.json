@@ -26,5 +26,20 @@
     "carId": 69,
     "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
     "details": "Deposit taken"
+  },
+  {
+    "date": "2026-08-19",
+    "type": "Price change",
+    "carId": 32,
+    "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
+    "details": "Price changed: EUR 9990 -> EUR 10550"
+  },
+  {
+    "date": "2026-08-19",
+    "type": "Offer ended",
+    "carId": 32,
+    "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
+    "price": 10550,
+    "details": "Offer ended: now EUR 10550 (was on offer from EUR 10650)"
   }
 ]

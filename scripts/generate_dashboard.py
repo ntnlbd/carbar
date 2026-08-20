@@ -260,6 +260,14 @@ html = r"""<!DOCTYPE html>
   thead th:first-child { z-index: 4; }
   tbody tr:hover td:first-child { background: var(--page-plane); }
 
+  .mini-scroll { overflow-x: auto; }
+  .mini-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .mini-table th, .mini-table td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--gridline); white-space: nowrap; }
+  .mini-table th { color: var(--text-secondary); font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; }
+  .mini-table td.num, .mini-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .mini-table tbody tr:hover td { background: var(--page-plane); }
+  .mini-table .empty { color: var(--text-muted); padding: 12px 10px; }
+
   footer { text-align: center; font-size: 10.5px; color: var(--text-muted); padding: 8px 0 2px; }
 </style>
 </head>
@@ -276,6 +284,7 @@ html = r"""<!DOCTYPE html>
   <div class="tabs" id="tabs">
     <button class="tab-btn active" data-tab="dashboard" type="button">Dashboard</button>
     <button class="tab-btn" data-tab="stock" type="button">Stock list</button>
+    <button class="tab-btn" data-tab="sales" type="button">Sales</button>
     <button class="tab-btn" data-tab="trends" type="button">Trends &amp; change log</button>
   </div>
 
@@ -370,6 +379,52 @@ html = r"""<!DOCTYPE html>
     </section>
   </div>
 
+  <!-- ===== Sales tab ===== -->
+  <div class="tab-panel" id="panel-sales">
+    <div class="cards" id="salesTabCards"></div>
+
+    <section>
+      <div class="charts-row">
+        <div class="chart-col">
+          <h2>Monthly sales</h2>
+          <p class="desc">Cars that left stock (de-listed = sold), by month</p>
+          <div class="mom-chart mom-chart-sm" id="salesChart"></div>
+          <div class="mom-note" id="salesNote"></div>
+        </div>
+        <div class="chart-col">
+          <h2>Monthly revenue</h2>
+          <p class="desc">Last-seen value of cars that left stock, by month</p>
+          <div class="mom-chart mom-chart-sm" id="revenueChart"></div>
+          <div class="mom-note" id="revenueNote"></div>
+        </div>
+      </div>
+      <div class="mom-source">A sale is counted when a car that was listed at the previous check is no longer on carbarsale.ie &mdash; whether or not a deposit had been taken first. Revenue uses the car's last-seen asking price (the dealer never publishes the final sale price).</div>
+    </section>
+
+    <section>
+      <h2>Sold cars</h2>
+      <p class="desc">Every car that has left stock, newest first</p>
+      <div class="mini-scroll">
+        <table class="mini-table">
+          <thead><tr><th>Date</th><th>Car</th><th class="num">Last price</th></tr></thead>
+          <tbody id="soldList"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pipeline &mdash; deposit taken</h2>
+      <p class="desc">Reserved cars still on the site: a window on sales likely coming, <strong>not yet counted</strong> as sold</p>
+      <div class="mini-scroll">
+        <table class="mini-table">
+          <thead><tr><th>Car</th><th class="num">Year</th><th class="num">Price</th><th class="num">Mileage</th><th>Link</th></tr></thead>
+          <tbody id="pipelineList"></tbody>
+        </table>
+      </div>
+      <div class="mom-note" id="pipelineNote"></div>
+    </section>
+  </div>
+
   <!-- ===== Trends & change log tab ===== -->
   <div class="tab-panel" id="panel-trends">
     <div class="cards" id="salesCards"></div>
@@ -380,23 +435,6 @@ html = r"""<!DOCTYPE html>
       <div class="mom-chart" id="momChart"></div>
       <div class="mom-note" id="momNote"></div>
       <div class="mom-source">How this is recorded: every day a scheduled GitHub Actions job re-scrapes carbarsale.ie, appends a new snapshot (date, stock count, AUM, avg price) to a running history log committed back to the repo, and rebuilds this dashboard from the full log &mdash; so this chart grows one bar per day automatically.</div>
-    </section>
-
-    <section>
-      <div class="charts-row">
-        <div class="chart-col">
-          <h2>Monthly sales</h2>
-          <p class="desc">Cars sold / removed from stock, by month</p>
-          <div class="mom-chart mom-chart-sm" id="salesChart"></div>
-          <div class="mom-note" id="salesNote"></div>
-        </div>
-        <div class="chart-col">
-          <h2>Monthly revenue</h2>
-          <p class="desc">Value of cars sold / removed, by month</p>
-          <div class="mom-chart mom-chart-sm" id="revenueChart"></div>
-          <div class="mom-note" id="revenueNote"></div>
-        </div>
-      </div>
     </section>
 
     <section>
@@ -649,6 +687,88 @@ function renderMonthlyCharts() {
   }
 }
 
+// ---------- Sales tab: cards, sold list, pipeline ----------
+function soldEntriesAll() {
+  // A car is "sold" the moment it drops off the listing (see change log),
+  // regardless of whether a deposit had been taken first.
+  return CHANGELOG.filter(r => r.type === "Sold" || r.type === "Removed");
+}
+
+function renderSalesTabCards() {
+  const el = document.getElementById("salesTabCards");
+  const sold = soldEntriesAll();
+  const withPrice = sold.filter(r => typeof r.price === "number");
+  const totalRevenue = withPrice.reduce((s, r) => s + r.price, 0);
+  const avgSale = withPrice.length ? totalRevenue / withPrice.length : null;
+
+  const pipeline = CARS.filter(c => c.status === "Deposit Taken");
+  const pipelineValue = pipeline.reduce((s, c) => s + (c.price || 0), 0);
+
+  const cardsDef = [
+    { label: "Total sales", value: sold.length,
+      delta: `<div class="delta">${sold.length ? "all-time, from change log" : "none recorded yet"}</div>` },
+    { label: "Total revenue", value: withPrice.length ? fmtEUR(totalRevenue) : "&ndash;",
+      delta: sold.length === 0 ? `<div class="delta">no sales recorded yet</div>`
+        : withPrice.length < sold.length ? `<div class="delta">${sold.length - withPrice.length} sale(s) missing price data</div>`
+        : `<div class="delta">last-seen asking prices</div>` },
+    { label: "Avg sale price", value: avgSale != null ? fmtEUR(avgSale) : "&ndash;",
+      delta: `<div class="delta">${withPrice.length} sale(s) with a price</div>` },
+    { label: "In pipeline (deposit taken)", value: pipeline.length,
+      delta: pipeline.length ? `<div class="delta">${fmtEUR(pipelineValue)} reserved &middot; not yet sold</div>` : `<div class="delta">none reserved right now</div>` },
+  ];
+  el.innerHTML = cardsDef.map(c => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      ${c.delta}
+    </div>
+  `).join("");
+}
+
+function renderSoldList() {
+  const el = document.getElementById("soldList");
+  const sold = [...soldEntriesAll()].reverse(); // newest first
+  if (!sold.length) {
+    el.innerHTML = `<tr><td class="empty" colspan="3">No sales recorded yet &mdash; a car is logged here the first daily check after it leaves the listing.</td></tr>`;
+    return;
+  }
+  el.innerHTML = sold.map(r => `
+    <tr>
+      <td>${r.date}</td>
+      <td>${r.title && r.title !== "-" ? r.title : "Car " + r.carId}</td>
+      <td class="num">${typeof r.price === "number" ? fmtEUR(r.price) : "&ndash;"}</td>
+    </tr>
+  `).join("");
+}
+
+function renderPipeline() {
+  const el = document.getElementById("pipelineList");
+  const note = document.getElementById("pipelineNote");
+  const pipeline = CARS.filter(c => c.status === "Deposit Taken");
+  if (!pipeline.length) {
+    el.innerHTML = `<tr><td class="empty" colspan="5">No cars are reserved right now.</td></tr>`;
+    note.textContent = "";
+    return;
+  }
+  el.innerHTML = pipeline.map(c => {
+    const title = (c.title && !/deposit taken/i.test(c.title)) ? c.title : `Reserved car #${c.id}`;
+    const priceCell = c.price != null ? fmtEUR(c.price) : "&ndash;";
+    const wasCell = (c.price_was && c.price != null && c.price < c.price_was)
+      ? ` <span class="price-was">${fmtEUR(c.price_was)}</span>` : "";
+    const mileageCell = c.mileage != null ? `${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}` : "&ndash;";
+    return `
+    <tr>
+      <td>${title}</td>
+      <td class="num">${c.year != null ? c.year : "&ndash;"}</td>
+      <td class="num">${priceCell}${wasCell}</td>
+      <td class="num">${mileageCell}</td>
+      <td><a class="car-link" href="${c.url}" target="_blank" rel="noopener">View &rarr;</a></td>
+    </tr>`;
+  }).join("");
+  const val = pipeline.reduce((s, c) => s + (c.price || 0), 0);
+  note.textContent = `${pipeline.length} car${pipeline.length === 1 ? "" : "s"} reserved, ${fmtEUR(val)} in the pipeline. These convert to sales once they leave the listing.`;
+}
+
 // ---------- Value by make (stacked by price band) ----------
 function renderMakeChart() {
   const legendEl = document.getElementById("makeLegend");
@@ -869,6 +989,9 @@ renderMoM();
 renderChangelog();
 renderSalesCards();
 renderMonthlyCharts();
+renderSalesTabCards();
+renderSoldList();
+renderPipeline();
 renderMakeChart();
 renderYearChart();
 renderPriceDonut();

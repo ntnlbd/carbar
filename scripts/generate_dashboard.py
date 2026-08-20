@@ -251,6 +251,7 @@ html = r"""<!DOCTYPE html>
   a.car-link { color: var(--series-1); text-decoration: none; }
   a.car-link:hover { text-decoration: underline; }
   .price-was { color: var(--text-muted); text-decoration: line-through; font-size: 10px; margin-left: 4px; }
+  .car-id { color: var(--text-muted); font-weight: 400; font-size: 0.9em; white-space: nowrap; }
   .table-scroll { max-height: 520px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
   thead th { position: sticky; top: 0; z-index: 3; }
   th:first-child, td:first-child {
@@ -469,6 +470,9 @@ function fmtCompactEUR(n) {
   if (n >= 1000) return "€" + (n/1000).toFixed(n >= 10000 ? 0 : 1) + "K";
   return "€" + Math.round(n);
 }
+// The listing id, shown in muted parentheses after a car's name everywhere a
+// car appears, so the user can always tie a row back to a specific listing.
+function idTag(id) { return ` <span class="car-id">(#${id})</span>`; }
 
 // ---------- Floating tooltip (for elements inside scroll-clipped containers, e.g. .mom-bar) ----------
 function wireFloatingTooltips() {
@@ -581,7 +585,7 @@ function renderChangelog() {
     <div class="changelog-row">
       <div class="cl-date">${r.date}</div>
       <div><span class="changelog-tag ${tagClass(r.type)}">${r.type}</span></div>
-      <div class="cl-details">${r.title && r.title !== "-" ? `<strong>${r.title}</strong> &mdash; ` : ""}${r.details}</div>
+      <div class="cl-details">${r.title && r.title !== "-" ? `<strong>${r.title}</strong>${r.carId && r.carId !== "-" ? idTag(r.carId) : ""} &mdash; ` : ""}${r.details}</div>
     </div>
   `).join("");
 }
@@ -735,7 +739,7 @@ function renderSoldList() {
   el.innerHTML = sold.map(r => `
     <tr>
       <td>${r.date}</td>
-      <td>${r.title && r.title !== "-" ? r.title : "Car " + r.carId}</td>
+      <td>${r.title && r.title !== "-" ? r.title : "Car"}${idTag(r.carId)}</td>
       <td class="num">${typeof r.price === "number" ? fmtEUR(r.price) : "&ndash;"}</td>
     </tr>
   `).join("");
@@ -751,14 +755,14 @@ function renderPipeline() {
     return;
   }
   el.innerHTML = pipeline.map(c => {
-    const title = (c.title && !/deposit taken/i.test(c.title)) ? c.title : `Reserved car #${c.id}`;
+    const title = (c.title && !/deposit taken/i.test(c.title)) ? c.title : "Reserved car";
     const priceCell = c.price != null ? fmtEUR(c.price) : "&ndash;";
     const wasCell = (c.price_was && c.price != null && c.price < c.price_was)
       ? ` <span class="price-was">${fmtEUR(c.price_was)}</span>` : "";
     const mileageCell = c.mileage != null ? `${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}` : "&ndash;";
     return `
     <tr>
-      <td>${title}</td>
+      <td>${title}${idTag(c.id)}</td>
       <td class="num">${c.year != null ? c.year : "&ndash;"}</td>
       <td class="num">${priceCell}${wasCell}</td>
       <td class="num">${mileageCell}</td>
@@ -794,7 +798,7 @@ function renderMakeChart() {
       if (v <= 0) return "";
       const segPct = (v / d.total) * 100;
       const carsInSeg = CARS.filter(c => c.make === m && c.price >= PRICE_BANDS[i].min && c.price < PRICE_BANDS[i].max);
-      const carList = carsInSeg.slice(0, 6).map(c => c.title).join("&#10;") + (carsInSeg.length > 6 ? `&#10;+${carsInSeg.length - 6} more` : "");
+      const carList = carsInSeg.slice(0, 6).map(c => `${c.title} (#${c.id})`).join("&#10;") + (carsInSeg.length > 6 ? `&#10;+${carsInSeg.length - 6} more` : "");
       const tip = `${PRICE_BANDS[i].label}: ${fmtEUR(v)}&#10;${carList}`;
       return `<div class="bar-seg tooltip-target" style="width:${segPct}%;background:${PRICE_BANDS[i].color};margin-right:2px" data-tip="${tip}"></div>`;
     }).join("");
@@ -831,7 +835,7 @@ function renderYearChart() {
     const carsAvail = CARS.filter(c => c.year == y && c.status === "Available");
     const carsDep = CARS.filter(c => c.year == y && c.status !== "Available");
     const listTip = (label, list) => {
-      const names = list.slice(0, 6).map(c => c.title).join("&#10;") + (list.length > 6 ? `&#10;+${list.length - 6} more` : "");
+      const names = list.slice(0, 6).map(c => `${c.title} (#${c.id})`).join("&#10;") + (list.length > 6 ? `&#10;+${list.length - 6} more` : "");
       return `${label}&#10;${names}`;
     };
     let segs = "";
@@ -934,7 +938,7 @@ function renderTable() {
       ? `${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}` : "&ndash;";
     return `
     <tr>
-      <td>${c.title}</td>
+      <td>${c.title}${idTag(c.id)}</td>
       <td>${c.make}</td>
       <td class="num">${c.year != null ? c.year : "&ndash;"}</td>
       <td class="num">${priceCell}${wasCell}</td>

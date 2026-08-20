@@ -474,6 +474,17 @@ function fmtCompactEUR(n) {
 // car appears, so the user can always tie a row back to a specific listing.
 function idTag(id) { return ` <span class="car-id">(#${id})</span>`; }
 
+// A car's display name. Deposit-taken cards hide the make/model on the site,
+// so never surface that placeholder as the name: use the real title when we
+// have it (preserved from before the deposit), otherwise fall back to the
+// year + engine we can still read. "Deposit taken" is conveyed by the status
+// column, not the name.
+function carDisplayName(c) {
+  if (c.title && !/deposit taken/i.test(c.title)) return c.title;
+  const bits = [c.year, c.engine].filter(Boolean).join(" ");
+  return bits || "Reserved car";
+}
+
 // ---------- Floating tooltip (for elements inside scroll-clipped containers, e.g. .mom-bar) ----------
 function wireFloatingTooltips() {
   const tip = document.createElement("div");
@@ -755,7 +766,7 @@ function renderPipeline() {
     return;
   }
   el.innerHTML = pipeline.map(c => {
-    const title = (c.title && !/deposit taken/i.test(c.title)) ? c.title : "Reserved car";
+    const title = carDisplayName(c);
     const priceCell = c.price != null ? fmtEUR(c.price) : "&ndash;";
     const wasCell = (c.price_was && c.price != null && c.price < c.price_was)
       ? ` <span class="price-was">${fmtEUR(c.price_was)}</span>` : "";
@@ -938,7 +949,7 @@ function renderTable() {
       ? `${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}` : "&ndash;";
     return `
     <tr>
-      <td>${c.title}${idTag(c.id)}</td>
+      <td>${carDisplayName(c)}${idTag(c.id)}</td>
       <td>${c.make}</td>
       <td class="num">${c.year != null ? c.year : "&ndash;"}</td>
       <td class="num">${priceCell}${wasCell}</td>

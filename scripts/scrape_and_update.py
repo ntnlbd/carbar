@@ -72,6 +72,31 @@ def _is_deposit(title, url):
     )
 
 
+def _looks_like_marker(title):
+    """True when a title is the site's reserved placeholder rather than a real
+    make/model name (e.g. '🔹DEPOSIT TAKEN🔹')."""
+    return (not title) or "deposit taken" in title.lower()
+
+
+def carry_forward_identity(new_cars, old_cars):
+    """When a car goes deposit-taken, the site hides its make/model (the title
+    and even the detail page become '🔹DEPOSIT TAKEN🔹'). Preserve the real
+    identity we captured before the deposit so lists keep showing the car's
+    name/model/make, with 'Deposit Taken' carried only in the status field."""
+    old_by_id = {c["id"]: c for c in old_cars}
+    for car in new_cars:
+        if not _looks_like_marker(car.get("title")):
+            continue
+        prev = old_by_id.get(car["id"])
+        if prev and not _looks_like_marker(prev.get("title")):
+            car["title"] = prev["title"]
+            if prev.get("make") and prev["make"] != "Unknown":
+                car["make"] = prev["make"]
+            if car.get("year") is None:
+                car["year"] = prev.get("year")
+    return new_cars
+
+
 def parse_cars(html):
     """
     Scraper for carbarsale.ie/cars listing cards.
@@ -255,6 +280,9 @@ def main():
 
     baseline = load_json("baseline.json", {"cars": []})
     old_cars = baseline.get("cars", [])
+
+    # Keep the real name/make for cars that have since gone deposit-taken.
+    carry_forward_identity(new_cars, old_cars)
 
     changelog_entries = diff_cars(old_cars, new_cars)
     stats = compute_stats(new_cars)

@@ -41,5 +41,13 @@
     "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
     "price": 10550,
     "details": "Offer ended: now EUR 10550 (was on offer from EUR 10650)"
+  },
+  {
+    "date": "2026-08-20",
+    "type": "Sold",
+    "carId": 65,
+    "title": "Mercedes C-Class 2016 2L Petrol Plug-in Sunroof",
+    "price": 13550,
+    "details": "No longer listed (sold or removed): Mercedes C-Class 2016 2L Petrol Plug-in Sunroof - EUR 13550"
   }
 ]

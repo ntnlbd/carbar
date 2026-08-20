@@ -52,7 +52,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Weekly stock update ($(date -u +%Y-%m-%d))"
+            git commit -m "Daily stock update ($(date -u +%Y-%m-%d))"
             git push
           fi
 

@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-08-20",
+  "scraped_at": "2026-08-21",
   "source": "https://carbarsale.ie/cars",
   "cars": [
     {
@@ -333,21 +333,6 @@
       "status": "Available"
     },
     {
-      "id": 23,
-      "title": "Audi A6 2018 2L TDI AUTO Fresh NCT TB DONE",
-      "year": 2018,
-      "price": 15999,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 126000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/23/audi-a6-2018-2l-tdi-auto-fresh-nct-tb-done",
-      "make": "Audi",
-      "status": "Available"
-    },
-    {
       "id": 75,
       "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
       "year": 2017,
@@ -424,12 +409,12 @@
     }
   ],
   "stats": {
-    "total_cars": 28,
-    "available": 26,
+    "total_cars": 27,
+    "available": 25,
     "deposit_taken": 2,
-    "on_offer": 10,
-    "aum_available_eur": 322649,
-    "aum_all_eur": 342629,
-    "avg_price_eur": 12237
+    "on_offer": 9,
+    "aum_available_eur": 306650,
+    "aum_all_eur": 326630,
+    "avg_price_eur": 12097
   }
 }

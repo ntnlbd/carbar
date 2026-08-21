@@ -70,5 +70,13 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-08-21",
+    "type": "Sold",
+    "carId": 23,
+    "title": "Audi A6 2018 2L TDI AUTO Fresh NCT TB DONE",
+    "price": 15999,
+    "details": "No longer listed (sold or removed): Audi A6 2018 2L TDI AUTO Fresh NCT TB DONE - EUR 15999"
   }
 ]

@@ -432,10 +432,10 @@ html = r"""<!DOCTYPE html>
 
     <section>
       <h2>AUM &mdash; month on month</h2>
-      <p class="desc">Total value of available stock at each daily check.</p>
+      <p class="desc">Total value of available stock, at the latest check in each month.</p>
       <div class="mom-chart" id="momChart"></div>
       <div class="mom-note" id="momNote"></div>
-      <div class="mom-source">How this is recorded: every day a scheduled GitHub Actions job re-scrapes carbarsale.ie, appends a new snapshot (date, stock count, AUM, avg price) to a running history log committed back to the repo, and rebuilds this dashboard from the full log &mdash; so this chart grows one bar per day automatically.</div>
+      <div class="mom-source">How this is recorded: every day a scheduled GitHub Actions job re-scrapes carbarsale.ie and appends a snapshot (date, stock count, AUM, avg price) to a running history log committed back to the repo. This chart rolls those daily snapshots up to one bar per month &mdash; the AUM at each month's most recent check &mdash; so it grows one bar per month automatically.</div>
     </section>
 
     <section>
@@ -564,22 +564,36 @@ function renderCards() {
 function renderMoM() {
   const el = document.getElementById("momChart");
   const note = document.getElementById("momNote");
-  const max = Math.max(...HISTORY.map(h => h.aumAvailable), 1);
-  el.innerHTML = HISTORY.map(h => {
-    const pct = Math.max(4, (h.aumAvailable / max) * 100);
+
+  // Roll the daily snapshots up to one point per calendar month. AUM is a
+  // balance (point-in-time stock value), not a flow, so each month shows the
+  // value at its most recent check. HISTORY is chronological, so the last
+  // write per month key wins.
+  const byMonth = new Map();
+  HISTORY.forEach(h => byMonth.set(monthKey(h.date), { aum: h.aumAvailable, date: h.date }));
+  const months = [...byMonth.keys()].sort();
+
+  if (!months.length) { el.innerHTML = ""; note.textContent = "No checks recorded yet."; return; }
+
+  const max = Math.max(...months.map(m => byMonth.get(m).aum), 1);
+  el.innerHTML = months.map(m => {
+    const d = byMonth.get(m);
+    const pct = Math.max(4, (d.aum / max) * 100);
     return `
       <div class="mom-col">
-        <div class="mom-bar" style="height:${pct}%" data-tip="${fmtEUR(h.aumAvailable)} on ${h.date}"></div>
-        <div class="mom-label">${h.date}</div>
+        <div class="mom-bar" style="height:${pct}%" data-tip="${fmtEUR(d.aum)} — ${m} (as of ${d.date})"></div>
+        <div class="mom-label">${m}</div>
       </div>
     `;
   }).join("");
-  if (HISTORY.length < 2) {
-    note.textContent = "Only one daily check recorded so far — this chart fills in as more checks run.";
+
+  if (months.length < 2) {
+    const only = byMonth.get(months[0]);
+    note.textContent = `${fmtEUR(only.aum)} available-stock value in ${months[0]} (latest of ${HISTORY.length} daily check${HISTORY.length === 1 ? "" : "s"}). More bars appear as new months are recorded.`;
   } else {
-    const first = HISTORY[0].aumAvailable, last = HISTORY[HISTORY.length - 1].aumAvailable;
+    const first = byMonth.get(months[0]).aum, last = byMonth.get(months[months.length - 1]).aum;
     const diff = last - first;
-    note.textContent = `${diff >= 0 ? "Up" : "Down"} ${fmtEUR(Math.abs(diff))} since ${HISTORY[0].date} (${HISTORY.length} checks recorded).`;
+    note.textContent = `${diff >= 0 ? "Up" : "Down"} ${fmtEUR(Math.abs(diff))} since ${months[0]} (${months.length} months recorded).`;
   }
 }
 

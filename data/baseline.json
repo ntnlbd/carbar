@@ -1,7 +1,37 @@
 {
-  "scraped_at": "2026-08-24",
+  "scraped_at": "2026-08-25",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 1,
+      "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
+      "year": 2014,
+      "price": 6550,
+      "price_was": 6990,
+      "on_offer": true,
+      "mileage": 107000,
+      "mileage_unit": "mi",
+      "engine": "1.7L Diesel",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/1/vauxhall-mokka-2014-17d-manual-high-spec-new-nct",
+      "make": "Vauxhall",
+      "status": "Available"
+    },
+    {
+      "id": 36,
+      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+      "year": 2016,
+      "price": 12990,
+      "price_was": 13550,
+      "on_offer": true,
+      "mileage": 158000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
+      "make": "BMW",
+      "status": "Available"
+    },
     {
       "id": 24,
       "title": "Mercedes B-Class 2014 1.8D NEW NCT",
@@ -75,21 +105,6 @@
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/72/mazda-3-22d-gt-2013-automatic-new-nct",
       "make": "Mazda",
-      "status": "Available"
-    },
-    {
-      "id": 36,
-      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
-      "year": 2016,
-      "price": 13550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 158000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
-      "make": "BMW",
       "status": "Available"
     },
     {
@@ -333,21 +348,6 @@
       "status": "Available"
     },
     {
-      "id": 1,
-      "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NCT&amp;TAX",
-      "year": 2014,
-      "price": 6550,
-      "price_was": 6990,
-      "on_offer": true,
-      "mileage": 107000,
-      "mileage_unit": "mi",
-      "engine": "1.7L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/1/vauxhall-mokka-2014-17d-manual-high-spec-ncttax",
-      "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
       "id": 2,
       "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
       "year": 2017,
@@ -397,9 +397,9 @@
     "total_cars": 26,
     "available": 25,
     "deposit_taken": 1,
-    "on_offer": 9,
-    "aum_available_eur": 306650,
-    "aum_all_eur": 316640,
-    "avg_price_eur": 12178
+    "on_offer": 10,
+    "aum_available_eur": 306090,
+    "aum_all_eur": 316080,
+    "avg_price_eur": 12157
   }
 }

@@ -100,5 +100,20 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-08-25",
+    "type": "Price change",
+    "carId": 36,
+    "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+    "details": "Price changed: EUR 13550 -> EUR 12990"
+  },
+  {
+    "date": "2026-08-25",
+    "type": "Offer",
+    "carId": 36,
+    "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+    "price": 12990,
+    "details": "On offer: EUR 12990 (down from EUR 13550)"
   }
 ]

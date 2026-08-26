@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-08-25",
+  "scraped_at": "2026-08-26",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 84,
+      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+      "year": 2009,
+      "price": 3450,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 73000,
+      "mileage_unit": "mi",
+      "engine": "1.8L Petrol",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/84/deposit-taken",
+      "make": "Vauxhall",
+      "status": "Deposit Taken"
+    },
     {
       "id": 1,
       "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
@@ -243,21 +258,6 @@
       "status": "Available"
     },
     {
-      "id": 84,
-      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
-      "year": 2009,
-      "price": 3450,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 73000,
-      "mileage_unit": "mi",
-      "engine": "1.8L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/84/vauxhall-astra-2009-18-petrol-automatic-low-km",
-      "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
       "id": 46,
       "title": "BMW 5-Series 2014 2L Diesel VERY LOW KM NEW NCT",
       "year": 2014,
@@ -395,10 +395,10 @@
   ],
   "stats": {
     "total_cars": 26,
-    "available": 25,
-    "deposit_taken": 1,
+    "available": 24,
+    "deposit_taken": 2,
     "on_offer": 10,
-    "aum_available_eur": 306090,
+    "aum_available_eur": 302640,
     "aum_all_eur": 316080,
     "avg_price_eur": 12157
   }

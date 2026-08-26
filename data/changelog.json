@@ -122,5 +122,12 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-08-26",
+    "type": "Status change",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "details": "Deposit taken"
   }
 ]

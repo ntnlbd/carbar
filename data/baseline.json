@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-08-26",
+  "scraped_at": "2026-08-27",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 81,
+      "title": "Volkswagen up! 2015 Automatic NEW NCT LOW KM",
+      "year": 2015,
+      "price": 7350,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 51000,
+      "mileage_unit": "km",
+      "engine": "1.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/81/volkswagen-up-2015-automatic-new-nct-low-km",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
     {
       "id": 84,
       "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
@@ -210,21 +225,6 @@
       "transmission": "Auto",
       "url": "https://carbarsale.ie/cars/58/mazda-2-demio-2017-13-petrol-auto-new-nct",
       "make": "Mazda",
-      "status": "Available"
-    },
-    {
-      "id": 81,
-      "title": "Volkswagen up! 2015 Automatic NEW NCT LOW KM",
-      "year": 2015,
-      "price": 7350,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 51000,
-      "mileage_unit": "km",
-      "engine": "1.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/81/volkswagen-up-2015-automatic-new-nct-low-km",
-      "make": "Volkswagen",
       "status": "Available"
     },
     {

@@ -129,5 +129,12 @@
     "carId": 84,
     "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
     "details": "Deposit taken"
+  },
+  {
+    "date": "2026-08-27",
+    "type": "No change",
+    "carId": "-",
+    "title": "-",
+    "details": "No changes since last check."
   }
 ]

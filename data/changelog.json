@@ -136,5 +136,50 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-08-28",
+    "type": "Price change",
+    "carId": 70,
+    "title": "Renault Laguna 1.5 DCI 110 Dynamique Manual NCT",
+    "details": "Price changed: EUR 2850 -> EUR 2650"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "Offer",
+    "carId": 70,
+    "title": "Renault Laguna 1.5 DCI 110 Dynamique Manual NCT",
+    "price": 2650,
+    "details": "On offer: EUR 2650 (down from EUR 2850)"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "Price change",
+    "carId": 81,
+    "title": "Volkswagen up! 2015 Automatic NEW NCT LOW KM",
+    "details": "Price changed: EUR 7350 -> EUR 6990"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "Offer",
+    "carId": 81,
+    "title": "Volkswagen up! 2015 Automatic NEW NCT LOW KM",
+    "price": 6990,
+    "details": "On offer: EUR 6990 (down from EUR 7350)"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "Price change",
+    "carId": 67,
+    "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
+    "details": "Price changed: EUR 9550 -> EUR 8990"
+  },
+  {
+    "date": "2026-08-28",
+    "type": "Offer",
+    "carId": 67,
+    "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
+    "price": 8990,
+    "details": "On offer: EUR 8990 (down from EUR 9550)"
   }
 ]

@@ -188,5 +188,20 @@
     "carId": 86,
     "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
     "details": "New listing added: Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto - EUR 16950"
+  },
+  {
+    "date": "2026-08-30",
+    "type": "Status change",
+    "carId": 83,
+    "title": "Peugeot 3008 1.6D Automatic High Spec. NEW NCT",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-08-30",
+    "type": "Sold",
+    "carId": 58,
+    "title": "Mazda 2 Demio 2017 1.3 Petrol Auto NEW NCT",
+    "price": 9550,
+    "details": "No longer listed (sold or removed): Mazda 2 Demio 2017 1.3 Petrol Auto NEW NCT - EUR 9550"
   }
 ]

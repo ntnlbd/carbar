@@ -225,5 +225,19 @@
     "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
     "price": 6999,
     "details": "On offer: EUR 6999 (down from EUR 7450)"
+  },
+  {
+    "date": "2026-09-01",
+    "type": "New listing",
+    "carId": 89,
+    "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+    "details": "New listing added: Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT - EUR 6750"
+  },
+  {
+    "date": "2026-09-01",
+    "type": "New listing",
+    "carId": 88,
+    "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+    "details": "New listing added: Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT - EUR 7350"
   }
 ]

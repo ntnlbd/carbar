@@ -1,7 +1,37 @@
 {
-  "scraped_at": "2026-08-31",
+  "scraped_at": "2026-09-01",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 89,
+      "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+      "year": 2013,
+      "price": 6750,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 184483,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
+      "make": "Ford",
+      "status": "Available"
+    },
+    {
+      "id": 88,
+      "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+      "year": 2012,
+      "price": 7350,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 240000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/88/audi-a4-2012-estate-2l-diesel-belt-done-new-nct",
+      "make": "Audi",
+      "status": "Available"
+    },
     {
       "id": 86,
       "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
@@ -409,12 +439,12 @@
     }
   ],
   "stats": {
-    "total_cars": 27,
-    "available": 24,
+    "total_cars": 29,
+    "available": 26,
     "deposit_taken": 3,
     "on_offer": 13,
-    "aum_available_eur": 304369,
-    "aum_all_eur": 324759,
-    "avg_price_eur": 12028
+    "aum_available_eur": 318469,
+    "aum_all_eur": 338859,
+    "avg_price_eur": 11685
   }
 }

@@ -239,5 +239,20 @@
     "carId": 88,
     "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
     "details": "New listing added: Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT - EUR 7350"
+  },
+  {
+    "date": "2026-09-02",
+    "type": "Price change",
+    "carId": 88,
+    "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+    "details": "Price changed: EUR 7350 -> EUR 6990"
+  },
+  {
+    "date": "2026-09-02",
+    "type": "Offer",
+    "carId": 88,
+    "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+    "price": 6990,
+    "details": "On offer: EUR 6990 (down from EUR 7350)"
   }
 ]

@@ -1,7 +1,67 @@
 {
-  "scraped_at": "2026-09-01",
+  "scraped_at": "2026-09-02",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 81,
+      "title": "Volkswagen up! 2015 Automatic NEW NCT LOW KM",
+      "year": 2015,
+      "price": 6990,
+      "price_was": 7350,
+      "on_offer": true,
+      "mileage": 51000,
+      "mileage_unit": "km",
+      "engine": "1.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/81/volkswagen-up-2015-automatic-new-nct-low-km",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
+    {
+      "id": 85,
+      "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
+      "year": 2008,
+      "price": 3650,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 219114,
+      "mileage_unit": "km",
+      "engine": "2.1L Diesel",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/85/mercedes-c-class-2008-21l-diesel-automatic",
+      "make": "Mercedes",
+      "status": "Available"
+    },
+    {
+      "id": 88,
+      "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+      "year": 2012,
+      "price": 6990,
+      "price_was": 7350,
+      "on_offer": true,
+      "mileage": 240000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/88/audi-a4-2012-estate-2l-diesel-belt-done-new-nct",
+      "make": "Audi",
+      "status": "Available"
+    },
+    {
+      "id": 74,
+      "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+      "year": 2014,
+      "price": 12990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 137000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/74/bmw-520d-m-sport-gt-2014-gran-turismo-auto",
+      "make": "BMW",
+      "status": "Available"
+    },
     {
       "id": 89,
       "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
@@ -15,21 +75,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
       "make": "Ford",
-      "status": "Available"
-    },
-    {
-      "id": 88,
-      "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
-      "year": 2012,
-      "price": 7350,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 240000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/88/audi-a4-2012-estate-2l-diesel-belt-done-new-nct",
-      "make": "Audi",
       "status": "Available"
     },
     {
@@ -63,21 +108,6 @@
       "status": "Available"
     },
     {
-      "id": 85,
-      "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
-      "year": 2008,
-      "price": 3650,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 219114,
-      "mileage_unit": "km",
-      "engine": "2.1L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/85/mercedes-c-class-2008-21l-diesel-automatic",
-      "make": "Mercedes",
-      "status": "Available"
-    },
-    {
       "id": 72,
       "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
       "year": 2013,
@@ -90,21 +120,6 @@
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/72/mazda-3-22d-gt-2013-automatic-new-nct",
       "make": "Mazda",
-      "status": "Available"
-    },
-    {
-      "id": 81,
-      "title": "Volkswagen up! 2015 Automatic NEW NCT LOW KM",
-      "year": 2015,
-      "price": 6990,
-      "price_was": 7350,
-      "on_offer": true,
-      "mileage": 51000,
-      "mileage_unit": "km",
-      "engine": "1.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/81/volkswagen-up-2015-automatic-new-nct-low-km",
-      "make": "Volkswagen",
       "status": "Available"
     },
     {
@@ -408,21 +423,6 @@
       "status": "Available"
     },
     {
-      "id": 74,
-      "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
-      "year": 2014,
-      "price": 12990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 137000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/74/bmw-520d-m-sport-gt-2014-gran-turismo-auto",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
       "id": 2,
       "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
       "year": 2017,
@@ -442,9 +442,9 @@
     "total_cars": 29,
     "available": 26,
     "deposit_taken": 3,
-    "on_offer": 13,
-    "aum_available_eur": 318469,
-    "aum_all_eur": 338859,
-    "avg_price_eur": 11685
+    "on_offer": 14,
+    "aum_available_eur": 318109,
+    "aum_all_eur": 338499,
+    "avg_price_eur": 11672
   }
 }

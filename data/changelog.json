@@ -254,5 +254,27 @@
     "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
     "price": 6990,
     "details": "On offer: EUR 6990 (down from EUR 7350)"
+  },
+  {
+    "date": "2026-09-03",
+    "type": "New listing",
+    "carId": 91,
+    "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+    "details": "New listing added: Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT - EUR 5550"
+  },
+  {
+    "date": "2026-09-03",
+    "type": "Price change",
+    "carId": 1,
+    "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
+    "details": "Price changed: EUR 6550 -> EUR 5990"
+  },
+  {
+    "date": "2026-09-03",
+    "type": "Offer",
+    "carId": 1,
+    "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
+    "price": 5990,
+    "details": "On offer: EUR 5990 (down from EUR 6550)"
   }
 ]

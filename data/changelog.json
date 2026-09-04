@@ -276,5 +276,28 @@
     "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
     "price": 5990,
     "details": "On offer: EUR 5990 (down from EUR 6550)"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "New listing",
+    "carId": 90,
+    "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
+    "details": "New listing added: BMW 3-Series 2015 2L Petrol Automatic NCT 05.27 - EUR 11950"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "Sold",
+    "carId": 81,
+    "title": "Volkswagen up! 2015 Automatic NEW NCT LOW KM",
+    "price": 6990,
+    "details": "No longer listed (sold or removed): Volkswagen up! 2015 Automatic NEW NCT LOW KM - EUR 6990"
+  },
+  {
+    "date": "2026-09-04",
+    "type": "Sold",
+    "carId": 83,
+    "title": "Peugeot 3008 1.6D Automatic High Spec. NEW NCT",
+    "price": 6950,
+    "details": "No longer listed (sold or removed): Peugeot 3008 1.6D Automatic High Spec. NEW NCT - EUR 6950"
   }
 ]

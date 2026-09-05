@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-09-04",
+  "scraped_at": "2026-09-05",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 68,
+      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+      "year": 2017,
+      "price": 20990,
+      "price_was": 21550,
+      "on_offer": true,
+      "mileage": 166000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
+      "make": "Audi",
+      "status": "Available"
+    },
     {
       "id": 24,
       "title": "Mercedes B-Class 2014 1.8D NEW NCT",
@@ -150,21 +165,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
       "make": "Volkswagen",
-      "status": "Available"
-    },
-    {
-      "id": 68,
-      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
-      "year": 2017,
-      "price": 20990,
-      "price_was": 21550,
-      "on_offer": true,
-      "mileage": 166000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
-      "make": "Audi",
       "status": "Available"
     },
     {

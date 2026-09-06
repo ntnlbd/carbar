@@ -1,7 +1,52 @@
 {
-  "scraped_at": "2026-09-05",
+  "scraped_at": "2026-09-06",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 87,
+      "title": "Ford Mondeo 2008 2L diesel Manual LOW KM NEW NCT",
+      "year": 2008,
+      "price": 2850,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 152000,
+      "mileage_unit": "km",
+      "engine": "1.8L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/87/deposit-taken",
+      "make": "Ford",
+      "status": "Deposit Taken"
+    },
+    {
+      "id": 67,
+      "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
+      "year": 2016,
+      "price": 8990,
+      "price_was": 9550,
+      "on_offer": true,
+      "mileage": 141000,
+      "mileage_unit": "mi",
+      "engine": "1.6L Diesel",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/67/nissan-qashqai-2016-16-diesel-automatic-new-nct",
+      "make": "Nissan",
+      "status": "Available"
+    },
+    {
+      "id": 90,
+      "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
+      "year": 2015,
+      "price": 11950,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 177000,
+      "mileage_unit": "km",
+      "engine": "2.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/90/bmw-3-series-2015-2l-petrol-automatic-nct-0527",
+      "make": "BMW",
+      "status": "Available"
+    },
     {
       "id": 68,
       "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
@@ -168,21 +213,6 @@
       "status": "Available"
     },
     {
-      "id": 90,
-      "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
-      "year": 2015,
-      "price": 11950,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 177000,
-      "mileage_unit": "km",
-      "engine": "2.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/90/bmw-3-series-2015-2l-petrol-automatic-nct-0527",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
       "id": 91,
       "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
       "year": 2013,
@@ -240,21 +270,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/62/porsche-cayenne-2012-3l-diesel-ncttax",
       "make": "Porsche",
-      "status": "Available"
-    },
-    {
-      "id": 67,
-      "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
-      "year": 2016,
-      "price": 8990,
-      "price_was": 9550,
-      "on_offer": true,
-      "mileage": 141000,
-      "mileage_unit": "mi",
-      "engine": "1.6L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/67/nissan-qashqai-2016-16-diesel-automatic-new-nct",
-      "make": "Nissan",
       "status": "Available"
     },
     {
@@ -348,21 +363,6 @@
       "status": "Available"
     },
     {
-      "id": 87,
-      "title": "Ford Mondeo 2008 2L diesel Manual LOW KM NEW NCT",
-      "year": 2008,
-      "price": 2850,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 152000,
-      "mileage_unit": "km",
-      "engine": "1.8L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/87/ford-mondeo-2008-2l-diesel-manual-low-km-new-nct",
-      "make": "Ford",
-      "status": "Available"
-    },
-    {
       "id": 70,
       "title": "Renault Laguna 1.5 DCI 110 Dynamique Manual NCT",
       "year": 2008,
@@ -440,10 +440,10 @@
   ],
   "stats": {
     "total_cars": 29,
-    "available": 27,
-    "deposit_taken": 2,
+    "available": 26,
+    "deposit_taken": 3,
     "on_offer": 13,
-    "aum_available_eur": 328059,
+    "aum_available_eur": 325209,
     "aum_all_eur": 341499,
     "avg_price_eur": 11776
   }

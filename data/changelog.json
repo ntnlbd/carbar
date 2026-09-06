@@ -306,5 +306,12 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-09-06",
+    "type": "Status change",
+    "carId": 87,
+    "title": "Ford Mondeo 2008 2L diesel Manual LOW KM NEW NCT",
+    "details": "Deposit taken"
   }
 ]

@@ -1,7 +1,82 @@
 {
-  "scraped_at": "2026-09-07",
+  "scraped_at": "2026-09-08",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 76,
+      "title": "Land Rover Discovery Sport 2017",
+      "year": 2017,
+      "price": 17990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 64000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
+      "make": "Land",
+      "status": "Available"
+    },
+    {
+      "id": 86,
+      "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
+      "year": 2018,
+      "price": 16950,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 83000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/86/peugeot-5008-allure-7-seats-2018-12-petrol-auto",
+      "make": "Peugeot",
+      "status": "Available"
+    },
+    {
+      "id": 36,
+      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+      "year": 2016,
+      "price": 12550,
+      "price_was": 12990,
+      "on_offer": true,
+      "mileage": 158000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 84,
+      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+      "year": 2009,
+      "price": 3650,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 73000,
+      "mileage_unit": "mi",
+      "engine": "1.8L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/84/vauxhall-astra-2009-18-petrol-automatic-low-km",
+      "make": "Vauxhall",
+      "status": "Available"
+    },
+    {
+      "id": 80,
+      "title": "Saab 2L PetrolAutomatic NEW NCT",
+      "year": 2004,
+      "price": 1990,
+      "price_was": 2350,
+      "on_offer": true,
+      "mileage": 227000,
+      "mileage_unit": "km",
+      "engine": "2.0L Petrol",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/80/saab-2l-petrolautomatic-new-nct",
+      "make": "Saab",
+      "status": "Available"
+    },
     {
       "id": 85,
       "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
@@ -46,21 +121,6 @@
       "url": "https://carbarsale.ie/cars/74/bmw-520d-m-sport-gt-2014-gran-turismo-auto",
       "make": "BMW",
       "status": "Available"
-    },
-    {
-      "id": 87,
-      "title": "Ford Mondeo 2008 2L diesel Manual LOW KM NEW NCT",
-      "year": 2008,
-      "price": 2850,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 152000,
-      "mileage_unit": "km",
-      "engine": "1.8L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/87/deposit-taken",
-      "make": "Ford",
-      "status": "Deposit Taken"
     },
     {
       "id": 67,
@@ -165,36 +225,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/46/bmw-5-series-2014-2l-diesel-very-low-km-new-nct",
       "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 36,
-      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
-      "year": 2016,
-      "price": 12990,
-      "price_was": 13550,
-      "on_offer": true,
-      "mileage": 158000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 86,
-      "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
-      "year": 2018,
-      "price": 16950,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 83000,
-      "mileage_unit": "km",
-      "engine": "1.2L Petrol",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/86/peugeot-5008-allure-7-seats-2018-12-petrol-auto",
-      "make": "Peugeot",
       "status": "Available"
     },
     {
@@ -333,21 +363,6 @@
       "status": "Available"
     },
     {
-      "id": 76,
-      "title": "Land Rover Discovery Sport 2017",
-      "year": 2017,
-      "price": 17990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 64000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
-      "make": "Land",
-      "status": "Available"
-    },
-    {
       "id": 89,
       "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
       "year": 2013,
@@ -360,51 +375,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
       "make": "Ford",
-      "status": "Available"
-    },
-    {
-      "id": 70,
-      "title": "Renault Laguna 1.5 DCI 110 Dynamique Manual NCT",
-      "year": 2008,
-      "price": 2650,
-      "price_was": 2850,
-      "on_offer": true,
-      "mileage": 156000,
-      "mileage_unit": "km",
-      "engine": "1.5L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/70/renault-laguna-15-dci-110-dynamique-manual-nct",
-      "make": "Renault",
-      "status": "Available"
-    },
-    {
-      "id": 84,
-      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
-      "year": 2009,
-      "price": 3450,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 73000,
-      "mileage_unit": "mi",
-      "engine": "1.8L Petrol",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/84/deposit-taken",
-      "make": "Vauxhall",
-      "status": "Deposit Taken"
-    },
-    {
-      "id": 80,
-      "title": "Saab 2L PetrolAutomatic NEW NCT",
-      "year": 2004,
-      "price": 2350,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 227000,
-      "mileage_unit": "km",
-      "engine": "2.0L Petrol",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/80/saab-2l-petrolautomatic-new-nct",
-      "make": "Saab",
       "status": "Available"
     },
     {
@@ -439,12 +409,12 @@
     }
   ],
   "stats": {
-    "total_cars": 29,
+    "total_cars": 27,
     "available": 26,
-    "deposit_taken": 3,
+    "deposit_taken": 1,
     "on_offer": 13,
-    "aum_available_eur": 325209,
-    "aum_all_eur": 341499,
-    "avg_price_eur": 11776
+    "aum_available_eur": 325409,
+    "aum_all_eur": 335399,
+    "avg_price_eur": 12422
   }
 }

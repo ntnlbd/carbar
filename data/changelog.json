@@ -380,5 +380,110 @@
     "title": "Renault Laguna 1.5 DCI 110 Dynamique Manual NCT",
     "price": 2650,
     "details": "No longer listed (sold or removed): Renault Laguna 1.5 DCI 110 Dynamique Manual NCT - EUR 2650"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Price change",
+    "carId": 1,
+    "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
+    "details": "Price changed: EUR 5990 -> EUR 5550"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Offer",
+    "carId": 1,
+    "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
+    "price": 5550,
+    "details": "On offer: EUR 5550 (down from EUR 5990)"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Price change",
+    "carId": 68,
+    "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+    "details": "Price changed: EUR 20990 -> EUR 19990"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Offer",
+    "carId": 68,
+    "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+    "price": 19990,
+    "details": "On offer: EUR 19990 (down from EUR 20990)"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Price change",
+    "carId": 88,
+    "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+    "details": "Price changed: EUR 6990 -> EUR 5990"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Offer",
+    "carId": 88,
+    "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+    "price": 5990,
+    "details": "On offer: EUR 5990 (down from EUR 6990)"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Price change",
+    "carId": 75,
+    "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+    "details": "Price changed: EUR 15550 -> EUR 14990"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Offer",
+    "carId": 75,
+    "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+    "price": 14990,
+    "details": "On offer: EUR 14990 (down from EUR 15550)"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Price change",
+    "carId": 89,
+    "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+    "details": "Price changed: EUR 6750 -> EUR 5990"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Offer",
+    "carId": 89,
+    "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+    "price": 5990,
+    "details": "On offer: EUR 5990 (down from EUR 6750)"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Price change",
+    "carId": 78,
+    "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
+    "details": "Price changed: EUR 16990 -> EUR 15990"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Offer",
+    "carId": 78,
+    "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
+    "price": 15990,
+    "details": "On offer: EUR 15990 (down from EUR 16990)"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Price change",
+    "carId": 79,
+    "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
+    "details": "Price changed: EUR 21550 -> EUR 20550"
+  },
+  {
+    "date": "2026-09-09",
+    "type": "Offer",
+    "carId": 79,
+    "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
+    "price": 20550,
+    "details": "On offer: EUR 20550 (down from EUR 21550)"
   }
 ]

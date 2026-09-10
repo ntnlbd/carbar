@@ -485,5 +485,20 @@
     "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
     "price": 20550,
     "details": "On offer: EUR 20550 (down from EUR 21550)"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "Price change",
+    "carId": 63,
+    "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+    "details": "Price changed: EUR 17770 -> EUR 16990"
+  },
+  {
+    "date": "2026-09-10",
+    "type": "Offer",
+    "carId": 63,
+    "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+    "price": 16990,
+    "details": "On offer: EUR 16990 (down from EUR 17770)"
   }
 ]

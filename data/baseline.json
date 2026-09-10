@@ -1,7 +1,37 @@
 {
-  "scraped_at": "2026-09-09",
+  "scraped_at": "2026-09-10",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 68,
+      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+      "year": 2017,
+      "price": 19990,
+      "price_was": 20990,
+      "on_offer": true,
+      "mileage": 166000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
+      "make": "Audi",
+      "status": "Available"
+    },
+    {
+      "id": 64,
+      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+      "year": 2018,
+      "price": 35550,
+      "price_was": 39990,
+      "on_offer": true,
+      "mileage": 110000,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
+      "make": "Tesla",
+      "status": "Available"
+    },
     {
       "id": 91,
       "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
@@ -18,6 +48,36 @@
       "status": "Available"
     },
     {
+      "id": 63,
+      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+      "year": 2016,
+      "price": 16990,
+      "price_was": 17770,
+      "on_offer": true,
+      "mileage": 127000,
+      "mileage_unit": "km",
+      "engine": "1.6L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
+      "make": "Mercedes",
+      "status": "Available"
+    },
+    {
+      "id": 76,
+      "title": "Land Rover Discovery Sport 2017",
+      "year": 2017,
+      "price": 17990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 64000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
+      "make": "Land",
+      "status": "Available"
+    },
+    {
       "id": 1,
       "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
       "year": 2014,
@@ -30,21 +90,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/1/vauxhall-mokka-2014-17d-manual-high-spec-new-nct",
       "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
-      "id": 68,
-      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
-      "year": 2017,
-      "price": 19990,
-      "price_was": 20990,
-      "on_offer": true,
-      "mileage": 166000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
-      "make": "Audi",
       "status": "Available"
     },
     {
@@ -150,21 +195,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/82/audi-a4-s-line-ultra-2017-manual-new-nct-belt-done",
       "make": "Audi",
-      "status": "Available"
-    },
-    {
-      "id": 76,
-      "title": "Land Rover Discovery Sport 2017",
-      "year": 2017,
-      "price": 17990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 64000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
-      "make": "Land",
       "status": "Available"
     },
     {
@@ -318,21 +348,6 @@
       "status": "Available"
     },
     {
-      "id": 63,
-      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
-      "year": 2016,
-      "price": 17770,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 127000,
-      "mileage_unit": "km",
-      "engine": "1.6L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
-      "make": "Mercedes",
-      "status": "Available"
-    },
-    {
       "id": 32,
       "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
       "year": 2016,
@@ -345,21 +360,6 @@
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/32/mazda-cx-5-2016-22l-diesel-automatic-chain-done",
       "make": "Mazda",
-      "status": "Available"
-    },
-    {
-      "id": 64,
-      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
-      "year": 2018,
-      "price": 35550,
-      "price_was": 39990,
-      "on_offer": true,
-      "mileage": 110000,
-      "mileage_unit": "km",
-      "engine": "L Electric",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
-      "make": "Tesla",
       "status": "Available"
     },
     {
@@ -412,9 +412,9 @@
     "total_cars": 27,
     "available": 26,
     "deposit_taken": 1,
-    "on_offer": 16,
-    "aum_available_eur": 319649,
-    "aum_all_eur": 329639,
-    "avg_price_eur": 12209
+    "on_offer": 17,
+    "aum_available_eur": 318869,
+    "aum_all_eur": 328859,
+    "avg_price_eur": 12180
   }
 }

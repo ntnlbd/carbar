@@ -1,7 +1,82 @@
 {
-  "scraped_at": "2026-09-10",
+  "scraped_at": "2026-09-11",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 92,
+      "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
+      "year": 2012,
+      "price": 7450,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 132000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/92/volkswagen-golf-2012-12-petrol-auto-nct-chain-don",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
+    {
+      "id": 90,
+      "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
+      "year": 2015,
+      "price": 11950,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 177000,
+      "mileage_unit": "km",
+      "engine": "2.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/90/bmw-3-series-2015-2l-petrol-automatic-nct-0527",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 67,
+      "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
+      "year": 2016,
+      "price": 8990,
+      "price_was": 9550,
+      "on_offer": true,
+      "mileage": 141000,
+      "mileage_unit": "mi",
+      "engine": "1.6L Diesel",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/67/nissan-qashqai-2016-16-diesel-automatic-new-nct",
+      "make": "Nissan",
+      "status": "Available"
+    },
+    {
+      "id": 1,
+      "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
+      "year": 2014,
+      "price": 5550,
+      "price_was": 5990,
+      "on_offer": true,
+      "mileage": 107000,
+      "mileage_unit": "mi",
+      "engine": "1.7L Diesel",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/1/vauxhall-mokka-2014-17d-manual-high-spec-new-nct",
+      "make": "Vauxhall",
+      "status": "Available"
+    },
+    {
+      "id": 75,
+      "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+      "year": 2017,
+      "price": 14990,
+      "price_was": 15550,
+      "on_offer": true,
+      "mileage": 80000,
+      "mileage_unit": "km",
+      "engine": "1.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/75/honda-civic-2017-1l-petrol-automatic-low-km",
+      "make": "Honda",
+      "status": "Available"
+    },
     {
       "id": 68,
       "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
@@ -78,21 +153,6 @@
       "status": "Available"
     },
     {
-      "id": 1,
-      "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
-      "year": 2014,
-      "price": 5550,
-      "price_was": 5990,
-      "on_offer": true,
-      "mileage": 107000,
-      "mileage_unit": "mi",
-      "engine": "1.7L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/1/vauxhall-mokka-2014-17d-manual-high-spec-new-nct",
-      "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
       "id": 88,
       "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
       "year": 2012,
@@ -105,21 +165,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/88/audi-a4-2012-estate-2l-diesel-belt-done-new-nct",
       "make": "Audi",
-      "status": "Available"
-    },
-    {
-      "id": 75,
-      "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
-      "year": 2017,
-      "price": 14990,
-      "price_was": 15550,
-      "on_offer": true,
-      "mileage": 80000,
-      "mileage_unit": "km",
-      "engine": "1.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/75/honda-civic-2017-1l-petrol-automatic-low-km",
-      "make": "Honda",
       "status": "Available"
     },
     {
@@ -288,36 +333,6 @@
       "status": "Available"
     },
     {
-      "id": 67,
-      "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
-      "year": 2016,
-      "price": 8990,
-      "price_was": 9550,
-      "on_offer": true,
-      "mileage": 141000,
-      "mileage_unit": "mi",
-      "engine": "1.6L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/67/nissan-qashqai-2016-16-diesel-automatic-new-nct",
-      "make": "Nissan",
-      "status": "Available"
-    },
-    {
-      "id": 90,
-      "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
-      "year": 2015,
-      "price": 11950,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 177000,
-      "mileage_unit": "km",
-      "engine": "2.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/90/bmw-3-series-2015-2l-petrol-automatic-nct-0527",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
       "id": 24,
       "title": "Mercedes B-Class 2014 1.8D NEW NCT",
       "year": 2014,
@@ -409,12 +424,12 @@
     }
   ],
   "stats": {
-    "total_cars": 27,
-    "available": 26,
+    "total_cars": 28,
+    "available": 27,
     "deposit_taken": 1,
     "on_offer": 17,
-    "aum_available_eur": 318869,
-    "aum_all_eur": 328859,
-    "avg_price_eur": 12180
+    "aum_available_eur": 326319,
+    "aum_all_eur": 336309,
+    "avg_price_eur": 12011
   }
 }

@@ -521,5 +521,20 @@
     "carId": 94,
     "title": "Audi A5 2013 2.0D Multi SE S Line Auto Belt Done",
     "details": "New listing added: Audi A5 2013 2.0D Multi SE S Line Auto Belt Done - EUR 10550"
+  },
+  {
+    "date": "2026-09-13",
+    "type": "New listing",
+    "carId": 95,
+    "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+    "details": "New listing added: Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic - EUR 27550"
+  },
+  {
+    "date": "2026-09-13",
+    "type": "Sold",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "price": 3650,
+    "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
   }
 ]

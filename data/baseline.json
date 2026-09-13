@@ -1,7 +1,97 @@
 {
-  "scraped_at": "2026-09-12",
+  "scraped_at": "2026-09-13",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 95,
+      "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+      "year": 2016,
+      "price": 27550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 163000,
+      "mileage_unit": "km",
+      "engine": "2.0L Petrol Plug-in Hybrid",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
+      "make": "Volvo",
+      "status": "Available"
+    },
+    {
+      "id": 86,
+      "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
+      "year": 2018,
+      "price": 16950,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 83000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/86/peugeot-5008-allure-7-seats-2018-12-petrol-auto",
+      "make": "Peugeot",
+      "status": "Available"
+    },
+    {
+      "id": 36,
+      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+      "year": 2016,
+      "price": 12550,
+      "price_was": 12990,
+      "on_offer": true,
+      "mileage": 158000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 78,
+      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
+      "year": 2016,
+      "price": 15990,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 77000,
+      "mileage_unit": "km",
+      "engine": "1.4L Petrol Plug-in Hybrid",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
+    {
+      "id": 32,
+      "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
+      "year": 2016,
+      "price": 10550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 132000,
+      "mileage_unit": "mi",
+      "engine": "2.2L Diesel",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/32/mazda-cx-5-2016-22l-diesel-automatic-chain-done",
+      "make": "Mazda",
+      "status": "Available"
+    },
+    {
+      "id": 94,
+      "title": "Audi A5 2013 2.0D Multi SE S Line Auto Belt Done",
+      "year": 2013,
+      "price": 10550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 136100,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/94/audi-a5-2013-20d-multi-se-s-line-auto-belt-done",
+      "make": "Audi",
+      "status": "Available"
+    },
     {
       "id": 93,
       "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
@@ -48,21 +138,6 @@
       "status": "Available"
     },
     {
-      "id": 94,
-      "title": "Audi A5 2013 2.0D Multi SE S Line Auto Belt Done",
-      "year": 2013,
-      "price": 10550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 136100,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/94/audi-a5-2013-20d-multi-se-s-line-auto-belt-done",
-      "make": "Audi",
-      "status": "Available"
-    },
-    {
       "id": 91,
       "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
       "year": 2013,
@@ -105,21 +180,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/88/audi-a4-2012-estate-2l-diesel-belt-done-new-nct",
       "make": "Audi",
-      "status": "Available"
-    },
-    {
-      "id": 86,
-      "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
-      "year": 2018,
-      "price": 16950,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 83000,
-      "mileage_unit": "km",
-      "engine": "1.2L Petrol",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/86/peugeot-5008-allure-7-seats-2018-12-petrol-auto",
-      "make": "Peugeot",
       "status": "Available"
     },
     {
@@ -273,21 +333,6 @@
       "status": "Available"
     },
     {
-      "id": 36,
-      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
-      "year": 2016,
-      "price": 12550,
-      "price_was": 12990,
-      "on_offer": true,
-      "mileage": 158000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
       "id": 62,
       "title": "Porsche Cayenne 2012 3L Diesel NCT&amp;TAX",
       "year": 2012,
@@ -330,21 +375,6 @@
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/72/mazda-3-22d-gt-2013-automatic-new-nct",
       "make": "Mazda",
-      "status": "Available"
-    },
-    {
-      "id": 78,
-      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
-      "year": 2016,
-      "price": 15990,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 77000,
-      "mileage_unit": "km",
-      "engine": "1.4L Petrol Plug-in Hybrid",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
-      "make": "Volkswagen",
       "status": "Available"
     },
     {
@@ -421,36 +451,6 @@
       "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
       "make": "Land",
       "status": "Available"
-    },
-    {
-      "id": 84,
-      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
-      "year": 2009,
-      "price": 3650,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 73000,
-      "mileage_unit": "mi",
-      "engine": "1.8L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/84/vauxhall-astra-2009-18-petrol-automatic-low-km",
-      "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
-      "id": 32,
-      "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
-      "year": 2016,
-      "price": 10550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 132000,
-      "mileage_unit": "mi",
-      "engine": "2.2L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/32/mazda-cx-5-2016-22l-diesel-automatic-chain-done",
-      "make": "Mazda",
-      "status": "Available"
     }
   ],
   "stats": {
@@ -458,8 +458,8 @@
     "available": 29,
     "deposit_taken": 1,
     "on_offer": 17,
-    "aum_available_eur": 346859,
-    "aum_all_eur": 356849,
-    "avg_price_eur": 11895
+    "aum_available_eur": 370759,
+    "aum_all_eur": 380749,
+    "avg_price_eur": 12692
   }
 }

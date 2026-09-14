@@ -1,22 +1,7 @@
 {
-  "scraped_at": "2026-09-13",
+  "scraped_at": "2026-09-14",
   "source": "https://carbarsale.ie/cars",
   "cars": [
-    {
-      "id": 95,
-      "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
-      "year": 2016,
-      "price": 27550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 163000,
-      "mileage_unit": "km",
-      "engine": "2.0L Petrol Plug-in Hybrid",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
-      "make": "Volvo",
-      "status": "Available"
-    },
     {
       "id": 86,
       "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
@@ -45,6 +30,66 @@
       "transmission": "Auto",
       "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
       "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 82,
+      "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
+      "year": 2017,
+      "price": 13950,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 139000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/82/audi-a4-s-line-ultra-2017-manual-new-nct-belt-done",
+      "make": "Audi",
+      "status": "Available"
+    },
+    {
+      "id": 75,
+      "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+      "year": 2017,
+      "price": 14990,
+      "price_was": 15550,
+      "on_offer": true,
+      "mileage": 80000,
+      "mileage_unit": "km",
+      "engine": "1.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/75/honda-civic-2017-1l-petrol-automatic-low-km",
+      "make": "Honda",
+      "status": "Available"
+    },
+    {
+      "id": 91,
+      "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+      "year": 2013,
+      "price": 5550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 189454,
+      "mileage_unit": "km",
+      "engine": "1.6L Petrol",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/91/hyundai-veloster-2013-16-petrol-manual-new-nct",
+      "make": "Hyundai",
+      "status": "Available"
+    },
+    {
+      "id": 95,
+      "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+      "year": 2016,
+      "price": 27550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 163000,
+      "mileage_unit": "km",
+      "engine": "2.0L Petrol Plug-in Hybrid",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
+      "make": "Volvo",
       "status": "Available"
     },
     {
@@ -138,21 +183,6 @@
       "status": "Available"
     },
     {
-      "id": 91,
-      "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
-      "year": 2013,
-      "price": 5550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 189454,
-      "mileage_unit": "km",
-      "engine": "1.6L Petrol",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/91/hyundai-veloster-2013-16-petrol-manual-new-nct",
-      "make": "Hyundai",
-      "status": "Available"
-    },
-    {
       "id": 89,
       "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
       "year": 2013,
@@ -243,21 +273,6 @@
       "status": "Available"
     },
     {
-      "id": 82,
-      "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
-      "year": 2017,
-      "price": 13950,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 139000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/82/audi-a4-s-line-ultra-2017-manual-new-nct-belt-done",
-      "make": "Audi",
-      "status": "Available"
-    },
-    {
       "id": 46,
       "title": "BMW 5-Series 2014 2L Diesel VERY LOW KM NEW NCT",
       "year": 2014,
@@ -270,21 +285,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/46/bmw-5-series-2014-2l-diesel-very-low-km-new-nct",
       "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 75,
-      "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
-      "year": 2017,
-      "price": 14990,
-      "price_was": 15550,
-      "on_offer": true,
-      "mileage": 80000,
-      "mileage_unit": "km",
-      "engine": "1.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/75/honda-civic-2017-1l-petrol-automatic-low-km",
-      "make": "Honda",
       "status": "Available"
     },
     {

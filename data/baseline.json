@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-09-14",
+  "scraped_at": "2026-09-15",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 76,
+      "title": "Land Rover Discovery Sport 2017",
+      "year": 2017,
+      "price": 17990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 64000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
+      "make": "Land",
+      "status": "Available"
+    },
     {
       "id": 86,
       "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
@@ -435,21 +450,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/1/vauxhall-mokka-2014-17d-manual-high-spec-new-nct",
       "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
-      "id": 76,
-      "title": "Land Rover Discovery Sport 2017",
-      "year": 2017,
-      "price": 17990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 64000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
-      "make": "Land",
       "status": "Available"
     }
   ],

@@ -550,5 +550,42 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-09-16",
+    "type": "New listing",
+    "carId": 96,
+    "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
+    "details": "New listing added: Audi Q2 2017 1.6 Diesel Automatic NCT - EUR 13550"
+  },
+  {
+    "date": "2026-09-16",
+    "type": "New listing",
+    "carId": 97,
+    "title": "Toyota Corolla 2005 1.4 Petrol Manual NCT",
+    "details": "New listing added: Toyota Corolla 2005 1.4 Petrol Manual NCT - EUR 1990"
+  },
+  {
+    "date": "2026-09-16",
+    "type": "Status change",
+    "carId": 46,
+    "title": "BMW 5-Series 2014 2L Diesel VERY LOW KM NEW NCT",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-09-16",
+    "type": "Sold",
+    "carId": 88,
+    "title": "Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT",
+    "price": 5990,
+    "details": "No longer listed (sold or removed): Audi A4 2012  Estate 2L Diesel Belt Done NEW NCT - EUR 5990"
+  },
+  {
+    "date": "2026-09-16",
+    "type": "Sold",
+    "carId": 2,
+    "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
+    "price": 9990,
+    "details": "No longer listed (sold or removed): \ud83d\udd39DEPOSIT TAKEN\ud83d\udd39 - EUR 9990"
   }
 ]

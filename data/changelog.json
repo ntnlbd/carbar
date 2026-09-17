@@ -587,5 +587,65 @@
     "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
     "price": 9990,
     "details": "No longer listed (sold or removed): \ud83d\udd39DEPOSIT TAKEN\ud83d\udd39 - EUR 9990"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "Price change",
+    "carId": 62,
+    "title": "Porsche Cayenne 2012 3L Diesel NCT&amp;TAX",
+    "details": "Price changed: EUR 21550 -> EUR 20990"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "Offer",
+    "carId": 62,
+    "title": "Porsche Cayenne 2012 3L Diesel NCT&amp;TAX",
+    "price": 20990,
+    "details": "On offer: EUR 20990 (down from EUR 21550)"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "New listing",
+    "carId": 100,
+    "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NCT",
+    "details": "New listing added: BMW 1-Series M SPORT 2015 High Spec. Auto NCT - EUR 12550"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "New listing",
+    "carId": 99,
+    "title": "Toyota Auris 2011 1.4 D-4D DPF Sport Automatic",
+    "details": "New listing added: Toyota Auris 2011 1.4 D-4D DPF Sport Automatic - EUR 4490"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "New listing",
+    "carId": 98,
+    "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
+    "details": "New listing added: Volkswagen Golf 2011 Estate 1.6 Diesel New NCT - EUR 3850"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "Sold",
+    "carId": 80,
+    "title": "Saab 2L PetrolAutomatic NEW NCT",
+    "price": 1990,
+    "details": "No longer listed (sold or removed): Saab 2L PetrolAutomatic NEW NCT - EUR 1990"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "Sold",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "price": 12990,
+    "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
+  },
+  {
+    "date": "2026-09-17",
+    "type": "Sold",
+    "carId": 72,
+    "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
+    "price": 6999,
+    "details": "No longer listed (sold or removed): Mazda 3 2.2D GT 2013 Automatic NEW NCT - EUR 6999"
   }
 ]

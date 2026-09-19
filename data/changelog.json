@@ -677,5 +677,20 @@
     "title": "BMW 5-Series 2014 2L Diesel VERY LOW KM NEW NCT",
     "price": 11990,
     "details": "No longer listed (sold or removed): BMW 5-Series 2014 2L Diesel VERY LOW KM NEW NCT - EUR 11990"
+  },
+  {
+    "date": "2026-09-19",
+    "type": "New listing",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "details": "New listing added: BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
+  },
+  {
+    "date": "2026-09-19",
+    "type": "Sold",
+    "carId": 67,
+    "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
+    "price": 8990,
+    "details": "No longer listed (sold or removed): Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT - EUR 8990"
   }
 ]

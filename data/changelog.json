@@ -692,5 +692,42 @@
     "title": "Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT",
     "price": 8990,
     "details": "No longer listed (sold or removed): Nissan Qashqai 2016 1.6 Diesel Automatic NEW NCT - EUR 8990"
+  },
+  {
+    "date": "2026-09-20",
+    "type": "Status change",
+    "carId": 99,
+    "title": "Toyota Auris 2011 1.4 D-4D DPF Sport Automatic",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-09-20",
+    "type": "New listing",
+    "carId": 72,
+    "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
+    "details": "New listing added: Mazda 3 2.2D GT 2013 Automatic NEW NCT - EUR 6999"
+  },
+  {
+    "date": "2026-09-20",
+    "type": "New listing",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "details": "New listing added: Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-09-20",
+    "type": "Sold",
+    "carId": 101,
+    "title": "Peugeot 3008 2010 1.6 Diesel Automatic NEW NCT",
+    "price": 2550,
+    "details": "No longer listed (sold or removed): Peugeot 3008 2010 1.6 Diesel Automatic NEW NCT - EUR 2550"
+  },
+  {
+    "date": "2026-09-20",
+    "type": "Sold",
+    "carId": 94,
+    "title": "Audi A5 2013 2.0D Multi SE S Line Auto Belt Done",
+    "price": 10550,
+    "details": "No longer listed (sold or removed): Audi A5 2013 2.0D Multi SE S Line Auto Belt Done - EUR 10550"
   }
 ]

@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-09-20",
+  "scraped_at": "2026-09-21",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 91,
+      "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+      "year": 2013,
+      "price": 5550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 189454,
+      "mileage_unit": "km",
+      "engine": "1.6L Petrol",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/91/hyundai-veloster-2013-16-petrol-manual-new-nct",
+      "make": "Hyundai",
+      "status": "Available"
+    },
     {
       "id": 98,
       "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
@@ -270,21 +285,6 @@
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/75/honda-civic-2017-1l-petrol-automatic-low-km",
       "make": "Honda",
-      "status": "Available"
-    },
-    {
-      "id": 91,
-      "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
-      "year": 2013,
-      "price": 5550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 189454,
-      "mileage_unit": "km",
-      "engine": "1.6L Petrol",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/91/hyundai-veloster-2013-16-petrol-manual-new-nct",
-      "make": "Hyundai",
       "status": "Available"
     },
     {

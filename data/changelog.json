@@ -743,5 +743,42 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-09-23",
+    "type": "Status change",
+    "carId": 86,
+    "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-09-23",
+    "type": "New listing",
+    "carId": 102,
+    "title": "Audi A4 2014  2L Diesel Auto Belt Done NCT 06.27",
+    "details": "New listing added: Audi A4 2014  2L Diesel Auto Belt Done NCT 06.27 - EUR 7350"
+  },
+  {
+    "date": "2026-09-23",
+    "type": "Price change",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "details": "Price changed: EUR 9990 -> EUR 9550"
+  },
+  {
+    "date": "2026-09-23",
+    "type": "Offer",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "price": 9550,
+    "details": "On offer: EUR 9550 (down from EUR 9990)"
+  },
+  {
+    "date": "2026-09-23",
+    "type": "Sold",
+    "carId": 99,
+    "title": "Toyota Auris 2011 1.4 D-4D DPF Sport Automatic",
+    "price": 4490,
+    "details": "No longer listed (sold or removed): Toyota Auris 2011 1.4 D-4D DPF Sport Automatic - EUR 4490"
   }
 ]

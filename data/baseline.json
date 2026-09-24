@@ -1,7 +1,67 @@
 {
-  "scraped_at": "2026-09-23",
+  "scraped_at": "2026-09-24",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 68,
+      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+      "year": 2017,
+      "price": 19990,
+      "price_was": 20990,
+      "on_offer": true,
+      "mileage": 166000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
+      "make": "Audi",
+      "status": "Available"
+    },
+    {
+      "id": 104,
+      "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+      "year": 2013,
+      "price": 7550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 107000,
+      "mileage_unit": "km",
+      "engine": "1.5L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/104/renault-megane-2013-15d-110-gt-line-auto-new-nct",
+      "make": "Renault",
+      "status": "Available"
+    },
+    {
+      "id": 103,
+      "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+      "year": 2018,
+      "price": 16550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 113000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/103/nissan-qashqai-2018-12-petrol-automatic-nct-0328",
+      "make": "Nissan",
+      "status": "Available"
+    },
+    {
+      "id": 76,
+      "title": "Land Rover Discovery Sport 2017",
+      "year": 2017,
+      "price": 17990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 64000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
+      "make": "Land",
+      "status": "Available"
+    },
     {
       "id": 86,
       "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
@@ -105,21 +165,6 @@
       "transmission": "Auto",
       "url": "https://carbarsale.ie/cars/93/bmw-5-series-touring-2012-high-spec-auto-ncttax",
       "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 76,
-      "title": "Land Rover Discovery Sport 2017",
-      "year": 2017,
-      "price": 17990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 64000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/76/land-rover-discovery-sport-2017",
-      "make": "Land",
       "status": "Available"
     },
     {
@@ -240,21 +285,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
       "make": "Volvo",
-      "status": "Available"
-    },
-    {
-      "id": 68,
-      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
-      "year": 2017,
-      "price": 19990,
-      "price_was": 20990,
-      "on_offer": true,
-      "mileage": 166000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
-      "make": "Audi",
       "status": "Available"
     },
     {
@@ -421,45 +451,15 @@
       "url": "https://carbarsale.ie/cars/74/bmw-520d-m-sport-gt-2014-gran-turismo-auto",
       "make": "BMW",
       "status": "Available"
-    },
-    {
-      "id": 72,
-      "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
-      "year": 2013,
-      "price": 6999,
-      "price_was": 7450,
-      "on_offer": true,
-      "mileage": 132000,
-      "mileage_unit": "mi",
-      "engine": "2.2L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/72/mazda-3-22d-gt-2013-automatic-new-nct",
-      "make": "Mazda",
-      "status": "Available"
-    },
-    {
-      "id": 84,
-      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
-      "year": 2009,
-      "price": 3650,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 73000,
-      "mileage_unit": "mi",
-      "engine": "1.8L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/84/vauxhall-astra-2009-18-petrol-automatic-low-km",
-      "make": "Vauxhall",
-      "status": "Available"
     }
   ],
   "stats": {
     "total_cars": 30,
     "available": 29,
     "deposit_taken": 1,
-    "on_offer": 15,
-    "aum_available_eur": 356239,
-    "aum_all_eur": 373189,
-    "avg_price_eur": 12440
+    "on_offer": 14,
+    "aum_available_eur": 369690,
+    "aum_all_eur": 386640,
+    "avg_price_eur": 12888
   }
 }

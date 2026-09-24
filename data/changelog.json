@@ -780,5 +780,35 @@
     "title": "Toyota Auris 2011 1.4 D-4D DPF Sport Automatic",
     "price": 4490,
     "details": "No longer listed (sold or removed): Toyota Auris 2011 1.4 D-4D DPF Sport Automatic - EUR 4490"
+  },
+  {
+    "date": "2026-09-24",
+    "type": "New listing",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "details": "New listing added: Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT - EUR 7550"
+  },
+  {
+    "date": "2026-09-24",
+    "type": "New listing",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "details": "New listing added: Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28 - EUR 16550"
+  },
+  {
+    "date": "2026-09-24",
+    "type": "Sold",
+    "carId": 72,
+    "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
+    "price": 6999,
+    "details": "No longer listed (sold or removed): Mazda 3 2.2D GT 2013 Automatic NEW NCT - EUR 6999"
+  },
+  {
+    "date": "2026-09-24",
+    "type": "Sold",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "price": 3650,
+    "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
   }
 ]

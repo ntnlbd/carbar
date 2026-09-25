@@ -810,5 +810,65 @@
     "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
     "price": 3650,
     "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Price change",
+    "carId": 64,
+    "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+    "details": "Price changed: EUR 35550 -> EUR 29990"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Offer",
+    "carId": 64,
+    "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+    "price": 29990,
+    "details": "On offer: EUR 29990 (down from EUR 35550)"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Price change",
+    "carId": 79,
+    "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
+    "details": "Price changed: EUR 20550 -> EUR 19990"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Offer",
+    "carId": 79,
+    "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
+    "price": 19990,
+    "details": "On offer: EUR 19990 (down from EUR 20550)"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Price change",
+    "carId": 32,
+    "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
+    "details": "Price changed: EUR 10550 -> EUR 9990"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Offer",
+    "carId": 32,
+    "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
+    "price": 9990,
+    "details": "On offer: EUR 9990 (down from EUR 10550)"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "New listing",
+    "carId": 72,
+    "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
+    "details": "New listing added: Mazda 3 2.2D GT 2013 Automatic NEW NCT - EUR 6999"
+  },
+  {
+    "date": "2026-09-25",
+    "type": "Sold",
+    "carId": 76,
+    "title": "Land Rover Discovery Sport 2017",
+    "price": 17990,
+    "details": "No longer listed (sold or removed): Land Rover Discovery Sport 2017 - EUR 17990"
   }
 ]

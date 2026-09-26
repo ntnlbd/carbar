@@ -870,5 +870,50 @@
     "title": "Land Rover Discovery Sport 2017",
     "price": 17990,
     "details": "No longer listed (sold or removed): Land Rover Discovery Sport 2017 - EUR 17990"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "New listing",
+    "carId": 105,
+    "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+    "details": "New listing added: Tesla Model S 85 2015 NEW NCT 10.27 - EUR 16550"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "Price change",
+    "carId": 63,
+    "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+    "details": "Price changed: EUR 16990 -> EUR 16550"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "Offer",
+    "carId": 63,
+    "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+    "price": 16550,
+    "details": "On offer: EUR 16550 (down from EUR 16990)"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "Price change",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "details": "Price changed: EUR 16550 -> EUR 15990"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "Offer",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "price": 15990,
+    "details": "On offer: EUR 15990 (down from EUR 16550)"
+  },
+  {
+    "date": "2026-09-26",
+    "type": "Sold",
+    "carId": 72,
+    "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
+    "price": 6999,
+    "details": "No longer listed (sold or removed): Mazda 3 2.2D GT 2013 Automatic NEW NCT - EUR 6999"
   }
 ]

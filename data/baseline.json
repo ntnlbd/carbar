@@ -1,7 +1,97 @@
 {
-  "scraped_at": "2026-09-25",
+  "scraped_at": "2026-09-26",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 100,
+      "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NCT",
+      "year": 2015,
+      "price": 12550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 118000,
+      "mileage_unit": "km",
+      "engine": "1.6L Petrol",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/100/bmw-1-series-m-sport-2015-high-spec-auto-nct",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 105,
+      "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+      "year": 2015,
+      "price": 16550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 140475,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/105/tesla-model-s-85-2015-new-nct-1027",
+      "make": "Tesla",
+      "status": "Available"
+    },
+    {
+      "id": 93,
+      "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+      "year": 2012,
+      "price": 9550,
+      "price_was": 9990,
+      "on_offer": true,
+      "mileage": 140500,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/93/bmw-5-series-touring-2012-high-spec-auto-ncttax",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 68,
+      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+      "year": 2017,
+      "price": 19990,
+      "price_was": 20990,
+      "on_offer": true,
+      "mileage": 166000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
+      "make": "Audi",
+      "status": "Available"
+    },
+    {
+      "id": 63,
+      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+      "year": 2016,
+      "price": 16550,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 127000,
+      "mileage_unit": "km",
+      "engine": "1.6L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
+      "make": "Mercedes",
+      "status": "Available"
+    },
+    {
+      "id": 103,
+      "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+      "year": 2018,
+      "price": 15990,
+      "price_was": 16550,
+      "on_offer": true,
+      "mileage": 113000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/103/nissan-qashqai-2018-12-petrol-automatic-nct-0328",
+      "make": "Nissan",
+      "status": "Available"
+    },
     {
       "id": 64,
       "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
@@ -48,21 +138,6 @@
       "status": "Available"
     },
     {
-      "id": 93,
-      "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
-      "year": 2012,
-      "price": 9550,
-      "price_was": 9990,
-      "on_offer": true,
-      "mileage": 140500,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/93/bmw-5-series-touring-2012-high-spec-auto-ncttax",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
       "id": 32,
       "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
       "year": 2016,
@@ -78,21 +153,6 @@
       "status": "Available"
     },
     {
-      "id": 68,
-      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
-      "year": 2017,
-      "price": 19990,
-      "price_was": 20990,
-      "on_offer": true,
-      "mileage": 166000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
-      "make": "Audi",
-      "status": "Available"
-    },
-    {
       "id": 104,
       "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
       "year": 2013,
@@ -105,21 +165,6 @@
       "transmission": "Auto",
       "url": "https://carbarsale.ie/cars/104/renault-megane-2013-15d-110-gt-line-auto-new-nct",
       "make": "Renault",
-      "status": "Available"
-    },
-    {
-      "id": 103,
-      "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
-      "year": 2018,
-      "price": 16550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 113000,
-      "mileage_unit": "km",
-      "engine": "1.2L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/103/nissan-qashqai-2018-12-petrol-automatic-nct-0328",
-      "make": "Nissan",
       "status": "Available"
     },
     {
@@ -179,21 +224,6 @@
       "engine": "2.0L Petrol",
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/90/bmw-3-series-2015-2l-petrol-automatic-nct-0527",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 100,
-      "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NCT",
-      "year": 2015,
-      "price": 12550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 118000,
-      "mileage_unit": "km",
-      "engine": "1.6L Petrol",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/100/bmw-1-series-m-sport-2015-high-spec-auto-nct",
       "make": "BMW",
       "status": "Available"
     },
@@ -318,21 +348,6 @@
       "status": "Available"
     },
     {
-      "id": 63,
-      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
-      "year": 2016,
-      "price": 16990,
-      "price_was": 17770,
-      "on_offer": true,
-      "mileage": 127000,
-      "mileage_unit": "km",
-      "engine": "1.6L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
-      "make": "Mercedes",
-      "status": "Available"
-    },
-    {
       "id": 82,
       "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
       "year": 2017,
@@ -436,21 +451,6 @@
       "url": "https://carbarsale.ie/cars/74/bmw-520d-m-sport-gt-2014-gran-turismo-auto",
       "make": "BMW",
       "status": "Available"
-    },
-    {
-      "id": 72,
-      "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
-      "year": 2013,
-      "price": 6999,
-      "price_was": 7450,
-      "on_offer": true,
-      "mileage": 132000,
-      "mileage_unit": "mi",
-      "engine": "2.2L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/72/mazda-3-22d-gt-2013-automatic-new-nct",
-      "make": "Mazda",
-      "status": "Available"
     }
   ],
   "stats": {
@@ -458,8 +458,8 @@
     "available": 29,
     "deposit_taken": 1,
     "on_offer": 16,
-    "aum_available_eur": 352019,
-    "aum_all_eur": 368969,
-    "avg_price_eur": 12299
+    "aum_available_eur": 360570,
+    "aum_all_eur": 377520,
+    "avg_price_eur": 12584
   }
 }

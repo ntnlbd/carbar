@@ -915,5 +915,27 @@
     "title": "Mazda 3 2.2D GT 2013 Automatic NEW NCT",
     "price": 6999,
     "details": "No longer listed (sold or removed): Mazda 3 2.2D GT 2013 Automatic NEW NCT - EUR 6999"
+  },
+  {
+    "date": "2026-09-27",
+    "type": "New listing",
+    "carId": 72,
+    "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
+    "details": "New listing added: \ud83d\udd39DEPOSIT TAKEN\ud83d\udd39 - EUR 6999"
+  },
+  {
+    "date": "2026-09-27",
+    "type": "Status change",
+    "carId": 32,
+    "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-09-27",
+    "type": "Sold",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "price": 12990,
+    "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
   }
 ]

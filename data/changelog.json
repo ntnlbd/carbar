@@ -937,5 +937,65 @@
     "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
     "price": 12990,
     "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "Price change",
+    "carId": 85,
+    "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
+    "details": "Price changed: EUR 3650 -> EUR 3350"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "Offer",
+    "carId": 85,
+    "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
+    "price": 3350,
+    "details": "On offer: EUR 3350 (down from EUR 3650)"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "New listing",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "details": "New listing added: BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "Price change",
+    "carId": 102,
+    "title": "Audi A4 2014  2L Diesel Auto Belt Done NCT 06.27",
+    "details": "Price changed: EUR 7350 -> EUR 6990"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "Offer",
+    "carId": 102,
+    "title": "Audi A4 2014  2L Diesel Auto Belt Done NCT 06.27",
+    "price": 6990,
+    "details": "On offer: EUR 6990 (down from EUR 7350)"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "New listing",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "details": "New listing added: Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "Sold",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "price": 15990,
+    "details": "No longer listed (sold or removed): Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28 - EUR 15990"
+  },
+  {
+    "date": "2026-09-28",
+    "type": "Sold",
+    "carId": 86,
+    "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
+    "price": 16950,
+    "details": "No longer listed (sold or removed): Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto - EUR 16950"
   }
 ]

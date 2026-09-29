@@ -997,5 +997,65 @@
     "title": "Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto",
     "price": 16950,
     "details": "No longer listed (sold or removed): Peugeot 5008 Allure 7 Seats 2018 1.2 Petrol Auto - EUR 16950"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "New listing",
+    "carId": 107,
+    "title": "BMW X1 2014 sDrive16d SE 2L Diesel New NCT booked",
+    "details": "New listing added: BMW X1 2014 sDrive16d SE 2L Diesel New NCT booked - EUR 6990"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "Price change",
+    "carId": 90,
+    "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
+    "details": "Price changed: EUR 11950 -> EUR 10990"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "Offer",
+    "carId": 90,
+    "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
+    "price": 10990,
+    "details": "On offer: EUR 10990 (down from EUR 11950)"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "New listing",
+    "carId": 106,
+    "title": "BMW 530  M SPORT 2018 2L Plug-in Hybrid NEW NCT",
+    "details": "New listing added: BMW 530  M SPORT 2018 2L Plug-in Hybrid NEW NCT - EUR 18550"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "New listing",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "details": "New listing added: Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28 - EUR 15990"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "Sold",
+    "carId": 75,
+    "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+    "price": 14990,
+    "details": "No longer listed (sold or removed): Honda Civic 2017 1L Petrol Automatic LOW KM - EUR 14990"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "Sold",
+    "carId": 98,
+    "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
+    "price": 3850,
+    "details": "No longer listed (sold or removed): Volkswagen Golf 2011 Estate 1.6 Diesel New NCT - EUR 3850"
+  },
+  {
+    "date": "2026-09-29",
+    "type": "Sold",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "price": 7550,
+    "details": "No longer listed (sold or removed): Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT - EUR 7550"
   }
 ]

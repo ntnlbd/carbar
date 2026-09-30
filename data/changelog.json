@@ -1057,5 +1057,35 @@
     "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
     "price": 7550,
     "details": "No longer listed (sold or removed): Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT - EUR 7550"
+  },
+  {
+    "date": "2026-09-30",
+    "type": "Price change",
+    "carId": 91,
+    "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+    "details": "Price changed: EUR 5550 -> EUR 4990"
+  },
+  {
+    "date": "2026-09-30",
+    "type": "Offer",
+    "carId": 91,
+    "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+    "price": 4990,
+    "details": "On offer: EUR 4990 (down from EUR 5550)"
+  },
+  {
+    "date": "2026-09-30",
+    "type": "New listing",
+    "carId": 108,
+    "title": "Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28",
+    "details": "New listing added: Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28 - EUR 11990"
+  },
+  {
+    "date": "2026-09-30",
+    "type": "Sold",
+    "carId": 32,
+    "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
+    "price": 9990,
+    "details": "No longer listed (sold or removed): Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE - EUR 9990"
   }
 ]

@@ -1087,5 +1087,20 @@
     "title": "Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE",
     "price": 9990,
     "details": "No longer listed (sold or removed): Mazda CX-5 2016 2.2L Diesel Automatic Chain DONE - EUR 9990"
+  },
+  {
+    "date": "2026-10-01",
+    "type": "New listing",
+    "carId": 109,
+    "title": "Peugeot 2008 2016 Auto 1.2 Puretech 110bhp  LOW KM",
+    "details": "New listing added: Peugeot 2008 2016 Auto 1.2 Puretech 110bhp  LOW KM - EUR 8550"
+  },
+  {
+    "date": "2026-10-01",
+    "type": "Sold",
+    "carId": 106,
+    "title": "BMW 530  M SPORT 2018 2L Plug-in Hybrid NEW NCT",
+    "price": 18550,
+    "details": "No longer listed (sold or removed): BMW 530  M SPORT 2018 2L Plug-in Hybrid NEW NCT - EUR 18550"
   }
 ]

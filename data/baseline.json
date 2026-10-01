@@ -1,7 +1,82 @@
 {
-  "scraped_at": "2026-09-30",
+  "scraped_at": "2026-10-01",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 108,
+      "title": "Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28",
+      "year": 2018,
+      "price": 11990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 100000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/108/jaguar-xf-2018-r-sport-2l-diesel-180hp-nct-0128",
+      "make": "Jaguar",
+      "status": "Available"
+    },
+    {
+      "id": 109,
+      "title": "Peugeot 2008 2016 Auto 1.2 Puretech 110bhp  LOW KM",
+      "year": 2016,
+      "price": 8550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 70000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/109/peugeot-2008-2016-auto-12-puretech-110bhp-low-km",
+      "make": "Peugeot",
+      "status": "Available"
+    },
+    {
+      "id": 95,
+      "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+      "year": 2016,
+      "price": 27550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 163000,
+      "mileage_unit": "km",
+      "engine": "2.0L Petrol Plug-in Hybrid",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
+      "make": "Volvo",
+      "status": "Available"
+    },
+    {
+      "id": 93,
+      "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+      "year": 2012,
+      "price": 9550,
+      "price_was": 9990,
+      "on_offer": true,
+      "mileage": 140500,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/93/bmw-5-series-touring-2012-high-spec-auto-ncttax",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 68,
+      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+      "year": 2017,
+      "price": 19990,
+      "price_was": 20990,
+      "on_offer": true,
+      "mileage": 166000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
+      "make": "Audi",
+      "status": "Available"
+    },
     {
       "id": 91,
       "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
@@ -48,21 +123,6 @@
       "status": "Available"
     },
     {
-      "id": 108,
-      "title": "Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28",
-      "year": 2018,
-      "price": 11990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 100000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/108/jaguar-xf-2018-r-sport-2l-diesel-180hp-nct-0128",
-      "make": "Jaguar",
-      "status": "Available"
-    },
-    {
       "id": 63,
       "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
       "year": 2016,
@@ -78,21 +138,6 @@
       "status": "Available"
     },
     {
-      "id": 95,
-      "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
-      "year": 2016,
-      "price": 27550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 163000,
-      "mileage_unit": "km",
-      "engine": "2.0L Petrol Plug-in Hybrid",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
-      "make": "Volvo",
-      "status": "Available"
-    },
-    {
       "id": 107,
       "title": "BMW X1 2014 sDrive16d SE 2L Diesel New NCT booked",
       "year": 2014,
@@ -104,21 +149,6 @@
       "engine": "2.0L Diesel",
       "transmission": "",
       "url": "https://carbarsale.ie/cars/107/bmw-x1-2014-sdrive16d-se-2l-diesel-new-nct-booked",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 106,
-      "title": "BMW 530  M SPORT 2018 2L Plug-in Hybrid NEW NCT",
-      "year": 2018,
-      "price": 18550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 163000,
-      "mileage_unit": "km",
-      "engine": "2.0L Petrol Plug-in Hybrid",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/106/bmw-530-m-sport-2018-2l-plug-in-hybrid-new-nct",
       "make": "BMW",
       "status": "Available"
     },
@@ -348,21 +378,6 @@
       "status": "Available"
     },
     {
-      "id": 93,
-      "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
-      "year": 2012,
-      "price": 9550,
-      "price_was": 9990,
-      "on_offer": true,
-      "mileage": 140500,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/93/bmw-5-series-touring-2012-high-spec-auto-ncttax",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
       "id": 24,
       "title": "Mercedes B-Class 2014 1.8D NEW NCT",
       "year": 2014,
@@ -408,21 +423,6 @@
       "status": "Available"
     },
     {
-      "id": 68,
-      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
-      "year": 2017,
-      "price": 19990,
-      "price_was": 20990,
-      "on_offer": true,
-      "mileage": 166000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
-      "make": "Audi",
-      "status": "Available"
-    },
-    {
       "id": 84,
       "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
       "year": 2009,
@@ -458,8 +458,8 @@
     "available": 29,
     "deposit_taken": 1,
     "on_offer": 19,
-    "aum_available_eur": 363190,
-    "aum_all_eur": 370189,
-    "avg_price_eur": 12340
+    "aum_available_eur": 353190,
+    "aum_all_eur": 360189,
+    "avg_price_eur": 12006
   }
 }

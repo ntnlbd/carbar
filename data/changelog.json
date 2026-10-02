@@ -1102,5 +1102,65 @@
     "title": "BMW 530  M SPORT 2018 2L Plug-in Hybrid NEW NCT",
     "price": 18550,
     "details": "No longer listed (sold or removed): BMW 530  M SPORT 2018 2L Plug-in Hybrid NEW NCT - EUR 18550"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "New listing",
+    "carId": 110,
+    "title": "Mini Cooper 2011 JCW 2L Diesel Auto NCT LOW KM",
+    "details": "New listing added: Mini Cooper 2011 JCW 2L Diesel Auto NCT LOW KM - EUR 9990"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "Price change",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "details": "Price changed: EUR 9550 -> EUR 8990"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "Offer",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "price": 8990,
+    "details": "On offer: EUR 8990 (down from EUR 9550)"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "New listing",
+    "carId": 111,
+    "title": "Audi e-tron 2020 50 Quattro Advance 73kWh NCT book",
+    "details": "New listing added: Audi e-tron 2020 50 Quattro Advance 73kWh NCT book - EUR 18550"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "Price change",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "details": "Price changed: EUR 15990 -> EUR 14990"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "Offer",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "price": 14990,
+    "details": "On offer: EUR 14990 (down from EUR 15990)"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "Sold",
+    "carId": 62,
+    "title": "Porsche Cayenne 2012 3L Diesel NCT&amp;TAX",
+    "price": 20990,
+    "details": "No longer listed (sold or removed): Porsche Cayenne 2012 3L Diesel NCT&amp;TAX - EUR 20990"
+  },
+  {
+    "date": "2026-10-02",
+    "type": "Sold",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "price": 3650,
+    "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
   }
 ]

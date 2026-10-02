@@ -1,7 +1,127 @@
 {
-  "scraped_at": "2026-10-01",
+  "scraped_at": "2026-10-02",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 63,
+      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+      "year": 2016,
+      "price": 16550,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 127000,
+      "mileage_unit": "km",
+      "engine": "1.6L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
+      "make": "Mercedes",
+      "status": "Available"
+    },
+    {
+      "id": 110,
+      "title": "Mini Cooper 2011 JCW 2L Diesel Auto NCT LOW KM",
+      "year": 2011,
+      "price": 9990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 116000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/110/mini-cooper-2011-jcw-2l-diesel-auto-nct-low-km",
+      "make": "Mini",
+      "status": "Available"
+    },
+    {
+      "id": 79,
+      "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
+      "year": 2017,
+      "price": 19990,
+      "price_was": 20550,
+      "on_offer": true,
+      "mileage": 177000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/79/mercedes-e-class-2017-amg-21l-diesel-auto-nct-tax",
+      "make": "Mercedes",
+      "status": "Available"
+    },
+    {
+      "id": 64,
+      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+      "year": 2018,
+      "price": 29990,
+      "price_was": 35550,
+      "on_offer": true,
+      "mileage": 110000,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
+      "make": "Tesla",
+      "status": "Available"
+    },
+    {
+      "id": 93,
+      "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+      "year": 2012,
+      "price": 8990,
+      "price_was": 9550,
+      "on_offer": true,
+      "mileage": 140500,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/93/bmw-5-series-touring-2012-high-spec-auto-ncttax",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 111,
+      "title": "Audi e-tron 2020 50 Quattro Advance 73kWh NCT book",
+      "year": 2020,
+      "price": 18550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 159000,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/111/audi-e-tron-2020-50-quattro-advance-73kwh-nct-book",
+      "make": "Audi",
+      "status": "Available"
+    },
+    {
+      "id": 103,
+      "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+      "year": 2018,
+      "price": 14990,
+      "price_was": 15990,
+      "on_offer": true,
+      "mileage": 113000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/103/nissan-qashqai-2018-12-petrol-automatic-nct-0328",
+      "make": "Nissan",
+      "status": "Available"
+    },
+    {
+      "id": 78,
+      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
+      "year": 2016,
+      "price": 15990,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 77000,
+      "mileage_unit": "km",
+      "engine": "1.4L Petrol Plug-in Hybrid",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
     {
       "id": 108,
       "title": "Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28",
@@ -45,21 +165,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
       "make": "Volvo",
-      "status": "Available"
-    },
-    {
-      "id": 93,
-      "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
-      "year": 2012,
-      "price": 9550,
-      "price_was": 9990,
-      "on_offer": true,
-      "mileage": 140500,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/93/bmw-5-series-touring-2012-high-spec-auto-ncttax",
-      "make": "BMW",
       "status": "Available"
     },
     {
@@ -123,21 +228,6 @@
       "status": "Available"
     },
     {
-      "id": 63,
-      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
-      "year": 2016,
-      "price": 16550,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 127000,
-      "mileage_unit": "km",
-      "engine": "1.6L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
-      "make": "Mercedes",
-      "status": "Available"
-    },
-    {
       "id": 107,
       "title": "BMW X1 2014 sDrive16d SE 2L Diesel New NCT booked",
       "year": 2014,
@@ -150,21 +240,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/107/bmw-x1-2014-sdrive16d-se-2l-diesel-new-nct-booked",
       "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 103,
-      "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
-      "year": 2018,
-      "price": 15990,
-      "price_was": 16550,
-      "on_offer": true,
-      "mileage": 113000,
-      "mileage_unit": "km",
-      "engine": "1.2L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/103/nissan-qashqai-2018-12-petrol-automatic-nct-0328",
-      "make": "Nissan",
       "status": "Available"
     },
     {
@@ -213,21 +288,6 @@
       "status": "Available"
     },
     {
-      "id": 78,
-      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
-      "year": 2016,
-      "price": 15990,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 77000,
-      "mileage_unit": "km",
-      "engine": "1.4L Petrol Plug-in Hybrid",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
-      "make": "Volkswagen",
-      "status": "Available"
-    },
-    {
       "id": 105,
       "title": "Tesla Model S 85 2015 NEW NCT 10.27",
       "year": 2015,
@@ -273,21 +333,6 @@
       "status": "Available"
     },
     {
-      "id": 62,
-      "title": "Porsche Cayenne 2012 3L Diesel NCT&amp;TAX",
-      "year": 2012,
-      "price": 20990,
-      "price_was": 21550,
-      "on_offer": true,
-      "mileage": 116000,
-      "mileage_unit": "mi",
-      "engine": "3.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/62/porsche-cayenne-2012-3l-diesel-ncttax",
-      "make": "Porsche",
-      "status": "Available"
-    },
-    {
       "id": 1,
       "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
       "year": 2014,
@@ -300,21 +345,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/1/vauxhall-mokka-2014-17d-manual-high-spec-new-nct",
       "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
-      "id": 64,
-      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
-      "year": 2018,
-      "price": 29990,
-      "price_was": 35550,
-      "on_offer": true,
-      "mileage": 110000,
-      "mileage_unit": "km",
-      "engine": "L Electric",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
-      "make": "Tesla",
       "status": "Available"
     },
     {
@@ -421,45 +451,15 @@
       "url": "https://carbarsale.ie/cars/96/audi-q2-2017-16-diesel-automatic-nct",
       "make": "Audi",
       "status": "Available"
-    },
-    {
-      "id": 84,
-      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
-      "year": 2009,
-      "price": 3650,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 73000,
-      "mileage_unit": "mi",
-      "engine": "1.8L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/84/vauxhall-astra-2009-18-petrol-automatic-low-km",
-      "make": "Vauxhall",
-      "status": "Available"
-    },
-    {
-      "id": 79,
-      "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
-      "year": 2017,
-      "price": 19990,
-      "price_was": 20550,
-      "on_offer": true,
-      "mileage": 177000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/79/mercedes-e-class-2017-amg-21l-diesel-auto-nct-tax",
-      "make": "Mercedes",
-      "status": "Available"
     }
   ],
   "stats": {
     "total_cars": 30,
     "available": 29,
     "deposit_taken": 1,
-    "on_offer": 19,
-    "aum_available_eur": 353190,
-    "aum_all_eur": 360189,
-    "avg_price_eur": 12006
+    "on_offer": 18,
+    "aum_available_eur": 355530,
+    "aum_all_eur": 362529,
+    "avg_price_eur": 12084
   }
 }

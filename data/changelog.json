@@ -1162,5 +1162,35 @@
     "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
     "price": 3650,
     "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-10-03",
+    "type": "Price change",
+    "carId": 85,
+    "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
+    "details": "Price changed: EUR 3350 -> EUR 2990"
+  },
+  {
+    "date": "2026-10-03",
+    "type": "Offer",
+    "carId": 85,
+    "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
+    "price": 2990,
+    "details": "On offer: EUR 2990 (down from EUR 3350)"
+  },
+  {
+    "date": "2026-10-03",
+    "type": "New listing",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "details": "New listing added: Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-10-03",
+    "type": "Sold",
+    "carId": 80,
+    "title": "Saab 2L PetrolAutomatic NEW NCT",
+    "price": 1990,
+    "details": "No longer listed (sold or removed): Saab 2L PetrolAutomatic NEW NCT - EUR 1990"
   }
 ]

@@ -1,7 +1,82 @@
 {
-  "scraped_at": "2026-10-02",
+  "scraped_at": "2026-10-03",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 85,
+      "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
+      "year": 2008,
+      "price": 2990,
+      "price_was": 3350,
+      "on_offer": true,
+      "mileage": 219114,
+      "mileage_unit": "km",
+      "engine": "2.1L Diesel",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/85/mercedes-c-class-2008-21l-diesel-automatic",
+      "make": "Mercedes",
+      "status": "Available"
+    },
+    {
+      "id": 84,
+      "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+      "year": 2009,
+      "price": 3650,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 73000,
+      "mileage_unit": "mi",
+      "engine": "1.8L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/84/vauxhall-astra-2009-18-petrol-automatic-low-km",
+      "make": "Vauxhall",
+      "status": "Available"
+    },
+    {
+      "id": 111,
+      "title": "Audi e-tron 2020 50 Quattro Advance 73kWh NCT book",
+      "year": 2020,
+      "price": 18550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 159000,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/111/audi-e-tron-2020-50-quattro-advance-73kwh-nct-book",
+      "make": "Audi",
+      "status": "Available"
+    },
+    {
+      "id": 89,
+      "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+      "year": 2013,
+      "price": 5990,
+      "price_was": 6750,
+      "on_offer": true,
+      "mileage": 184483,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
+      "make": "Ford",
+      "status": "Available"
+    },
+    {
+      "id": 68,
+      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+      "year": 2017,
+      "price": 19990,
+      "price_was": 20990,
+      "on_offer": true,
+      "mileage": 166000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
+      "make": "Audi",
+      "status": "Available"
+    },
     {
       "id": 63,
       "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
@@ -78,21 +153,6 @@
       "status": "Available"
     },
     {
-      "id": 111,
-      "title": "Audi e-tron 2020 50 Quattro Advance 73kWh NCT book",
-      "year": 2020,
-      "price": 18550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 159000,
-      "mileage_unit": "km",
-      "engine": "L Electric",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/111/audi-e-tron-2020-50-quattro-advance-73kwh-nct-book",
-      "make": "Audi",
-      "status": "Available"
-    },
-    {
       "id": 103,
       "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
       "year": 2018,
@@ -165,21 +225,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/95/volvo-xc90-t8-2lplug-in-hybrid-momentum-geartronic",
       "make": "Volvo",
-      "status": "Available"
-    },
-    {
-      "id": 68,
-      "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
-      "year": 2017,
-      "price": 19990,
-      "price_was": 20990,
-      "on_offer": true,
-      "mileage": 166000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/68/audi-a5-2017-s-line-2l-diesel-ncttax",
-      "make": "Audi",
       "status": "Available"
     },
     {
@@ -303,21 +348,6 @@
       "status": "Available"
     },
     {
-      "id": 85,
-      "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
-      "year": 2008,
-      "price": 3350,
-      "price_was": 3650,
-      "on_offer": true,
-      "mileage": 219114,
-      "mileage_unit": "km",
-      "engine": "2.1L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/85/mercedes-c-class-2008-21l-diesel-automatic",
-      "make": "Mercedes",
-      "status": "Available"
-    },
-    {
       "id": 74,
       "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
       "year": 2014,
@@ -363,21 +393,6 @@
       "status": "Available"
     },
     {
-      "id": 80,
-      "title": "Saab 2L PetrolAutomatic NEW NCT",
-      "year": 2004,
-      "price": 1990,
-      "price_was": 2350,
-      "on_offer": true,
-      "mileage": 227000,
-      "mileage_unit": "km",
-      "engine": "2.0L Petrol",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/80/saab-2l-petrolautomatic-new-nct",
-      "make": "Saab",
-      "status": "Available"
-    },
-    {
       "id": 72,
       "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
       "year": 2013,
@@ -391,21 +406,6 @@
       "url": "https://carbarsale.ie/cars/72/deposit-taken",
       "make": "Unknown",
       "status": "Deposit Taken"
-    },
-    {
-      "id": 89,
-      "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
-      "year": 2013,
-      "price": 5990,
-      "price_was": 6750,
-      "on_offer": true,
-      "mileage": 184483,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
-      "make": "Ford",
-      "status": "Available"
     },
     {
       "id": 24,
@@ -457,9 +457,9 @@
     "total_cars": 30,
     "available": 29,
     "deposit_taken": 1,
-    "on_offer": 18,
-    "aum_available_eur": 355530,
-    "aum_all_eur": 362529,
-    "avg_price_eur": 12084
+    "on_offer": 17,
+    "aum_available_eur": 356830,
+    "aum_all_eur": 363829,
+    "avg_price_eur": 12128
   }
 }

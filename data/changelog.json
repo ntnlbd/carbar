@@ -1192,5 +1192,20 @@
     "title": "Saab 2L PetrolAutomatic NEW NCT",
     "price": 1990,
     "details": "No longer listed (sold or removed): Saab 2L PetrolAutomatic NEW NCT - EUR 1990"
+  },
+  {
+    "date": "2026-10-04",
+    "type": "New listing",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "details": "New listing added: Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT - EUR 7550"
+  },
+  {
+    "date": "2026-10-04",
+    "type": "Sold",
+    "carId": 100,
+    "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NCT",
+    "price": 12550,
+    "details": "No longer listed (sold or removed): BMW 1-Series M SPORT 2015 High Spec. Auto NCT - EUR 12550"
   }
 ]

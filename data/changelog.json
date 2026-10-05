@@ -1207,5 +1207,20 @@
     "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NCT",
     "price": 12550,
     "details": "No longer listed (sold or removed): BMW 1-Series M SPORT 2015 High Spec. Auto NCT - EUR 12550"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "New listing",
+    "carId": 100,
+    "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NCT",
+    "details": "New listing added: BMW 1-Series M SPORT 2015 High Spec. Auto NCT - EUR 12550"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "Sold",
+    "carId": 85,
+    "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
+    "price": 2990,
+    "details": "No longer listed (sold or removed): Mercedes C-Class 2008 2.1L Diesel Automatic - EUR 2990"
   }
 ]

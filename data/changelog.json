@@ -1222,5 +1222,20 @@
     "title": "Mercedes C-Class 2008 2.1L Diesel Automatic",
     "price": 2990,
     "details": "No longer listed (sold or removed): Mercedes C-Class 2008 2.1L Diesel Automatic - EUR 2990"
+  },
+  {
+    "date": "2026-10-06",
+    "type": "New listing",
+    "carId": 113,
+    "title": "Toyota Avensis 2009 2L D-4D Terra Manual low KM",
+    "details": "New listing added: Toyota Avensis 2009 2L D-4D Terra Manual low KM - EUR 3850"
+  },
+  {
+    "date": "2026-10-06",
+    "type": "Sold",
+    "carId": 100,
+    "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NCT",
+    "price": 12550,
+    "details": "No longer listed (sold or removed): BMW 1-Series M SPORT 2015 High Spec. Auto NCT - EUR 12550"
   }
 ]

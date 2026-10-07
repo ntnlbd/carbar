@@ -518,5 +518,15 @@
     "aumAvailable": 352690,
     "aumAll": 359689,
     "avgPrice": 11990
+  },
+  {
+    "date": "2026-10-07",
+    "total": 30,
+    "available": 28,
+    "depositTaken": 2,
+    "onOffer": 15,
+    "aumAvailable": 337440,
+    "aumAll": 348429,
+    "avgPrice": 11614
   }
 ]

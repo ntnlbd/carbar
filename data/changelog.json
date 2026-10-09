@@ -1417,5 +1417,20 @@
     "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
     "price": 12990,
     "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "New listing",
+    "carId": 64,
+    "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+    "details": "New listing added: Tesla Model X 2018 100D 100kWh NEW NCT - EUR 29990"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "Sold",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "price": 7550,
+    "details": "No longer listed (sold or removed): Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT - EUR 7550"
   }
 ]

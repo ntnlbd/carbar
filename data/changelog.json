@@ -1432,5 +1432,20 @@
     "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
     "price": 7550,
     "details": "No longer listed (sold or removed): Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT - EUR 7550"
+  },
+  {
+    "date": "2026-10-10",
+    "type": "New listing",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "details": "New listing added: Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT - EUR 7550"
+  },
+  {
+    "date": "2026-10-10",
+    "type": "Sold",
+    "carId": 24,
+    "title": "Mercedes B-Class 2014 1.8D NEW NCT",
+    "price": 8990,
+    "details": "No longer listed (sold or removed): Mercedes B-Class 2014 1.8D NEW NCT - EUR 8990"
   }
 ]

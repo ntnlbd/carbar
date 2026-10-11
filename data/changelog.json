@@ -1447,5 +1447,35 @@
     "title": "Mercedes B-Class 2014 1.8D NEW NCT",
     "price": 8990,
     "details": "No longer listed (sold or removed): Mercedes B-Class 2014 1.8D NEW NCT - EUR 8990"
+  },
+  {
+    "date": "2026-10-11",
+    "type": "New listing",
+    "carId": 82,
+    "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
+    "details": "New listing added: Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done - EUR 13950"
+  },
+  {
+    "date": "2026-10-11",
+    "type": "New listing",
+    "carId": 24,
+    "title": "Mercedes B-Class 2014 1.8D NEW NCT",
+    "details": "New listing added: Mercedes B-Class 2014 1.8D NEW NCT - EUR 8550"
+  },
+  {
+    "date": "2026-10-11",
+    "type": "Sold",
+    "carId": 115,
+    "title": "BMW 520 2L Diesel 2015 Auto NEW NCT",
+    "price": 8990,
+    "details": "No longer listed (sold or removed): BMW 520 2L Diesel 2015 Auto NEW NCT - EUR 8990"
+  },
+  {
+    "date": "2026-10-11",
+    "type": "Sold",
+    "carId": 4,
+    "title": "BMW 1-Series 2013 1.6 Petrol NEW Chain NEW NCT",
+    "price": 6990,
+    "details": "No longer listed (sold or removed): BMW 1-Series 2013 1.6 Petrol NEW Chain NEW NCT - EUR 6990"
   }
 ]

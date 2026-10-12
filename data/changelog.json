@@ -1477,5 +1477,35 @@
     "title": "BMW 1-Series 2013 1.6 Petrol NEW Chain NEW NCT",
     "price": 6990,
     "details": "No longer listed (sold or removed): BMW 1-Series 2013 1.6 Petrol NEW Chain NEW NCT - EUR 6990"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "New listing",
+    "carId": 109,
+    "title": "\ud83d\udd39DEPOSIT TAKEN \ud83d\udd39",
+    "details": "New listing added: \ud83d\udd39DEPOSIT TAKEN \ud83d\udd39 - EUR 8550"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "New listing",
+    "carId": 36,
+    "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+    "details": "New listing added: BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT - EUR 12550"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "Sold",
+    "carId": 105,
+    "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+    "price": 16550,
+    "details": "No longer listed (sold or removed): Tesla Model S 85 2015 NEW NCT 10.27 - EUR 16550"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "Sold",
+    "carId": 91,
+    "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+    "price": 4990,
+    "details": "No longer listed (sold or removed): Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT - EUR 4990"
   }
 ]

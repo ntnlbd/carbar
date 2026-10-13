@@ -1,7 +1,67 @@
 {
-  "scraped_at": "2026-10-12",
+  "scraped_at": "2026-10-13",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 114,
+      "title": "Toyota Yaris 2022 Automatic 1L Petrol NCT 07.28",
+      "year": 2022,
+      "price": 15990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 52000,
+      "mileage_unit": "km",
+      "engine": "1.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/114/toyota-yaris-2022-automatic-1l-petrol-nct-0728",
+      "make": "Toyota",
+      "status": "Available"
+    },
+    {
+      "id": 64,
+      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+      "year": 2018,
+      "price": 29990,
+      "price_was": 35550,
+      "on_offer": true,
+      "mileage": 110000,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
+      "make": "Tesla",
+      "status": "Available"
+    },
+    {
+      "id": 118,
+      "title": "Mercedes 180 COUPE SPORT 2012 Automatic SunRoof",
+      "year": 2012,
+      "price": 8550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 147000,
+      "mileage_unit": "km",
+      "engine": "1.8L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/118/mercedes-180-coupe-sport-2012-automatic-sunroof",
+      "make": "Mercedes",
+      "status": "Available"
+    },
+    {
+      "id": 78,
+      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
+      "year": 2016,
+      "price": 15990,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 77000,
+      "mileage_unit": "km",
+      "engine": "1.4L Petrol Plug-in Hybrid",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
     {
       "id": 109,
       "title": "\ud83d\udd39DEPOSIT TAKEN \ud83d\udd39",
@@ -45,21 +105,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/113/toyota-avensis-2009-2l-d-4d-terra-manual-low-km",
       "make": "Toyota",
-      "status": "Available"
-    },
-    {
-      "id": 78,
-      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
-      "year": 2016,
-      "price": 15990,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 77000,
-      "mileage_unit": "km",
-      "engine": "1.4L Petrol Plug-in Hybrid",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
-      "make": "Volkswagen",
       "status": "Available"
     },
     {
@@ -180,21 +225,6 @@
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/116/bmw-5-series-2011-2l-diesel-automatic-ncttax",
       "make": "BMW",
-      "status": "Available"
-    },
-    {
-      "id": 64,
-      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
-      "year": 2018,
-      "price": 29990,
-      "price_was": 35550,
-      "on_offer": true,
-      "mileage": 110000,
-      "mileage_unit": "km",
-      "engine": "L Electric",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
-      "make": "Tesla",
       "status": "Available"
     },
     {
@@ -333,21 +363,6 @@
       "status": "Available"
     },
     {
-      "id": 108,
-      "title": "Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28",
-      "year": 2018,
-      "price": 11990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 100000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/108/jaguar-xf-2018-r-sport-2l-diesel-180hp-nct-0128",
-      "make": "Jaguar",
-      "status": "Available"
-    },
-    {
       "id": 92,
       "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
       "year": 2012,
@@ -378,21 +393,6 @@
       "status": "Available"
     },
     {
-      "id": 114,
-      "title": "Toyota Yaris 2022 Automatic 1L Petrol NCT 07.28",
-      "year": 2022,
-      "price": 15990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 52000,
-      "mileage_unit": "km",
-      "engine": "1.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/114/toyota-yaris-2022-automatic-1l-petrol-nct-0728",
-      "make": "Toyota",
-      "status": "Available"
-    },
-    {
       "id": 75,
       "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
       "year": 2017,
@@ -406,21 +406,6 @@
       "url": "https://carbarsale.ie/cars/75/honda-civic-2017-1l-petrol-automatic-low-km",
       "make": "Honda",
       "status": "Available"
-    },
-    {
-      "id": 112,
-      "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
-      "year": 2010,
-      "price": 3990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 158000,
-      "mileage_unit": "km",
-      "engine": "1.6L Petrol",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/112/deposit-taken",
-      "make": "Unknown",
-      "status": "Deposit Taken"
     },
     {
       "id": 102,
@@ -451,15 +436,30 @@
       "url": "https://carbarsale.ie/cars/90/bmw-3-series-2015-2l-petrol-automatic-nct-0527",
       "make": "BMW",
       "status": "Available"
+    },
+    {
+      "id": 105,
+      "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+      "year": 2015,
+      "price": 16550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 140475,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/105/tesla-model-s-85-2015-new-nct-1027",
+      "make": "Tesla",
+      "status": "Available"
     }
   ],
   "stats": {
     "total_cars": 30,
-    "available": 28,
-    "deposit_taken": 2,
+    "available": 29,
+    "deposit_taken": 1,
     "on_offer": 14,
-    "aum_available_eur": 345560,
-    "aum_all_eur": 358100,
-    "avg_price_eur": 11937
+    "aum_available_eur": 358670,
+    "aum_all_eur": 367220,
+    "avg_price_eur": 12241
   }
 }

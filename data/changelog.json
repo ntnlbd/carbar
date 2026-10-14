@@ -1537,5 +1537,50 @@
     "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
     "price": 3990,
     "details": "No longer listed (sold or removed): \ud83d\udd39DEPOSIT TAKEN\ud83d\udd39 - EUR 3990"
+  },
+  {
+    "date": "2026-10-14",
+    "type": "New listing",
+    "carId": 100,
+    "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NEW NCT",
+    "details": "New listing added: BMW 1-Series M SPORT 2015 High Spec. Auto NEW NCT - EUR 12550"
+  },
+  {
+    "date": "2026-10-14",
+    "type": "Price change",
+    "carId": 96,
+    "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
+    "details": "Price changed: EUR 13550 -> EUR 12990"
+  },
+  {
+    "date": "2026-10-14",
+    "type": "Offer",
+    "carId": 96,
+    "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
+    "price": 12990,
+    "details": "On offer: EUR 12990 (down from EUR 13550)"
+  },
+  {
+    "date": "2026-10-14",
+    "type": "Price change",
+    "carId": 95,
+    "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+    "details": "Price changed: EUR 27550 -> EUR 25990"
+  },
+  {
+    "date": "2026-10-14",
+    "type": "Offer",
+    "carId": 95,
+    "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+    "price": 25990,
+    "details": "On offer: EUR 25990 (down from EUR 27550)"
+  },
+  {
+    "date": "2026-10-14",
+    "type": "Sold",
+    "carId": 105,
+    "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+    "price": 16550,
+    "details": "No longer listed (sold or removed): Tesla Model S 85 2015 NEW NCT 10.27 - EUR 16550"
   }
 ]

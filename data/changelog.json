@@ -1582,5 +1582,42 @@
     "title": "Tesla Model S 85 2015 NEW NCT 10.27",
     "price": 16550,
     "details": "No longer listed (sold or removed): Tesla Model S 85 2015 NEW NCT 10.27 - EUR 16550"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "New listing",
+    "carId": 120,
+    "title": "Peugeot 308 2014 1.2 Petrol Manual NEW NCT LOW KM",
+    "details": "New listing added: Peugeot 308 2014 1.2 Petrol Manual NEW NCT LOW KM - EUR 5550"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "New listing",
+    "carId": 121,
+    "title": "Kia Ceed 2012 1.6 Diesel LOW KM NEW NCT Booked",
+    "details": "New listing added: Kia Ceed 2012 1.6 Diesel LOW KM NEW NCT Booked - EUR 4450"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "Status change",
+    "carId": 102,
+    "title": "Audi A4 2014  2L Diesel Auto Belt Done NCT 06.27",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "Sold",
+    "carId": 75,
+    "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+    "price": 14990,
+    "details": "No longer listed (sold or removed): Honda Civic 2017 1L Petrol Automatic LOW KM - EUR 14990"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "Sold",
+    "carId": 90,
+    "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
+    "price": 10990,
+    "details": "No longer listed (sold or removed): BMW 3-Series 2015 2L Petrol Automatic NCT 05.27 - EUR 10990"
   }
 ]

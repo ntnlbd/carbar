@@ -1619,5 +1619,95 @@
     "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
     "price": 10990,
     "details": "No longer listed (sold or removed): BMW 3-Series 2015 2L Petrol Automatic NCT 05.27 - EUR 10990"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "New listing",
+    "carId": 4,
+    "title": "BMW 1-Series 2013 1.6 Petrol NEW Chain NEW NCT",
+    "details": "New listing added: BMW 1-Series 2013 1.6 Petrol NEW Chain NEW NCT - EUR 6990"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "New listing",
+    "carId": 105,
+    "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+    "details": "New listing added: Tesla Model S 85 2015 NEW NCT 10.27 - EUR 16550"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "New listing",
+    "carId": 91,
+    "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+    "details": "New listing added: Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT - EUR 4990"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "New listing",
+    "carId": 75,
+    "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+    "details": "New listing added: Honda Civic 2017 1L Petrol Automatic LOW KM - EUR 14990"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "New listing",
+    "carId": 119,
+    "title": "Volkswagen Golf 2008 1.4 Petrol Manual NCT",
+    "details": "New listing added: Volkswagen Golf 2008 1.4 Petrol Manual NCT - EUR 3350"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "New listing",
+    "carId": 98,
+    "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
+    "details": "New listing added: Volkswagen Golf 2011 Estate 1.6 Diesel New NCT - EUR 3850"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "Sold",
+    "carId": 121,
+    "title": "Kia Ceed 2012 1.6 Diesel LOW KM NEW NCT Booked",
+    "price": 4450,
+    "details": "No longer listed (sold or removed): Kia Ceed 2012 1.6 Diesel LOW KM NEW NCT Booked - EUR 4450"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "Sold",
+    "carId": 118,
+    "title": "Mercedes 180 COUPE SPORT 2012 Automatic SunRoof",
+    "price": 8550,
+    "details": "No longer listed (sold or removed): Mercedes 180 COUPE SPORT 2012 Automatic SunRoof - EUR 8550"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "Sold",
+    "carId": 109,
+    "title": "\ud83d\udd39DEPOSIT TAKEN \ud83d\udd39",
+    "price": 8550,
+    "details": "No longer listed (sold or removed): \ud83d\udd39DEPOSIT TAKEN \ud83d\udd39 - EUR 8550"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "Sold",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "price": 3650,
+    "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "Sold",
+    "carId": 92,
+    "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
+    "price": 7450,
+    "details": "No longer listed (sold or removed): Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don - EUR 7450"
+  },
+  {
+    "date": "2026-10-16",
+    "type": "Sold",
+    "carId": 107,
+    "title": "BMW X1 2014 sDrive16d SE 2L Diesel New NCT booked",
+    "price": 6990,
+    "details": "No longer listed (sold or removed): BMW X1 2014 sDrive16d SE 2L Diesel New NCT booked - EUR 6990"
   }
 ]

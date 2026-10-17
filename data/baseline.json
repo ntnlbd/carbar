@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-10-16",
+  "scraped_at": "2026-10-17",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 63,
+      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+      "year": 2016,
+      "price": 16550,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 127000,
+      "mileage_unit": "km",
+      "engine": "1.6L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
+      "make": "Mercedes",
+      "status": "Available"
+    },
     {
       "id": 1,
       "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
@@ -345,21 +360,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/98/volkswagen-golf-2011-estate-16-diesel-new-nct",
       "make": "Volkswagen",
-      "status": "Available"
-    },
-    {
-      "id": 63,
-      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
-      "year": 2016,
-      "price": 16550,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 127000,
-      "mileage_unit": "km",
-      "engine": "1.6L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
-      "make": "Mercedes",
       "status": "Available"
     },
     {

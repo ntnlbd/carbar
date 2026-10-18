@@ -1,7 +1,67 @@
 {
-  "scraped_at": "2026-10-17",
+  "scraped_at": "2026-10-18",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 64,
+      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+      "year": 2018,
+      "price": 29990,
+      "price_was": 35550,
+      "on_offer": true,
+      "mileage": 110000,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
+      "make": "Tesla",
+      "status": "Available"
+    },
+    {
+      "id": 78,
+      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
+      "year": 2016,
+      "price": 15990,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 77000,
+      "mileage_unit": "km",
+      "engine": "1.4L Petrol Plug-in Hybrid",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
+    {
+      "id": 75,
+      "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+      "year": 2017,
+      "price": 14990,
+      "price_was": 15550,
+      "on_offer": true,
+      "mileage": 80000,
+      "mileage_unit": "km",
+      "engine": "1.0L Petrol",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/75/deposit-taken",
+      "make": "Honda",
+      "status": "Deposit Taken"
+    },
+    {
+      "id": 116,
+      "title": "BMW 5-Series 2011 2L Diesel Automatic NCT&amp;TAX",
+      "year": 2011,
+      "price": 5550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 150000,
+      "mileage_unit": "mi",
+      "engine": "2.0L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/116/deposit-taken",
+      "make": "BMW",
+      "status": "Deposit Taken"
+    },
     {
       "id": 63,
       "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
@@ -90,21 +150,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/113/toyota-avensis-2009-2l-d-4d-terra-manual-low-km",
       "make": "Toyota",
-      "status": "Available"
-    },
-    {
-      "id": 78,
-      "title": "Volkswagen Golf 2016 GTE 1.4 Petrol NCT LOW KM",
-      "year": 2016,
-      "price": 15990,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 77000,
-      "mileage_unit": "km",
-      "engine": "1.4L Petrol Plug-in Hybrid",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/78/volkswagen-golf-2016-gte-14-petrol-nct-low-km",
-      "make": "Volkswagen",
       "status": "Available"
     },
     {
@@ -243,36 +288,6 @@
       "status": "Available"
     },
     {
-      "id": 75,
-      "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
-      "year": 2017,
-      "price": 14990,
-      "price_was": 15550,
-      "on_offer": true,
-      "mileage": 80000,
-      "mileage_unit": "km",
-      "engine": "1.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/75/honda-civic-2017-1l-petrol-automatic-low-km",
-      "make": "Honda",
-      "status": "Available"
-    },
-    {
-      "id": 116,
-      "title": "BMW 5-Series 2011 2L Diesel Automatic NCT&amp;TAX",
-      "year": 2011,
-      "price": 5550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 150000,
-      "mileage_unit": "mi",
-      "engine": "2.0L Diesel",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/116/bmw-5-series-2011-2l-diesel-automatic-ncttax",
-      "make": "BMW",
-      "status": "Available"
-    },
-    {
       "id": 117,
       "title": "Toyota Auris 2012 1.4 D-4D Terra Mint Low km",
       "year": 2012,
@@ -300,21 +315,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/119/volkswagen-golf-2008-14-petrol-manual-nct",
       "make": "Volkswagen",
-      "status": "Available"
-    },
-    {
-      "id": 64,
-      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
-      "year": 2018,
-      "price": 29990,
-      "price_was": 35550,
-      "on_offer": true,
-      "mileage": 110000,
-      "mileage_unit": "km",
-      "engine": "L Electric",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
-      "make": "Tesla",
       "status": "Available"
     },
     {
@@ -455,10 +455,10 @@
   ],
   "stats": {
     "total_cars": 30,
-    "available": 29,
-    "deposit_taken": 1,
+    "available": 27,
+    "deposit_taken": 3,
     "on_offer": 17,
-    "aum_available_eur": 349210,
+    "aum_available_eur": 328670,
     "aum_all_eur": 356200,
     "avg_price_eur": 11873
   }

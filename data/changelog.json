@@ -1716,5 +1716,19 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-10-18",
+    "type": "Status change",
+    "carId": 75,
+    "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-10-18",
+    "type": "Status change",
+    "carId": 116,
+    "title": "BMW 5-Series 2011 2L Diesel Automatic NCT&amp;TAX",
+    "details": "Deposit taken"
   }
 ]

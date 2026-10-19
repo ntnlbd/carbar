@@ -1730,5 +1730,35 @@
     "carId": 116,
     "title": "BMW 5-Series 2011 2L Diesel Automatic NCT&amp;TAX",
     "details": "Deposit taken"
+  },
+  {
+    "date": "2026-10-19",
+    "type": "New listing",
+    "carId": 123,
+    "title": "BMW 330 2017 2L Plug in Hybrid Automatic NEW NCT",
+    "details": "New listing added: BMW 330 2017 2L Plug in Hybrid Automatic NEW NCT - EUR 8990"
+  },
+  {
+    "date": "2026-10-19",
+    "type": "New listing",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "details": "New listing added: Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-10-19",
+    "type": "Sold",
+    "carId": 96,
+    "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
+    "price": 12990,
+    "details": "No longer listed (sold or removed): Audi Q2 2017 1.6 Diesel Automatic NCT - EUR 12990"
+  },
+  {
+    "date": "2026-10-19",
+    "type": "Sold",
+    "carId": 68,
+    "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+    "price": 19990,
+    "details": "No longer listed (sold or removed): Audi A5 2017 S Line 2L Diesel NCT&amp;TAX - EUR 19990"
   }
 ]

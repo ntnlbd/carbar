@@ -1760,5 +1760,20 @@
     "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
     "price": 19990,
     "details": "No longer listed (sold or removed): Audi A5 2017 S Line 2L Diesel NCT&amp;TAX - EUR 19990"
+  },
+  {
+    "date": "2026-10-20",
+    "type": "New listing",
+    "carId": 124,
+    "title": "Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28",
+    "details": "New listing added: Jaguar XF 2018 R Sport 2L diesel 180hp NCT 01.28 - EUR 11990"
+  },
+  {
+    "date": "2026-10-20",
+    "type": "Sold",
+    "carId": 24,
+    "title": "Mercedes B-Class 2014 1.8D NEW NCT",
+    "price": 8550,
+    "details": "No longer listed (sold or removed): Mercedes B-Class 2014 1.8D NEW NCT - EUR 8550"
   }
 ]

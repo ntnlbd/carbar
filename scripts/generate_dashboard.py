@@ -124,7 +124,7 @@ html = r"""<!DOCTYPE html>
   .tab-panel.active { display: block; }
 
   /* Stat cards */
-  .cards { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-bottom: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 14px; }
   @media (max-width: 900px) { .cards { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 560px) { .cards { grid-template-columns: repeat(2, 1fr); } }
   .card {
@@ -546,6 +546,13 @@ function renderCards() {
     return `<div class="delta ${cls}">${diff > 0 ? "▲" : "▼"} ${txt} vs last week</div>`;
   }
 
+  // Cumulative sales (genuine only — a car whose number later reappeared had
+  // its sale cancelled and is excluded).
+  const soldGenuine = CHANGELOG.filter(r => (r.type === "Sold" || r.type === "Removed") && !r.cancelled);
+  const soldRevenue = soldGenuine.filter(r => typeof r.price === "number").reduce((s, r) => s + r.price, 0);
+  const thisMonth = (CHANGELOG.length ? CHANGELOG[CHANGELOG.length - 1].date : "").slice(0, 7);
+  const soldThisMonth = soldGenuine.filter(r => r.date.slice(0, 7) === thisMonth).length;
+
   const cardsDef = [
     { label: "Total cars in stock", value: STATS.total_cars, delta: deltaHtml(STATS.total_cars, prev ? prev.total : null, false) },
     { label: "Available", value: STATS.available, delta: deltaHtml(STATS.available, prev ? prev.available : null, false) },
@@ -553,6 +560,8 @@ function renderCards() {
     { label: "AUM (available)", value: fmtEUR(STATS.aum_available_eur), delta: deltaHtml(STATS.aum_available_eur, prev ? prev.aumAvailable : null, true) },
     { label: "AUM (all stock)", value: fmtEUR(STATS.aum_all_eur), delta: deltaHtml(STATS.aum_all_eur, prev ? prev.aumAll : null, true) },
     { label: "Average price", value: fmtEUR(STATS.avg_price_eur), delta: deltaHtml(STATS.avg_price_eur, prev ? prev.avgPrice : null, true) },
+    { label: "Cars sold (all-time)", value: soldGenuine.length, delta: `<div class="delta">${soldThisMonth} this month &middot; excl. relisted</div>` },
+    { label: "Sales revenue (all-time)", value: soldRevenue ? fmtEUR(soldRevenue) : "&ndash;", delta: `<div class="delta">last-seen asking prices</div>` },
   ];
   el.innerHTML = cardsDef.map(c => `
     <div class="card">

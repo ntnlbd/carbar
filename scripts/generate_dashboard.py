@@ -255,6 +255,7 @@ html = r"""<!DOCTYPE html>
   a.car-link:hover { text-decoration: underline; }
   .price-was { color: var(--text-muted); text-decoration: line-through; font-size: 10px; margin-left: 4px; }
   .car-id { color: var(--text-muted); font-weight: 400; font-size: 0.9em; white-space: nowrap; }
+  td.est-sale { color: var(--success); }
   .table-scroll { max-height: 520px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
   thead th { position: sticky; top: 0; z-index: 3; }
   th:first-child, td:first-child {
@@ -372,6 +373,7 @@ html = r"""<!DOCTYPE html>
               <th data-key="make">Make</th>
               <th data-key="year" class="num">Year</th>
               <th data-key="price" class="num">Price</th>
+              <th data-key="price" class="num">Est. sale &minus;5%</th>
               <th data-key="mileage" class="num">Mileage</th>
               <th data-key="status">Status</th>
               <th>Link</th>
@@ -421,7 +423,7 @@ html = r"""<!DOCTYPE html>
       <p class="desc">Reserved cars still on the site: a window on sales likely coming, <strong>not yet counted</strong> as sold</p>
       <div class="mini-scroll">
         <table class="mini-table">
-          <thead><tr><th>Car</th><th class="num">Year</th><th class="num">Price</th><th class="num">Mileage</th><th>Link</th></tr></thead>
+          <thead><tr><th>Car</th><th class="num">Year</th><th class="num">Price</th><th class="num">Est. sale &minus;5%</th><th class="num">Mileage</th><th>Link</th></tr></thead>
           <tbody id="pipelineList"></tbody>
         </table>
       </div>
@@ -473,6 +475,12 @@ function fmtCompactEUR(n) {
   if (n >= 1000) return "€" + (n/1000).toFixed(n >= 10000 ? 0 : 1) + "K";
   return "€" + Math.round(n);
 }
+// Sale modifier: a fixed 5% discount off the asking price, shown as an optional
+// "potential real sale price" estimate (cars rarely sell at full ask). Change
+// SALE_MODIFIER to adjust the assumed discount everywhere it is displayed.
+const SALE_MODIFIER = 0.05;
+const MODIFIER_LABEL = "−5%"; // −5%
+function estSale(price) { return price == null ? null : Math.round(price * (1 - SALE_MODIFIER)); }
 // The listing id, shown in muted parentheses after a car's name everywhere a
 // car appears, so the user can always tie a row back to a specific listing.
 function idTag(id) { return ` <span class="car-id">(#${id})</span>`; }
@@ -558,6 +566,7 @@ function renderCards() {
     { label: "Available", value: STATS.available, delta: deltaHtml(STATS.available, prev ? prev.available : null, false) },
     { label: "Deposit taken", value: STATS.deposit_taken, delta: deltaHtml(STATS.deposit_taken, prev ? prev.depositTaken : null, false) },
     { label: "AUM (available)", value: fmtEUR(STATS.aum_available_eur), delta: deltaHtml(STATS.aum_available_eur, prev ? prev.aumAvailable : null, true) },
+    { label: `Est. sale value (${MODIFIER_LABEL})`, value: fmtEUR(estSale(STATS.aum_available_eur)), delta: `<div class="delta">available stock, ${MODIFIER_LABEL} off asking</div>` },
     { label: "AUM (all stock)", value: fmtEUR(STATS.aum_all_eur), delta: deltaHtml(STATS.aum_all_eur, prev ? prev.aumAll : null, true) },
     { label: "Average price", value: fmtEUR(STATS.avg_price_eur), delta: deltaHtml(STATS.avg_price_eur, prev ? prev.avgPrice : null, true) },
     { label: "Cars sold (all-time)", value: soldGenuine.length, delta: `<div class="delta">${soldThisMonth} this month &middot; excl. relisted</div>` },
@@ -793,7 +802,7 @@ function renderPipeline() {
   const note = document.getElementById("pipelineNote");
   const pipeline = CARS.filter(c => c.status === "Deposit Taken");
   if (!pipeline.length) {
-    el.innerHTML = `<tr><td class="empty" colspan="5">No cars are reserved right now.</td></tr>`;
+    el.innerHTML = `<tr><td class="empty" colspan="6">No cars are reserved right now.</td></tr>`;
     note.textContent = "";
     return;
   }
@@ -802,12 +811,14 @@ function renderPipeline() {
     const priceCell = c.price != null ? fmtEUR(c.price) : "&ndash;";
     const wasCell = (c.price_was && c.price != null && c.price < c.price_was)
       ? ` <span class="price-was">${fmtEUR(c.price_was)}</span>` : "";
+    const estCell = c.price != null ? fmtEUR(estSale(c.price)) : "&ndash;";
     const mileageCell = c.mileage != null ? `${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}` : "&ndash;";
     return `
     <tr>
       <td>${title}${idTag(c.id)}</td>
       <td class="num">${c.year != null ? c.year : "&ndash;"}</td>
       <td class="num">${priceCell}${wasCell}</td>
+      <td class="num est-sale">${estCell}</td>
       <td class="num">${mileageCell}</td>
       <td><a class="car-link" href="${c.url}" target="_blank" rel="noopener">View &rarr;</a></td>
     </tr>`;
@@ -970,13 +981,15 @@ function renderTable() {
     return (av - bv) * sortDir;
   });
 
+  const totalAsk = rows.reduce((s, c) => s + (c.price || 0), 0);
   document.getElementById("filterCount").textContent =
-    `${rows.length} of ${CARS.length} cars · total value ${fmtEUR(rows.reduce((s, c) => s + c.price, 0))}`;
+    `${rows.length} of ${CARS.length} cars · total value ${fmtEUR(totalAsk)} · est. ${fmtEUR(estSale(totalAsk))} at ${MODIFIER_LABEL}`;
 
   document.getElementById("tableBody").innerHTML = rows.map(c => {
     const priceCell = c.price != null ? fmtEUR(c.price) : "&ndash;";
     const wasCell = (c.price_was && c.price != null && c.price < c.price_was)
       ? ` <span class="price-was">${fmtEUR(c.price_was)}</span>` : "";
+    const estCell = c.price != null ? fmtEUR(estSale(c.price)) : "&ndash;";
     const mileageCell = c.mileage != null
       ? `${c.mileage.toLocaleString("en-IE")} ${c.mileage_unit}` : "&ndash;";
     return `
@@ -985,6 +998,7 @@ function renderTable() {
       <td>${c.make}</td>
       <td class="num">${c.year != null ? c.year : "&ndash;"}</td>
       <td class="num">${priceCell}${wasCell}</td>
+      <td class="num est-sale">${estCell}</td>
       <td class="num">${mileageCell}</td>
       <td><span class="status-tag"><span class="status-dot ${c.status === "Available" ? "available" : "deposit"}"></span>${c.status}</span></td>
       <td><a class="car-link" href="${c.url}" target="_blank" rel="noopener">View &rarr;</a></td>

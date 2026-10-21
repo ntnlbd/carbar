@@ -209,7 +209,10 @@ html = r"""<!DOCTYPE html>
   .changelog-tag.price { background: rgba(42,120,214,0.12); color: var(--series-1); }
   .changelog-tag.status { background: rgba(237,161,0,0.14); color: #96690a; }
   .changelog-tag.offer { background: rgba(27,175,122,0.14); color: #0a7a52; }
+  .changelog-tag.relisted { background: rgba(42,120,214,0.12); color: var(--series-1); }
   .changelog-tag.baseline { background: var(--gridline); color: var(--text-secondary); }
+  .changelog-tag.cancelled { background: var(--gridline); color: var(--text-muted); }
+  .changelog-row.cancelled .cl-details { color: var(--text-muted); text-decoration: line-through; }
   .changelog-row .cl-details { color: var(--text-primary); }
 
   /* Filters */
@@ -399,7 +402,7 @@ html = r"""<!DOCTYPE html>
           <div class="mom-note" id="revenueNote"></div>
         </div>
       </div>
-      <div class="mom-source">A sale is counted when a car that was listed at the previous check is no longer on carbarsale.ie &mdash; whether or not a deposit had been taken first. Revenue uses the car's last-seen asking price (the dealer never publishes the final sale price).</div>
+      <div class="mom-source">A sale is counted when a car that was listed at the previous check is no longer on carbarsale.ie &mdash; whether or not a deposit had been taken first. Listings are tracked by number: if a car's number reappears later (the dealer often re-lists cars), the earlier sale is cancelled and no longer counted. Revenue uses the car's last-seen asking price (the dealer never publishes the final sale price).</div>
     </section>
 
     <section>
@@ -601,18 +604,23 @@ function renderMoM() {
 function renderChangelog() {
   const el = document.getElementById("changelogList");
   const tagClass = t => ({
-    "New listing": "new", "Sold": "sold", "Removed": "sold",
+    "New listing": "new", "Sold": "sold", "Removed": "sold", "Relisted": "relisted",
     "Price change": "price", "Status change": "status",
     "Offer": "offer", "Offer ended": "status", "Baseline": "baseline",
   }[t] || "baseline");
   const rows = [...CHANGELOG].reverse();
-  el.innerHTML = rows.map(r => `
-    <div class="changelog-row">
+  el.innerHTML = rows.map(r => {
+    // A sale that was later cancelled (the car's number reappeared) is shown
+    // struck through so the record stays visible but clearly doesn't count.
+    const cancelled = !!r.cancelled;
+    const tagText = cancelled ? `${r.type} &times;` : r.type;
+    return `
+    <div class="changelog-row${cancelled ? " cancelled" : ""}">
       <div class="cl-date">${r.date}</div>
-      <div><span class="changelog-tag ${tagClass(r.type)}">${r.type}</span></div>
+      <div><span class="changelog-tag ${cancelled ? "cancelled" : tagClass(r.type)}">${tagText}</span></div>
       <div class="cl-details">${r.title && r.title !== "-" ? `<strong>${r.title}</strong>${r.carId && r.carId !== "-" ? idTag(r.carId) : ""} &mdash; ` : ""}${r.details}</div>
-    </div>
-  `).join("");
+    </div>`;
+  }).join("");
 }
 
 // ---------- Sales & revenue stats ----------
@@ -620,7 +628,7 @@ function monthKey(dateStr) { return dateStr.slice(0, 7); } // YYYY-MM
 
 function renderSalesCards() {
   const el = document.getElementById("salesCards");
-  const soldEntries = CHANGELOG.filter(r => r.type === "Sold" || r.type === "Removed");
+  const soldEntries = CHANGELOG.filter(r => (r.type === "Sold" || r.type === "Removed") && !r.cancelled);
   const totalSales = soldEntries.length;
   const withPrice = soldEntries.filter(r => typeof r.price === "number");
   const totalRevenue = withPrice.reduce((s, r) => s + r.price, 0);
@@ -661,7 +669,7 @@ function renderSalesCards() {
 
 // ---------- Monthly sales / revenue charts ----------
 function renderMonthlyCharts() {
-  const soldEntries = CHANGELOG.filter(r => r.type === "Sold" || r.type === "Removed");
+  const soldEntries = CHANGELOG.filter(r => (r.type === "Sold" || r.type === "Removed") && !r.cancelled);
   const byMonth = {};
   soldEntries.forEach(r => {
     const m = monthKey(r.date);
@@ -719,8 +727,9 @@ function renderMonthlyCharts() {
 // ---------- Sales tab: cards, sold list, pipeline ----------
 function soldEntriesAll() {
   // A car is "sold" the moment it drops off the listing (see change log),
-  // regardless of whether a deposit had been taken first.
-  return CHANGELOG.filter(r => r.type === "Sold" || r.type === "Removed");
+  // regardless of whether a deposit had been taken first — unless its number
+  // later reappeared, in which case the sale was cancelled and is excluded.
+  return CHANGELOG.filter(r => (r.type === "Sold" || r.type === "Removed") && !r.cancelled);
 }
 
 function renderSalesTabCards() {

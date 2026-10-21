@@ -265,6 +265,34 @@ def diff_cars(old_cars, new_cars):
     return entries
 
 
+def reconcile_relistings(changelog, new_entries):
+    """Cars on carbarsale.ie regularly drop off the listing and reappear days
+    later (the dealer re-lists them), which would otherwise be counted as a
+    sale. Track no-longer-listed items by number: when a number shows up again,
+    cancel its earlier 'Sold' record(s) and log the event as a relisting rather
+    than a brand-new listing. Returns the list of relisted car ids."""
+    relisted = []
+    for e in new_entries:
+        if e.get("type") != "New listing":
+            continue
+        cid = e["carId"]
+        prior_sales = [x for x in changelog
+                       if x.get("carId") == cid
+                       and x.get("type") in ("Sold", "Removed")
+                       and not x.get("cancelled")]
+        if not prior_sales:
+            continue
+        for x in prior_sales:
+            x["cancelled"] = True
+            x["cancelledOn"] = TODAY
+            if "[relisted" not in x.get("details", ""):
+                x["details"] = x.get("details", "") + f" [relisted {TODAY} — sale cancelled]"
+        e["type"] = "Relisted"
+        e["details"] = f"Back on site after being delisted (earlier sale cancelled): {e['title']}"
+        relisted.append(cid)
+    return relisted
+
+
 def main():
     print(f"Fetching {SOURCE_URL} ...")
     try:
@@ -315,8 +343,10 @@ def main():
         history.append(snapshot)
     save_json("history.json", history)
 
-    # Append changelog entries
+    # Append changelog entries, first cancelling any earlier sale for a car
+    # whose number has reappeared on the site (temporary delisting != sale).
     changelog = load_json("changelog.json", [])
+    reconcile_relistings(changelog, changelog_entries)
     changelog.extend(changelog_entries)
     save_json("changelog.json", changelog)
 

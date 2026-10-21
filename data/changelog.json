@@ -1775,5 +1775,50 @@
     "title": "Mercedes B-Class 2014 1.8D NEW NCT",
     "price": 8550,
     "details": "No longer listed (sold or removed): Mercedes B-Class 2014 1.8D NEW NCT - EUR 8550"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "New listing",
+    "carId": 121,
+    "title": "Kia Ceed 2012 1.6 Diesel LOW KM NEW NCT Booked",
+    "details": "New listing added: Kia Ceed 2012 1.6 Diesel LOW KM NEW NCT Booked - EUR 4450"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "Price change",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "details": "Price changed: EUR 8990 -> EUR 7990"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "Offer",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "price": 7990,
+    "details": "On offer: EUR 7990 (down from EUR 8990)"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "New listing",
+    "carId": 24,
+    "title": "Mercedes B-Class 2014 1.8D NEW NCT",
+    "details": "New listing added: Mercedes B-Class 2014 1.8D NEW NCT - EUR 8550"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "Sold",
+    "carId": 75,
+    "title": "Honda Civic 2017 1L Petrol Automatic LOW KM",
+    "price": 14990,
+    "details": "No longer listed (sold or removed): Honda Civic 2017 1L Petrol Automatic LOW KM - EUR 14990"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "Sold",
+    "carId": 102,
+    "title": "Audi A4 2014  2L Diesel Auto Belt Done NCT 06.27",
+    "price": 6990,
+    "details": "No longer listed (sold or removed): Audi A4 2014  2L Diesel Auto Belt Done NCT 06.27 - EUR 6990"
   }
 ]

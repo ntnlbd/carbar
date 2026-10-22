@@ -1819,7 +1819,9 @@
     "carId": 96,
     "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
     "price": 12990,
-    "details": "No longer listed (sold or removed): Audi Q2 2017 1.6 Diesel Automatic NCT - EUR 12990"
+    "details": "No longer listed (sold or removed): Audi Q2 2017 1.6 Diesel Automatic NCT - EUR 12990 [relisted 2026-10-22 \u2014 sale cancelled]",
+    "cancelled": true,
+    "cancelledOn": "2026-10-22"
   },
   {
     "date": "2026-10-19",
@@ -1827,7 +1829,9 @@
     "carId": 68,
     "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
     "price": 19990,
-    "details": "No longer listed (sold or removed): Audi A5 2017 S Line 2L Diesel NCT&amp;TAX - EUR 19990"
+    "details": "No longer listed (sold or removed): Audi A5 2017 S Line 2L Diesel NCT&amp;TAX - EUR 19990 [relisted 2026-10-22 \u2014 sale cancelled]",
+    "cancelled": true,
+    "cancelledOn": "2026-10-22"
   },
   {
     "date": "2026-10-20",
@@ -1911,5 +1915,42 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-10-22",
+    "type": "Relisted",
+    "carId": 68,
+    "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
+    "details": "Back on site after being delisted (earlier sale cancelled): Audi A5 2017 S Line 2L Diesel NCT&amp;TAX"
+  },
+  {
+    "date": "2026-10-22",
+    "type": "Status change",
+    "carId": 117,
+    "title": "Toyota Auris 2012 1.4 D-4D Terra Mint Low km",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-10-22",
+    "type": "Relisted",
+    "carId": 96,
+    "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
+    "details": "Back on site after being delisted (earlier sale cancelled): Audi Q2 2017 1.6 Diesel Automatic NCT"
+  },
+  {
+    "date": "2026-10-22",
+    "type": "Sold",
+    "carId": 100,
+    "title": "BMW 1-Series M SPORT 2015 High Spec. Auto NEW NCT",
+    "price": 12550,
+    "details": "No longer listed (sold or removed): BMW 1-Series M SPORT 2015 High Spec. Auto NEW NCT - EUR 12550"
+  },
+  {
+    "date": "2026-10-22",
+    "type": "Sold",
+    "carId": 84,
+    "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
+    "price": 3650,
+    "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
   }
 ]

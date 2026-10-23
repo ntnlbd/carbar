@@ -1742,7 +1742,9 @@
     "carId": 118,
     "title": "Mercedes 180 COUPE SPORT 2012 Automatic SunRoof",
     "price": 8550,
-    "details": "No longer listed (sold or removed): Mercedes 180 COUPE SPORT 2012 Automatic SunRoof - EUR 8550"
+    "details": "No longer listed (sold or removed): Mercedes 180 COUPE SPORT 2012 Automatic SunRoof - EUR 8550 [relisted 2026-10-23 \u2014 sale cancelled]",
+    "cancelled": true,
+    "cancelledOn": "2026-10-23"
   },
   {
     "date": "2026-10-16",
@@ -1768,7 +1770,9 @@
     "carId": 92,
     "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
     "price": 7450,
-    "details": "No longer listed (sold or removed): Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don - EUR 7450"
+    "details": "No longer listed (sold or removed): Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don - EUR 7450 [relisted 2026-10-23 \u2014 sale cancelled]",
+    "cancelled": true,
+    "cancelledOn": "2026-10-23"
   },
   {
     "date": "2026-10-16",
@@ -1952,5 +1956,57 @@
     "title": "Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM",
     "price": 3650,
     "details": "No longer listed (sold or removed): Vauxhall Astra 2009 1.8 Petrol Automatic LOW KM - EUR 3650"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Status change",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Price change",
+    "carId": 36,
+    "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+    "details": "Price changed: EUR 12550 -> EUR 11990"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Offer",
+    "carId": 36,
+    "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+    "price": 11990,
+    "details": "On offer: EUR 11990 (down from EUR 12550)"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Relisted",
+    "carId": 118,
+    "title": "Mercedes 180 COUPE SPORT 2012 Automatic SunRoof",
+    "details": "Back on site after being delisted (earlier sale cancelled): Mercedes 180 COUPE SPORT 2012 Automatic SunRoof"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Relisted",
+    "carId": 92,
+    "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
+    "details": "Back on site after being delisted (earlier sale cancelled): Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Sold",
+    "carId": 116,
+    "title": "BMW 5-Series 2011 2L Diesel Automatic NCT&amp;TAX",
+    "price": 5550,
+    "details": "No longer listed (sold or removed): BMW 5-Series 2011 2L Diesel Automatic NCT&amp;TAX - EUR 5550"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "Sold",
+    "carId": 96,
+    "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
+    "price": 12990,
+    "details": "No longer listed (sold or removed): Audi Q2 2017 1.6 Diesel Automatic NCT - EUR 12990"
   }
 ]

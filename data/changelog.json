@@ -1466,7 +1466,9 @@
     "carId": 74,
     "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
     "price": 12990,
-    "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
+    "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990 [relisted 2026-10-24 \u2014 sale cancelled]",
+    "cancelled": true,
+    "cancelledOn": "2026-10-24"
   },
   {
     "date": "2026-10-09",
@@ -2007,6 +2009,38 @@
     "carId": 96,
     "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
     "price": 12990,
-    "details": "No longer listed (sold or removed): Audi Q2 2017 1.6 Diesel Automatic NCT - EUR 12990"
+    "details": "No longer listed (sold or removed): Audi Q2 2017 1.6 Diesel Automatic NCT - EUR 12990 [relisted 2026-10-24 \u2014 sale cancelled]",
+    "cancelled": true,
+    "cancelledOn": "2026-10-24"
+  },
+  {
+    "date": "2026-10-24",
+    "type": "Relisted",
+    "carId": 96,
+    "title": "Audi Q2 2017 1.6 Diesel Automatic NCT",
+    "details": "Back on site after being delisted (earlier sale cancelled): Audi Q2 2017 1.6 Diesel Automatic NCT"
+  },
+  {
+    "date": "2026-10-24",
+    "type": "Relisted",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "details": "Back on site after being delisted (earlier sale cancelled): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO"
+  },
+  {
+    "date": "2026-10-24",
+    "type": "Sold",
+    "carId": 117,
+    "title": "Toyota Auris 2012 1.4 D-4D Terra Mint Low km",
+    "price": 6850,
+    "details": "No longer listed (sold or removed): Toyota Auris 2012 1.4 D-4D Terra Mint Low km - EUR 6850"
+  },
+  {
+    "date": "2026-10-24",
+    "type": "Sold",
+    "carId": 1,
+    "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
+    "price": 5550,
+    "details": "No longer listed (sold or removed): Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT - EUR 5550"
   }
 ]

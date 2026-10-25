@@ -2042,5 +2042,27 @@
     "title": "Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT",
     "price": 5550,
     "details": "No longer listed (sold or removed): Vauxhall Mokka 2014 1.7D Manual High Spec. NEW NCT - EUR 5550"
+  },
+  {
+    "date": "2026-10-25",
+    "type": "New listing",
+    "carId": 125,
+    "title": "Toyota Prius 2017 1.8 Hybrid Auto luxury NCT 04.27",
+    "details": "New listing added: Toyota Prius 2017 1.8 Hybrid Auto luxury NCT 04.27 - EUR 9990"
+  },
+  {
+    "date": "2026-10-25",
+    "type": "Price change",
+    "carId": 121,
+    "title": "Kia Ceed 2012 1.6 Diesel LOW KM NEW NCT 12.27",
+    "details": "Price changed: EUR 4450 -> EUR 4550"
+  },
+  {
+    "date": "2026-10-25",
+    "type": "Sold",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "price": 12990,
+    "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
   }
 ]

@@ -2063,6 +2063,23 @@
     "carId": 74,
     "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
     "price": 12990,
-    "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990"
+    "details": "No longer listed (sold or removed): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO - EUR 12990 [relisted 2026-10-26 \u2014 sale cancelled]",
+    "cancelled": true,
+    "cancelledOn": "2026-10-26"
+  },
+  {
+    "date": "2026-10-26",
+    "type": "Relisted",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "details": "Back on site after being delisted (earlier sale cancelled): BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO"
+  },
+  {
+    "date": "2026-10-26",
+    "type": "Sold",
+    "carId": 119,
+    "title": "Volkswagen Golf 2008 1.4 Petrol Manual NCT",
+    "price": 3350,
+    "details": "No longer listed (sold or removed): Volkswagen Golf 2008 1.4 Petrol Manual NCT - EUR 3350"
   }
 ]

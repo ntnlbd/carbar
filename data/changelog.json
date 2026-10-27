@@ -2081,5 +2081,28 @@
     "title": "Volkswagen Golf 2008 1.4 Petrol Manual NCT",
     "price": 3350,
     "details": "No longer listed (sold or removed): Volkswagen Golf 2008 1.4 Petrol Manual NCT - EUR 3350"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "Price change",
+    "carId": 98,
+    "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
+    "details": "Price changed: EUR 3850 -> EUR 3550"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "Offer",
+    "carId": 98,
+    "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
+    "price": 3550,
+    "details": "On offer: EUR 3550 (down from EUR 3850)"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "Sold",
+    "carId": 93,
+    "title": "BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX",
+    "price": 7990,
+    "details": "No longer listed (sold or removed): BMW 5-Series Touring 2012 High Spec. Auto NCT&amp;TAX - EUR 7990"
   }
 ]

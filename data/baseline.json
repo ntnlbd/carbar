@@ -1,7 +1,22 @@
 {
-  "scraped_at": "2026-10-28",
+  "scraped_at": "2026-10-29",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 63,
+      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+      "year": 2016,
+      "price": 16550,
+      "price_was": 16990,
+      "on_offer": true,
+      "mileage": 127000,
+      "mileage_unit": "km",
+      "engine": "1.6L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
+      "make": "Mercedes",
+      "status": "Available"
+    },
     {
       "id": 118,
       "title": "Mercedes 180 COUPE SPORT 2012 Automatic SunRoof",
@@ -285,21 +300,6 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
       "make": "Ford",
-      "status": "Available"
-    },
-    {
-      "id": 63,
-      "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
-      "year": 2016,
-      "price": 16550,
-      "price_was": 16990,
-      "on_offer": true,
-      "mileage": 127000,
-      "mileage_unit": "km",
-      "engine": "1.6L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/63/mercedes-c-class-amg-line-2016-16-diesel-auto",
-      "make": "Mercedes",
       "status": "Available"
     },
     {

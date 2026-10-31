@@ -2134,5 +2134,27 @@
     "carId": 126,
     "title": "Mercedes C-Class 2009 2.1L Diesel Elegance Sport",
     "details": "New listing added: Mercedes C-Class 2009 2.1L Diesel Elegance Sport - EUR 4450"
+  },
+  {
+    "date": "2026-10-31",
+    "type": "New listing",
+    "carId": 128,
+    "title": "Toyota Yaris 2006 1L Petrol Automatic LOW KM",
+    "details": "New listing added: Toyota Yaris 2006 1L Petrol Automatic LOW KM - EUR 3990"
+  },
+  {
+    "date": "2026-10-31",
+    "type": "New listing",
+    "carId": 127,
+    "title": "Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX",
+    "details": "New listing added: Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX - EUR 6350"
+  },
+  {
+    "date": "2026-10-31",
+    "type": "Sold",
+    "carId": 123,
+    "title": "BMW 330 2017 2L Plug in Hybrid Automatic NEW NCT",
+    "price": 8990,
+    "details": "No longer listed (sold or removed): BMW 330 2017 2L Plug in Hybrid Automatic NEW NCT - EUR 8990"
   }
 ]

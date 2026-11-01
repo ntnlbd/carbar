@@ -2156,5 +2156,20 @@
     "title": "BMW 330 2017 2L Plug in Hybrid Automatic NEW NCT",
     "price": 8990,
     "details": "No longer listed (sold or removed): BMW 330 2017 2L Plug in Hybrid Automatic NEW NCT - EUR 8990"
+  },
+  {
+    "date": "2026-11-01",
+    "type": "Status change",
+    "carId": 95,
+    "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-11-01",
+    "type": "Sold",
+    "carId": 111,
+    "title": "Audi e-tron 2020 50 Quattro Advance 73kWh NCT book",
+    "price": 18550,
+    "details": "No longer listed (sold or removed): Audi e-tron 2020 50 Quattro Advance 73kWh NCT book - EUR 18550"
   }
 ]

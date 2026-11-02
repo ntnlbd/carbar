@@ -2171,5 +2171,35 @@
     "title": "Audi e-tron 2020 50 Quattro Advance 73kWh NCT book",
     "price": 18550,
     "details": "No longer listed (sold or removed): Audi e-tron 2020 50 Quattro Advance 73kWh NCT book - EUR 18550"
+  },
+  {
+    "date": "2026-11-02",
+    "type": "Price change",
+    "carId": 82,
+    "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
+    "details": "Price changed: EUR 13950 -> EUR 13550"
+  },
+  {
+    "date": "2026-11-02",
+    "type": "Offer",
+    "carId": 82,
+    "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
+    "price": 13550,
+    "details": "On offer: EUR 13550 (down from EUR 13950)"
+  },
+  {
+    "date": "2026-11-02",
+    "type": "Price change",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "details": "Price changed: EUR 7550 -> EUR 6999"
+  },
+  {
+    "date": "2026-11-02",
+    "type": "Offer",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "price": 6999,
+    "details": "On offer: EUR 6999 (down from EUR 7550)"
   }
 ]

@@ -1,7 +1,52 @@
 {
-  "scraped_at": "2026-11-02",
+  "scraped_at": "2026-11-03",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 110,
+      "title": "Mini Cooper 2011 JCW 2L Diesel Auto NCT LOW KM",
+      "year": 2011,
+      "price": 9990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 116000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/110/mini-cooper-2011-jcw-2l-diesel-auto-nct-low-km",
+      "make": "Mini",
+      "status": "Available"
+    },
+    {
+      "id": 120,
+      "title": "Peugeot 308 2014 1.2 Petrol Manual NEW NCT LOW KM",
+      "year": 2014,
+      "price": 5550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 121000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/120/peugeot-308-2014-12-petrol-manual-new-nct-low-km",
+      "make": "Peugeot",
+      "status": "Available"
+    },
+    {
+      "id": 64,
+      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+      "year": 2018,
+      "price": 29990,
+      "price_was": 35550,
+      "on_offer": true,
+      "mileage": 110000,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
+      "make": "Tesla",
+      "status": "Available"
+    },
     {
       "id": 113,
       "title": "Toyota Avensis 2009 2L D-4D Terra Manual NEW NCT",
@@ -105,21 +150,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/126/mercedes-c-class-2009-21l-diesel-elegance-sport",
       "make": "Mercedes",
-      "status": "Available"
-    },
-    {
-      "id": 64,
-      "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
-      "year": 2018,
-      "price": 29990,
-      "price_was": 35550,
-      "on_offer": true,
-      "mileage": 110000,
-      "mileage_unit": "km",
-      "engine": "L Electric",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
-      "make": "Tesla",
       "status": "Available"
     },
     {
@@ -258,21 +288,6 @@
       "status": "Available"
     },
     {
-      "id": 110,
-      "title": "Mini Cooper 2011 JCW 2L Diesel Auto NCT LOW KM",
-      "year": 2011,
-      "price": 9990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 116000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/110/mini-cooper-2011-jcw-2l-diesel-auto-nct-low-km",
-      "make": "Mini",
-      "status": "Available"
-    },
-    {
       "id": 68,
       "title": "Audi A5 2017 S Line 2L Diesel NCT&amp;TAX",
       "year": 2017,
@@ -345,21 +360,6 @@
       "transmission": "Auto",
       "url": "https://carbarsale.ie/cars/125/toyota-prius-2017-18-hybrid-auto-luxury-nct-0427",
       "make": "Toyota",
-      "status": "Available"
-    },
-    {
-      "id": 120,
-      "title": "Peugeot 308 2014 1.2 Petrol Manual NEW NCT LOW KM",
-      "year": 2014,
-      "price": 5550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 121000,
-      "mileage_unit": "km",
-      "engine": "1.2L Petrol",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/120/peugeot-308-2014-12-petrol-manual-new-nct-low-km",
-      "make": "Peugeot",
       "status": "Available"
     },
     {

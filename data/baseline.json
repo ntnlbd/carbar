@@ -1,7 +1,37 @@
 {
-  "scraped_at": "2026-11-03",
+  "scraped_at": "2026-11-04",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 36,
+      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+      "year": 2016,
+      "price": 11550,
+      "price_was": 11990,
+      "on_offer": true,
+      "mileage": 158000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
+      "make": "BMW",
+      "status": "Available"
+    },
+    {
+      "id": 89,
+      "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+      "year": 2013,
+      "price": 5990,
+      "price_was": 6750,
+      "on_offer": true,
+      "mileage": 184483,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
+      "make": "Ford",
+      "status": "Available"
+    },
     {
       "id": 110,
       "title": "Mini Cooper 2011 JCW 2L Diesel Auto NCT LOW KM",
@@ -90,21 +120,6 @@
       "transmission": "",
       "url": "https://carbarsale.ie/cars/105/tesla-model-s-85-2015-new-nct-1027",
       "make": "Tesla",
-      "status": "Available"
-    },
-    {
-      "id": 36,
-      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
-      "year": 2016,
-      "price": 11990,
-      "price_was": 12550,
-      "on_offer": true,
-      "mileage": 158000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
-      "make": "BMW",
       "status": "Available"
     },
     {
@@ -240,21 +255,6 @@
       "transmission": "Auto",
       "url": "https://carbarsale.ie/cars/79/mercedes-e-class-2017-amg-21l-diesel-auto-nct-tax",
       "make": "Mercedes",
-      "status": "Available"
-    },
-    {
-      "id": 89,
-      "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
-      "year": 2013,
-      "price": 5990,
-      "price_was": 6750,
-      "on_offer": true,
-      "mileage": 184483,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
-      "make": "Ford",
       "status": "Available"
     },
     {
@@ -428,8 +428,8 @@
     "available": 27,
     "deposit_taken": 1,
     "on_offer": 17,
-    "aum_available_eur": 294339,
-    "aum_all_eur": 320329,
-    "avg_price_eur": 11440
+    "aum_available_eur": 293899,
+    "aum_all_eur": 319889,
+    "avg_price_eur": 11425
   }
 }

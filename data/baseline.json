@@ -1,20 +1,35 @@
 {
-  "scraped_at": "2026-11-04",
+  "scraped_at": "2026-11-05",
   "source": "https://carbarsale.ie/cars",
   "cars": [
     {
-      "id": 36,
-      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
-      "year": 2016,
-      "price": 11550,
-      "price_was": 11990,
+      "id": 127,
+      "title": "Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX",
+      "year": 2012,
+      "price": 6350,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 215000,
+      "mileage_unit": "km",
+      "engine": "1.2L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/127/volkswagen-polo-2012-12l-petrol-automatic-ncttax",
+      "make": "Volkswagen",
+      "status": "Available"
+    },
+    {
+      "id": 79,
+      "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NeW NCT",
+      "year": 2017,
+      "price": 19990,
+      "price_was": 20550,
       "on_offer": true,
-      "mileage": 158000,
+      "mileage": 177000,
       "mileage_unit": "km",
       "engine": "2.0L Diesel",
       "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
-      "make": "BMW",
+      "url": "https://carbarsale.ie/cars/79/mercedes-e-class-2017-amg-21l-diesel-auto-new-nct",
+      "make": "Mercedes",
       "status": "Available"
     },
     {
@@ -30,6 +45,36 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
       "make": "Ford",
+      "status": "Available"
+    },
+    {
+      "id": 128,
+      "title": "Toyota Yaris 2006 1L Petrol Automatic LOW KM",
+      "year": 2006,
+      "price": 3990,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 166000,
+      "mileage_unit": "km",
+      "engine": "1.0L Petrol",
+      "transmission": "Automatic",
+      "url": "https://carbarsale.ie/cars/128/toyota-yaris-2006-1l-petrol-automatic-low-km",
+      "make": "Toyota",
+      "status": "Available"
+    },
+    {
+      "id": 36,
+      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+      "year": 2016,
+      "price": 11550,
+      "price_was": 11990,
+      "on_offer": true,
+      "mileage": 158000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
+      "make": "BMW",
       "status": "Available"
     },
     {
@@ -228,36 +273,6 @@
       "status": "Deposit Taken"
     },
     {
-      "id": 128,
-      "title": "Toyota Yaris 2006 1L Petrol Automatic LOW KM",
-      "year": 2006,
-      "price": 3990,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 166000,
-      "mileage_unit": "km",
-      "engine": "1.0L Petrol",
-      "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/128/toyota-yaris-2006-1l-petrol-automatic-low-km",
-      "make": "Toyota",
-      "status": "Available"
-    },
-    {
-      "id": 79,
-      "title": "Mercedes E-Class 2017 AMG 2.1L Diesel Auto NCT TAX",
-      "year": 2017,
-      "price": 19990,
-      "price_was": 20550,
-      "on_offer": true,
-      "mileage": 177000,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/79/mercedes-e-class-2017-amg-21l-diesel-auto-nct-tax",
-      "make": "Mercedes",
-      "status": "Available"
-    },
-    {
       "id": 63,
       "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
       "year": 2016,
@@ -408,28 +423,28 @@
       "status": "Available"
     },
     {
-      "id": 127,
-      "title": "Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX",
-      "year": 2012,
-      "price": 6350,
+      "id": 129,
+      "title": "Renault Captur 2014 1.5 Diesel Automatic NEW NCT",
+      "year": 2014,
+      "price": 5950,
       "price_was": null,
       "on_offer": false,
-      "mileage": 215000,
-      "mileage_unit": "km",
-      "engine": "1.2L Petrol",
+      "mileage": 163000,
+      "mileage_unit": "mi",
+      "engine": "1.5L Diesel",
       "transmission": "Automatic",
-      "url": "https://carbarsale.ie/cars/127/volkswagen-polo-2012-12l-petrol-automatic-ncttax",
-      "make": "Volkswagen",
+      "url": "https://carbarsale.ie/cars/129/renault-captur-2014-15-diesel-automatic-new-nct",
+      "make": "Renault",
       "status": "Available"
     }
   ],
   "stats": {
-    "total_cars": 28,
-    "available": 27,
+    "total_cars": 29,
+    "available": 28,
     "deposit_taken": 1,
     "on_offer": 17,
-    "aum_available_eur": 293899,
-    "aum_all_eur": 319889,
-    "avg_price_eur": 11425
+    "aum_available_eur": 299849,
+    "aum_all_eur": 325839,
+    "avg_price_eur": 11236
   }
 }

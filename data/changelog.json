@@ -2230,5 +2230,57 @@
     "carId": 129,
     "title": "Renault Captur 2014 1.5 Diesel Automatic NEW NCT",
     "details": "New listing added: Renault Captur 2014 1.5 Diesel Automatic NEW NCT - EUR 5950"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "New listing",
+    "carId": 130,
+    "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
+    "details": "New listing added: BMW 3-Series 2015 2L Petrol Automatic NCT 05.27 - EUR 11550"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "Price change",
+    "carId": 127,
+    "title": "Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX",
+    "details": "Price changed: EUR 6350 -> EUR 5990"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "Offer",
+    "carId": 127,
+    "title": "Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX",
+    "price": 5990,
+    "details": "On offer: EUR 5990 (down from EUR 6350)"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "Price change",
+    "carId": 64,
+    "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+    "details": "Price changed: EUR 29990 -> EUR 27790"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "Offer",
+    "carId": 64,
+    "title": "Tesla Model X 2018 100D 100kWh NEW NCT",
+    "price": 27790,
+    "details": "On offer: EUR 27790 (down from EUR 29990)"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "Price change",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "details": "Price changed: EUR 12990 -> EUR 11990"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "Offer",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "price": 11990,
+    "details": "On offer: EUR 11990 (down from EUR 12990)"
   }
 ]

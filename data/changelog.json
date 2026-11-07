@@ -2282,5 +2282,21 @@
     "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
     "price": 11990,
     "details": "On offer: EUR 11990 (down from EUR 12990)"
+  },
+  {
+    "date": "2026-11-07",
+    "type": "Sold",
+    "carId": 103,
+    "title": "Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28",
+    "price": 14990,
+    "details": "No longer listed (sold or removed): Nissan Qashqai 2018 1.2 Petrol Automatic NCT 03.28 - EUR 14990"
+  },
+  {
+    "date": "2026-11-07",
+    "type": "Sold",
+    "carId": 95,
+    "title": "Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic",
+    "price": 25990,
+    "details": "No longer listed (sold or removed): Volvo XC90 T8 2Lplug in Hybrid Momentum Geartronic - EUR 25990"
   }
 ]

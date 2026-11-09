@@ -2306,5 +2306,28 @@
     "title": "BMW 3-Series 2015 2L Petrol Automatic NCT 05.27",
     "price": 11550,
     "details": "No longer listed (sold or removed): BMW 3-Series 2015 2L Petrol Automatic NCT 05.27 - EUR 11550"
+  },
+  {
+    "date": "2026-11-09",
+    "type": "Price change",
+    "carId": 98,
+    "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
+    "details": "Price changed: EUR 3550 -> EUR 2990"
+  },
+  {
+    "date": "2026-11-09",
+    "type": "Offer",
+    "carId": 98,
+    "title": "Volkswagen Golf 2011 Estate 1.6 Diesel New NCT",
+    "price": 2990,
+    "details": "On offer: EUR 2990 (down from EUR 3550)"
+  },
+  {
+    "date": "2026-11-09",
+    "type": "Sold",
+    "carId": 127,
+    "title": "Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX",
+    "price": 5990,
+    "details": "No longer listed (sold or removed): Volkswagen Polo 2012 1.2L Petrol Automatic NCT&amp;TAX - EUR 5990"
   }
 ]

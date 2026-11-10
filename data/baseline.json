@@ -1,20 +1,20 @@
 {
-  "scraped_at": "2026-11-09",
+  "scraped_at": "2026-11-10",
   "source": "https://carbarsale.ie/cars",
   "cars": [
     {
-      "id": 36,
-      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
-      "year": 2016,
-      "price": 11550,
-      "price_was": 11990,
+      "id": 89,
+      "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+      "year": 2013,
+      "price": 5990,
+      "price_was": 6750,
       "on_offer": true,
-      "mileage": 158000,
+      "mileage": 184483,
       "mileage_unit": "km",
       "engine": "2.0L Diesel",
-      "transmission": "Auto",
-      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
-      "make": "BMW",
+      "transmission": "Manual",
+      "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
+      "make": "Ford",
       "status": "Available"
     },
     {
@@ -30,6 +30,36 @@
       "transmission": "Manual",
       "url": "https://carbarsale.ie/cars/113/toyota-avensis-2009-2l-d-4d-terra-manual-new-nct",
       "make": "Toyota",
+      "status": "Available"
+    },
+    {
+      "id": 105,
+      "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+      "year": 2015,
+      "price": 16550,
+      "price_was": null,
+      "on_offer": false,
+      "mileage": 140475,
+      "mileage_unit": "km",
+      "engine": "L Electric",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/105/tesla-model-s-85-2015-new-nct-1027",
+      "make": "Tesla",
+      "status": "Available"
+    },
+    {
+      "id": 36,
+      "title": "BMW 2-Series 2016 Luxury Sport Auto LOW KM NEW NCT",
+      "year": 2016,
+      "price": 11550,
+      "price_was": 11990,
+      "on_offer": true,
+      "mileage": 158000,
+      "mileage_unit": "km",
+      "engine": "2.0L Diesel",
+      "transmission": "Auto",
+      "url": "https://carbarsale.ie/cars/36/bmw-2-series-2016-luxury-sport-auto-low-km-new-nct",
+      "make": "BMW",
       "status": "Available"
     },
     {
@@ -59,21 +89,6 @@
       "engine": "L Electric",
       "transmission": "",
       "url": "https://carbarsale.ie/cars/64/tesla-model-x-2018-100d-100kwh-new-nct",
-      "make": "Tesla",
-      "status": "Available"
-    },
-    {
-      "id": 105,
-      "title": "Tesla Model S 85 2015 NEW NCT 10.27",
-      "year": 2015,
-      "price": 16550,
-      "price_was": null,
-      "on_offer": false,
-      "mileage": 140475,
-      "mileage_unit": "km",
-      "engine": "L Electric",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/105/tesla-model-s-85-2015-new-nct-1027",
       "make": "Tesla",
       "status": "Available"
     },
@@ -165,21 +180,6 @@
       "transmission": "Auto",
       "url": "https://carbarsale.ie/cars/79/mercedes-e-class-2017-amg-21l-diesel-auto-new-nct",
       "make": "Mercedes",
-      "status": "Available"
-    },
-    {
-      "id": 89,
-      "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
-      "year": 2013,
-      "price": 5990,
-      "price_was": 6750,
-      "on_offer": true,
-      "mileage": 184483,
-      "mileage_unit": "km",
-      "engine": "2.0L Diesel",
-      "transmission": "Manual",
-      "url": "https://carbarsale.ie/cars/89/ford-kuga-zetec-2013-2l-diesel-manual-new-nct",
-      "make": "Ford",
       "status": "Available"
     },
     {

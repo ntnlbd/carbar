@@ -2336,5 +2336,35 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-11-11",
+    "type": "New listing",
+    "carId": 131,
+    "title": "Mercedes C-Class 2013 AVANTGARDE SPORTS 2.1D Auto",
+    "details": "New listing added: Mercedes C-Class 2013 AVANTGARDE SPORTS 2.1D Auto - EUR 7750"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "Status change",
+    "carId": 92,
+    "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
+    "details": "Deposit taken"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "Sold",
+    "carId": 105,
+    "title": "Tesla Model S 85 2015 NEW NCT 10.27",
+    "price": 16550,
+    "details": "No longer listed (sold or removed): Tesla Model S 85 2015 NEW NCT 10.27 - EUR 16550"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "Sold",
+    "carId": 118,
+    "title": "Mercedes 180 COUPE SPORT 2012 Automatic SunRoof",
+    "price": 8550,
+    "details": "No longer listed (sold or removed): Mercedes 180 COUPE SPORT 2012 Automatic SunRoof - EUR 8550"
   }
 ]

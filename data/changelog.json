@@ -2366,5 +2366,35 @@
     "title": "Mercedes 180 COUPE SPORT 2012 Automatic SunRoof",
     "price": 8550,
     "details": "No longer listed (sold or removed): Mercedes 180 COUPE SPORT 2012 Automatic SunRoof - EUR 8550"
+  },
+  {
+    "date": "2026-11-12",
+    "type": "Price change",
+    "carId": 82,
+    "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
+    "details": "Price changed: EUR 13550 -> EUR 12990"
+  },
+  {
+    "date": "2026-11-12",
+    "type": "Offer",
+    "carId": 82,
+    "title": "Audi A4 S Line Ultra 2017 Manual NEW NCT Belt Done",
+    "price": 12990,
+    "details": "On offer: EUR 12990 (down from EUR 13550)"
+  },
+  {
+    "date": "2026-11-12",
+    "type": "New listing",
+    "carId": 132,
+    "title": "Peugeot 2008 2016 Automatic 1.2 Petrol NEW NCT",
+    "details": "New listing added: Peugeot 2008 2016 Automatic 1.2 Petrol NEW NCT - EUR 8550"
+  },
+  {
+    "date": "2026-11-12",
+    "type": "Sold",
+    "carId": 92,
+    "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
+    "price": 6990,
+    "details": "No longer listed (sold or removed): Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don - EUR 6990"
   }
 ]

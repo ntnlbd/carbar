@@ -2396,5 +2396,41 @@
     "title": "Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don",
     "price": 6990,
     "details": "No longer listed (sold or removed): Volkswagen Golf 2012 1.2 Petrol Auto NCT Chain Don - EUR 6990"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "New listing",
+    "carId": 133,
+    "title": "Volkswagen Passat 2013 1.4 Tsi TrendLine Automatic",
+    "details": "New listing added: Volkswagen Passat 2013 1.4 Tsi TrendLine Automatic - EUR 8450"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "Price change",
+    "carId": 126,
+    "title": "Mercedes C-Class 2009 2.1L Diesel Elegance Sport",
+    "details": "Price changed: EUR 4450 -> EUR 3990"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "Offer",
+    "carId": 126,
+    "title": "Mercedes C-Class 2009 2.1L Diesel Elegance Sport",
+    "price": 3990,
+    "details": "On offer: EUR 3990 (down from EUR 4450)"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "New listing",
+    "carId": 134,
+    "title": "Toyota Corolla 2014 1.4 D4-D Manual NEW NCT LOW KM",
+    "details": "New listing added: Toyota Corolla 2014 1.4 D4-D Manual NEW NCT LOW KM - EUR 7950"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "New listing",
+    "carId": 135,
+    "title": "Mercedes C-Class 2017 Auto LOW KM Finance Availabl",
+    "details": "New listing added: Mercedes C-Class 2017 Auto LOW KM Finance Availabl - EUR 14990"
   }
 ]

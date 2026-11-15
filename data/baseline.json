@@ -1,14 +1,29 @@
 {
-  "scraped_at": "2026-11-14",
+  "scraped_at": "2026-11-15",
   "source": "https://carbarsale.ie/cars",
   "cars": [
+    {
+      "id": 126,
+      "title": "Mercedes C-Class 2009 2.1L Diesel Elegance Sport",
+      "year": 2009,
+      "price": 3990,
+      "price_was": 4450,
+      "on_offer": true,
+      "mileage": 165000,
+      "mileage_unit": "mi",
+      "engine": "2.1L Diesel",
+      "transmission": "",
+      "url": "https://carbarsale.ie/cars/126/mercedes-c-class-2009-21l-diesel-elegance-sport",
+      "make": "Mercedes",
+      "status": "Available"
+    },
     {
       "id": 137,
       "title": "Volkswagen Golf 2012  2.0 TDI 140BHP EDITION-R",
       "year": 2012,
-      "price": 5350,
-      "price_was": null,
-      "on_offer": false,
+      "price": 4990,
+      "price_was": 5350,
+      "on_offer": true,
       "mileage": 183000,
       "mileage_unit": "mi",
       "engine": "2.0L Diesel",
@@ -180,21 +195,6 @@
       "transmission": "Automatic",
       "url": "https://carbarsale.ie/cars/132/peugeot-2008-2016-automatic-12-petrol-new-nct",
       "make": "Peugeot",
-      "status": "Available"
-    },
-    {
-      "id": 126,
-      "title": "Mercedes C-Class 2009 2.1L Diesel Elegance Sport",
-      "year": 2009,
-      "price": 3990,
-      "price_was": 4450,
-      "on_offer": true,
-      "mileage": 165000,
-      "mileage_unit": "mi",
-      "engine": "2.1L Diesel",
-      "transmission": "",
-      "url": "https://carbarsale.ie/cars/126/mercedes-c-class-2009-21l-diesel-elegance-sport",
-      "make": "Mercedes",
       "status": "Available"
     },
     {
@@ -457,9 +457,9 @@
     "total_cars": 30,
     "available": 30,
     "deposit_taken": 0,
-    "on_offer": 16,
-    "aum_available_eur": 299029,
-    "aum_all_eur": 299029,
-    "avg_price_eur": 9968
+    "on_offer": 17,
+    "aum_available_eur": 298669,
+    "aum_all_eur": 298669,
+    "avg_price_eur": 9956
   }
 }

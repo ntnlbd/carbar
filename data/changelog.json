@@ -2468,5 +2468,73 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Price change",
+    "carId": 63,
+    "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+    "details": "Price changed: EUR 16550 -> EUR 15990"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Offer",
+    "carId": 63,
+    "title": "Mercedes C-Class AMG Line 2016 1.6 Diesel Auto",
+    "price": 15990,
+    "details": "On offer: EUR 15990 (down from EUR 16550)"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Price change",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "details": "Price changed: EUR 6999 -> EUR 6990"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Offer",
+    "carId": 104,
+    "title": "Renault Megane 2013 1.5D 110 GT LINE Auto NEW NCT",
+    "price": 6990,
+    "details": "On offer: EUR 6990 (down from EUR 6999)"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Price change",
+    "carId": 24,
+    "title": "Mercedes B-Class 2014 1.8D NEW NCT",
+    "details": "Price changed: EUR 8550 -> EUR 7990"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Offer",
+    "carId": 24,
+    "title": "Mercedes B-Class 2014 1.8D NEW NCT",
+    "price": 7990,
+    "details": "On offer: EUR 7990 (down from EUR 8550)"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Price change",
+    "carId": 89,
+    "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+    "details": "Price changed: EUR 5990 -> EUR 5550"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Offer",
+    "carId": 89,
+    "title": "Ford Kuga Zetec 2013 2L Diesel Manual NEW NCT",
+    "price": 5550,
+    "details": "On offer: EUR 5550 (down from EUR 5990)"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "Sold",
+    "carId": 113,
+    "title": "Toyota Avensis 2009 2L D-4D Terra Manual NEW NCT",
+    "price": 3850,
+    "details": "No longer listed (sold or removed): Toyota Avensis 2009 2L D-4D Terra Manual NEW NCT - EUR 3850"
   }
 ]

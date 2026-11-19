@@ -2544,5 +2544,19 @@
     "title": "Toyota Yaris 2006 1L Petrol Automatic LOW KM",
     "price": 3990,
     "details": "No longer listed (sold or removed): Toyota Yaris 2006 1L Petrol Automatic LOW KM - EUR 3990"
+  },
+  {
+    "date": "2026-11-19",
+    "type": "New listing",
+    "carId": 140,
+    "title": "VW Polo 2015 1.2 TSI 90hp Comfortline + Automatic",
+    "details": "New listing added: VW Polo 2015 1.2 TSI 90hp Comfortline + Automatic - EUR 9350"
+  },
+  {
+    "date": "2026-11-19",
+    "type": "New listing",
+    "carId": 139,
+    "title": "Mazda3 2014 2.2L Diesel Manual Platinum NEW NCT/Ta",
+    "details": "New listing added: Mazda3 2014 2.2L Diesel Manual Platinum NEW NCT/Ta - EUR 5750"
   }
 ]

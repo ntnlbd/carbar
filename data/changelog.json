@@ -2565,5 +2565,36 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-11-21",
+    "type": "New listing",
+    "carId": 138,
+    "title": "\ud83d\udd39DEPOSIT TAKEN\ud83d\udd39",
+    "details": "New listing added: \ud83d\udd39DEPOSIT TAKEN\ud83d\udd39 - EUR 5350"
+  },
+  {
+    "date": "2026-11-21",
+    "type": "Sold",
+    "carId": 132,
+    "title": "Peugeot 2008 2016 Automatic 1.2 Petrol NEW NCT",
+    "price": 8550,
+    "details": "No longer listed (sold or removed): Peugeot 2008 2016 Automatic 1.2 Petrol NEW NCT - EUR 8550"
+  },
+  {
+    "date": "2026-11-21",
+    "type": "Sold",
+    "carId": 137,
+    "title": "Volkswagen Golf 2012  2.0 TDI 140BHP EDITION-R",
+    "price": 4990,
+    "details": "No longer listed (sold or removed): Volkswagen Golf 2012  2.0 TDI 140BHP EDITION-R - EUR 4990"
+  },
+  {
+    "date": "2026-11-21",
+    "type": "Sold",
+    "carId": 91,
+    "title": "Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT",
+    "price": 4990,
+    "details": "No longer listed (sold or removed): Hyundai Veloster 2013 1.6 Petrol Manual NEW NCT - EUR 4990"
   }
 ]

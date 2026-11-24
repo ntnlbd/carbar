@@ -2610,5 +2610,13 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-11-24",
+    "type": "Sold",
+    "carId": 136,
+    "title": "Mazda Demio 2011 1.3 Petrol Automatic NEW NCT",
+    "price": 4350,
+    "details": "No longer listed (sold or removed): Mazda Demio 2011 1.3 Petrol Automatic NEW NCT - EUR 4350"
   }
 ]

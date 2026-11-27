@@ -2632,5 +2632,20 @@
     "carId": "-",
     "title": "-",
     "details": "No changes since last check."
+  },
+  {
+    "date": "2026-11-27",
+    "type": "Price change",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "details": "Price changed: EUR 11990 -> EUR 11550"
+  },
+  {
+    "date": "2026-11-27",
+    "type": "Offer",
+    "carId": 74,
+    "title": "BMW 520D M SPORT GT 2014 GRAN TURISMO AUTO",
+    "price": 11550,
+    "details": "On offer: EUR 11550 (down from EUR 11990)"
   }
 ]
